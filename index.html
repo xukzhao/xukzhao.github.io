@@ -1,258 +1,722 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<meta http-equiv="Content-Language" content="zh-CN" />
-<meta name="description" content="�������簮�������㲥��̨,��ʮ�������̨,xukzhao�ղصĹ㲥��̨" />
-<meta name="keywords" content="xukzhao�����̨ ,����㲥|��̨,xukzhao" />
-<title>����㲥|��̨-xukzhao</title>
+<meta charset="utf-8">
+<meta name="description" content="徐氏松茂堂"
+<meta name="keywords" content="xukzhao,徐氏，徐氏族谱，松茂堂"
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>徐氏松茂堂</title>
 <link rel="shortcut icon" href="favicon.ico" />
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-<script type="text/javascript" src="checkmail.js"></script>
-<script type="text/javascript" src="datetime.js"></script>
-<script type="text/javascript" src="weather.js"></script>
-<style type="text/css">
-#radio {
-	float: left;
-	width: 600px;
-	margin:0 0 10px 0;
-	border:1px #363 solid;
-}
-#radio li {
-	float:left;
-	width:75px;
-	border:1px #336633 solid;
-	margin-top:10px;
-}
-#radio h2 {
-	border-bottom: 1px solid #363;
-	padding:0 0 5px 180px;
-}
-#iframe {
-	margin:0;
-	float:left;
-	padding:50px 0 0 116px;
-}
-span {
-	font-size:40px;
-	color:#900;
-}
-#out {
-	margin-top:50px;
-}
-#shenghuo {
-	margin-top:10px;
-}
-#radio span{font-size:12px;color:#999;}
-</style>
-</head>
-<body >
-<div class="content" id="top">
-  <div id="email">
-    <form  id="mailcheck" name="gomail" onsubmit="return clickMail()"   action=""  method="post"  target="_blank">
-      <input type="hidden" name="url" />
-      <input type="hidden" name="username" />
-      <input type="hidden" name="type" />
-      <input type="hidden" name="password" />
-      <input type="hidden" name="domain" />
-      <input type="hidden" value="http://cn.mail.yahoo.com/inset.html?rr=529401327" name=".done" />
-      <input type="hidden" name="user" />
-      <input type="hidden" name="pass" />
-      <input type="hidden" value="true" name="enterVip" />
-      <input type="hidden" name="UserName" />
-      <input type="hidden" name="Password" />
-      <input type="hidden" name="u" />
-      <input type="hidden" name="psw" />
-      <input type="hidden" name="login" />
-      <input type="hidden" name="LoginName" />
-      <input type="hidden" name="usr" />
-      <input type="hidden" name="func" />
-      <input type="hidden" name="login_name" />
-      <input type="hidden" name="login_password" />
-      <input type="hidden" name="BackURL" />
-      <input type="hidden" value="http://mail.google.com/mail?ui=html&amp;zy=l" name="continue" />
-      <input type="hidden" name="Email" />
-      <input type="hidden" name="Passwd" />
-      <input type="hidden" name="domainname" />
-      <input type="hidden" value="false" name="firstlogin" />
-      <input type="hidden" name="starttime" />
-      <input type="hidden" name="p2" />
-      <input type="hidden" name="passwd" />
-      <input type="hidden" name="id" />
-      <input type="hidden" name="m" />
-      <input type="hidden" name="mpass" />
-      <input type="hidden" name="loginid" />
-      <input type="hidden" name="appid" />
-      <input type="hidden" name="ru" />
-      <input type="hidden" name="eru" />
-      <input type="hidden" name="fl" />
-      <input type="hidden" name="ct" />
-      <input type="hidden" name="vr" />
-      <input type="hidden" name="sg" />
-      <input type="hidden" name="vwriter" />
-      <input type="hidden" name="vpassword" />
-      <select tabindex="0" class="vpassword" name="domains">
-        <option selected="selected"  >��ѡ������</option>
-        <option value="gmail">@gmail.com</option>
-        <option value="163">@163.com ����</option>
-        <option value="sina">@sina.com ����</option>
-        <option value="126">@126.com ����</option>
-        <option value="yahoo">@yahoo.com.cn</option>
-        <option value="21cn">@21cn.com</option>
-        <option value="sohu">@sohu.com �Ѻ�</option>
-        <option value="tom">@tom.com</option>
-        <option value="188">@188.com</option>
-        <option value="yeah">@yeah.net</option>
-        <option>-��ѡ����������-</option>
-        <option value="baidu">�ٶ��˺�</option>
-        <option value="chinaren">ChinaRenУ��¼</option>
-      </select>
-      �û�����
-      <input  class="name" tabindex="1" size="12" name="uName" />
-      ���룺
-      <input tabindex="2" type="password"  class="password" size="12" name="uPw" />
-      <input tabindex="3" type="submit" value=" ��¼ " name="sub" class="sub"/>
-      <input type="hidden" value="submit" name="cmd" />
-    </form>
-  </div>
-  <div id="time">
-    <script type="text/javascript">document.write(clock());</script>
-  </div>
-  <div id="header">
-    <div class="info">
-      <h1><span>�����̨</span></h1>
-      <p>http://www.dcom.cn.st</p>
-    </div>
-  </div>
-  <div id="subheader">
-    <ul>
-      <li><a href="../index.html" title="xukzhao�����̨">��ҳ</a></li>
-      <li><a href="../bbs" target="_blank"  title="xukzhao��̳">��̳</a></li>
-      <li><a href="../blog" target="_blank" title="xukzhao web">����</a></li>
-      
-    </ul>
-  </div>
-  <div id="Wealth" class="weather">
-    <script type="text/javascript">  
-MiniSite.Weather.print("Wealth");</script>
-    ����������...</div>
-  <div id="main" >
-    <div class="right_side">
-      <h2>��̨����</h2>
-      <ul>
-        <li> <a href="radio/radioyy.html" target="_blank" >����̨</a> <a href="radio/radiojt.html"  target="_blank">��̨ͨ</a></li>
-        <li> <a href="radio/radioxw.html" target="_blank" >����̨</a> <a href="radio/radiojj.html" target="_blank" >����̨</a></li>
-        <li> <a href="radio/radiowy.html" target="_blank" >����̨</a> <a href="radio/radiogj.html" target="_blank" >����̨</a></li>
-      </ul>
-      <h2 id="out">��վ��̨</h2>
-      <ul>
-        <li> <a href="http://www.tinggb.com/" target="_blank">���㲥</a> <a href="http://www.sowang.com/zt/radio.htm" target="_blank" >���ߵ�̨</a></li>
-        <li> <a href="http://hichannel.hinet.net/player/radio-f1.jsp?id=202" target="_blank" >̨��ĵ�̨</a></li>
-        <li> <a href="http://www.654789.com/" target="_blank" >�ǿ������̨</a></li>
-        <li> <a href="http://list.mp3.baidu.com/radio/" target="_blank">�ٶȵ�̨����</a></li>
-      </ul>
-      <div id="shenghuo">
-        <h3>�������</h3>
-        <p> <a href="http://www.zhcw.com/" target="_blank" >����</a> <a href="http://www.ip138.com/" target="_blank" >��ѯ��</a> <a href="../wnl.html"  target="_blank">������ </a> <a href="http://www.8684.cn/" target="_blank" >������ѯ</a> <a href="http://www.google.cn/language_tools" target="_blank" >���߷���</a> <a href="http://timewe.net/cdr" target="_blank" >����ֻ���</a> <a href="http://www.zdic.net/" target="_blank" >�����ֵ�ʵ�</a> <a href="../chepai.html" target="_blank" >���ƹ����ز�ѯ</a> 
-      </div>
-    </div>
-    <div  id="radio" >
-      <h2>�����̨  <span>(�������е�̨��24Сʱ�㲥)</span> </h2>
-      <ul>
-        <li> <a  href="radio/mgzy.html" target="mainframe">��������</a></li>
-        <li> <a  href="radio/fggj.html" target="mainframe">��������</a></li>
-        <li><a href="radio/bbc.html" target="mainframe">bbc</a> </li>
-        <li><a href="radio/dgzw.html" target="mainframe">�ù�����</a></li>
-        <li><a href="radio/qqpd.html" target="mainframe">QQ�����ɶ�</a></li>
-        <li><a href="radio/qmyy.html" target="mainframe">��������̨</a></li>
-        <li><a href="radio/cri.html" target="mainframe">CRI:����</a></li>
-        <li><a href="radio/crixyy.html" target="mainframe">CRIѧӢ��̨</a></li>
-        
-        <li><a href="radio/mpwl.html" target="mainframe">è�������̨</a></li>
-        
-        <li><a href="radio/dslx.html" target="mainframe">��������Ƶ��</a></li>
-        <li><a href="radio/hqjq.html" target="mainframe">���ɽ���Ƶ��</a></li>
-        <li><a href="radio/shcj.html" target="mainframe">�Ϻ��ƾ��㲥</a></li>
-        <li><a href="radio/gdgs.html" target="mainframe">�㶫���й㲥</a></li>
-        <li><a href="radio/zjjj.html" target="mainframe">�齭����</a></li>
-        <li><a href="radio/hs.html" target="mainframe">��ɽ��̨</a></li>
-        <li><a href="radio/sz971.html" target="mainframe">���ڵ�̨971</a></li>
-        <li><a href="radio/sz898.html" target="mainframe">���ڵ�̨898</a></li>
-        <li><a href="radio/sz942.html" target="mainframe">���ڵ�̨942</a></li>
-        <li> <a href="radio/gdyy.html" target="mainframe">�㶫����֮��</a></li>
-        <li><a href="radio/gdcs.html" target="mainframe">�㶫����֮��</a></li>
-        <li><a href="radio/gdwt.html" target="mainframe">�㶫����㲥</a></li>
-        <li><a href="radio/gdwx.html" target="mainframe">�㶫���ǹ㲥</a></li>
-        <li><a href="radio/nyzs.html" target="mainframe">����֮��</a></li>
-        <li><a href="radio/gzxw.html" target="mainframe">���ݵ�̨����</a></li>
-        <li><a href="radio/fs985.html" target="mainframe">��ɽǧɫ985</a></li>
-        <li><a href="radio/fs883.html" target="mainframe">��ɽ����883</a></li>
-        <li><a href="radio/fs942.html" target="mainframe">��ɽ��Ծ924</a></li>
-        <li><a href="radio/fs901.html" target="mainframe">��ɽ˳��901</a></li>
-        <li><a href="radio/fs946.html" target="mainframe">��ɽ�氮946</a></li>
-        <li><a href="radio/fs906.html" target="mainframe">��ɽ�ͷ�906</a></li>
-        
-        <li><a href="radio/babf.html" target="mainframe">�����ͷ׹㲥</a></li>
-        <li><a href="radio/ball.html" target="mainframe">���������㲥</a></li>
-        <li><a href="radio/jmlyy.html" target="mainframe">������������</a></li>
-        <li><a href="radio/jmdt.html" target="mainframe">���������ۺ�</a></li>
-        <li><a href="radio/dgjtyy.html" target="mainframe">��ݸ��ͨ����</a></li>
-        <li><a href="radio/dgxwzh.html" target="mainframe">��ݸ�����ۺ�</a></li>
-        <li><a href="radio/zsfm888.html" target="mainframe">��ɽFM88.8</a></li>
-        <li><a href="radio/zsfm967.html" target="mainframe">��ɽFM96.7</a></li>
-        <li><a href="radio/amdt.html" target="mainframe">���ŵ�̨</a></li>
-        <li><a href="radio/cngj.html" target="mainframe">HIT FM</a></li>
-        
-        
-        <li><a href="radio/xmyy.html" target="mainframe">�������ֵ�̨</a></li>
-        <li><a href="radio/" target="mainframe">����love</a></li>
-        <li><a href="radio/dgdg.html" target="mainframe">���㶯��</a></li>
-        <li><a href="radio/cn.html" target="mainframe">�й�֮��</a></li>
-        <li><a href="radio/cnds.html" target="mainframe">�й�����֮��</a></li>
-        <li><a href="radio/cnjj.html" target="mainframe">�й�����֮��</a></li>
-        <li><a href="radio/cnyy.html" target="mainframe">�й�����</a></li>
-        <li><a href="radio/cnzx.html" target="mainframe">������Ѷ</a></li>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
 
-        <li><a href="radio/yhlx.html" target="mainframe">������������</a></li>
-        
-        
-        <li><a href="radio/gxwy.html" target="mainframe">�������չ㲥</a></li>
-        <li><a href="radio/gxxw.html" target="mainframe">���������ۺ�</a></li>
-        <li><a href="radio/gxjj.html" target="mainframe">�������ù㲥</a></li>
-        <li><a href="radio/gxjy.html" target="mainframe">������������</a></li>
-        <li><a href="radio/hkpth.html" target="mainframe">�����ͨ��̨</a></li>
-        <li><a href="radio/hk1t.html" target="mainframe">��۵�̨һ̨</a></li>
-        <li><a href="radio/hk2t.html" target="mainframe">��۵�̨��̨</a></li>
-        <li><a href="radio/tjxs.html" target="mainframe">��������㲥</a></li>
-        
-        <li><a href="radio/bjwy.html" target="mainframe">��������㲥</a></li>
-        <li><a href="radio/bjjx.html" target="mainframe">������ѧ�㲥</a></li>
-        <li><a href="radio/shty.html" target="mainframe">�Ϻ�����Ƶ��</a></li>
-      </ul>
-      <p id="iframe">
-        <iframe src="radio/hqjq.html"  width="368" height="104" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" name="mainframe"></iframe>
-      </p>
-      <div id="search">
-        <form name="searchform" method="get" action="http://www1.baidu.com/baidu" target="_blank">
-          <p id="searchp">��̨������</p>
-          <input type="hidden" name="tn" value="qqjhx" />
-          <input name="word" type="text" id="query" class='inputsear'/>
-          <input type="submit"  value="��  ��" class='searther'/>
-          <input type="button" name="google" value="Google" onclick="window.open('http://www.google.com/search?q='+form.query.value)"  class='searther' />
-          <input type="button" name="gougou" value="����" onclick=" window.open('http://www.gougou.com/search?search='+form.query.value)" class='searther' />
-          <input type="button"  name="yahoo" value="�� ��" onclick="window.open('http://www.yahoo.com.cn/search?p='+form.query.value)" class='searther' />
-          <input type="button" name="3721" value="�� ��" onclick=" window.open('http://www.youdao.com/search?q='+form.query.value)" class='searther' />
-        </form>
-      </div>
-    </div>
-    <div id="footer">
-      <p> Copyright &copy; 2008 <b>xukzhao�����̨</b>| E-mail��<a href="mailto:xukzhao@gmail.com">xukzhao@gmail.com</a>  <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=13249221&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:13249221:41 &r=0.16136204241774976" alt="���������ҷ���Ϣ" title="���������ҷ���Ϣ"></a></p>
-      <p> <a  href="http://validator.w3.org/check?uri=referer" target="_blank" title="xukzhaoW3C��֤"><img
-        src="http://www.w3.org/Icons/valid-xhtml10"
-        alt="xukzhao����㲥��̨��W3C��֤" height="30" width="80" /></a> </p>
-    </div>
+$('.tree > ul  li').hide();
+$('.tree > ul > li').first().show();
+		
+    $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', '点击展开');
+    $('.tree li.parent_li > span').on('click', function (e) {
+        var children = $(this).parent('li.parent_li').find(' > ul > li');
+		
+        if (children.is(":visible")) {
+            children.hide('fast');
+            $(this).attr('title', '点击展开').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+        }
+		else {
+            children.show('fast');
+            $(this).attr('title', '点击收起').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+        }
+        e.stopPropagation();
+    });
+
+});
+
+
+</script>
+<style type="text/css">
+	*{ margin:0;}
+	body{margin:0;
+		text-align:center; 
+	    font-family: Geneva, Arial, Helvetica, sans-serif;
+		font-size:16px;background-color:#eee;
+		}
+	.icon-minus-sign{background-position:0 -96px;}
+    .icon-plus-sign{background-position:-24px -96px;}
+    .icon-folder-open{width:16px;background-position:-168px 0px;}
+		p {line-height:1.5em}
+	small {margin-left:1em;}
+	h3{text-align:center;}
+	
+	
+	
+ #mm{width:70%; margin:2em auto; border-style:groove; border-width:1px 3px 1px; border-color:#999; padding:0 0.5em ;-moz-border-radius:5px;font-size:1.2em;
+           -webkit-border-radius:5px;background:#fbfbfb;}
+  
+	#header{text-align:center; margin:2em 0 10px;border-bottom-style:dashed; border-bottom-width:1px; border-bottom-color:#999;font-size:1em}
+	@media screen and (min-width:1900px) {#mm{width:60%;} }
+@media screen and (max-width:1200px) {#mm{width:90%;} }
+
+	@media screen and (min-device-width:360px) and (max-device-width:480px) {   
+  	h3{font-size:1.5em;}	
+
+#header {font-size:2em}
+
+.tree.well{font-size:2em}
+.tree.well p{font-size:1em}
+.tree.well .folder{height:35px;line-height:35px;}
+small{font-size:0.6em}
+}
+
+	
+	
+</style>
+
+</head>
+<body>
+<div id="mm">
+  <div id="header">
+  <h3 style=" margin-bottom:25px;">徐氏松茂堂</h3>
+  <p style=" text-indent:2em;text-align:left">吾徐氏系出伯益之后，虞时为士师官佐禹王治水有功，始封其子穆公于徐邑，因邑纪姓以志不忘，及至康公为周之诸侯，修德爱民得天瑞称偃王。避楚鲸吞出奔东海高平，更姓改郡，子孙以徐为姓以郡氏焉。嗣后元直公避汉末之乱，隐居襄阳。数传而至世勋公，仕唐佐太宗东征高丽，西平突厥有功，封国师号茂公。其后至达公，仕明佐太祖洪武定天下有功，封天策上将军兼右丞相，加上柱国开国公。建王府于金陵，谥赠武宁追封忠武王，即为我金陵徐氏子始祖也。达公之孙为亮公，由进仕及第官至监察御史，靖难变乱，公秉性刚直弹劾权奸，被贬为粤东康州太守（今德庆）， 终于任安葬于德庆北门外白土塘独衫山。嗣后众散居四方，其伦次年湮久远不可稽考又五世。	崇公号定俸，明嘉靖年间，广西瑶蛮作乱，公随先哲王阳明先生督师入桂,平蛮乱。复官受广西平南平岭司职，明季寇乱，解组辞官，隐居落鹅瑶，别号秀山居士，葬瑶山飞鹅地。又四传至京宗公，始迁桂平罗洪村，公生四子，长曰国禄公，今其子孙居平南鹏化里花相村，分支大洪、大窝等处；次曰国辅公，子孙世居落鹅瑶；三曰国显公号隆书，前明贡生，住居罗洪村后，子孙多众，分支大罗、大朗、里濒、官州、洞心、松竹堂等处，即我桂萼堂六房之祖也；四曰国聘公，今其子孙迁居古龙冲，分支罗洪、白屋等处。其余有不知者待考问。</p>
+
+
+
+
+ 
   </div>
+<div class="tree well" style=" text-align:left; margin-top:1em;">
+<p style="padding-bottom:10px;">（舒文邦以泰积善世斯长 事业河山寿勋名日月光） ---- 贰拾字是为六房后世代宗派</p> 
+<ul>
+<li ><span class="folder" style="color:#3366CC ;">徐桂萼堂历代世系之三房</span> <small><<<(点击展开)</small>
+       <ul>      
+			 <li><span><i class="icon-folder-open"></i>始祖 崇公（定俸公）</span>
+                    <ul>
+                      <li><span><i class="icon-minus-sign"></i>二世祖 明昌公</span>
+						  <ul>   
+                           <li><span><i class="icon-minus-sign"></i>三世祖 旋台公</span>
+							<ul>
+								<li><span><i class="icon-minus-sign"></i>四世祖 京宗公</span>
+									<ul>       	   
+										<li><span><i class="icon-leaf"></i>国禄公</span></li>
+										<li><span><i class="icon-leaf"></i>国辅公</span></li>
+										<li><span><i class="icon-minus-sign"></i>五世祖 国显公（隆书公）</span>	
+											     <ul>	
+												  <li><span><i class="icon-minus-sign"></i>六世祖 碧天公</span>
+												      <ul> 
+													   <li><span><i class="icon-minus-sign"></i> 七世祖 朝彦公 </span>
+													       <ul>
+														   <li><span><i class="icon-leaf"></i>长房 敏公</span></li>
+														   <li><span><i class="icon-leaf"></i>二房 犖公</span></li>
+														   <li><span><i class="icon-minus-sign"></i>三房 鸿公</span>
+														       <ul>            	       	
+                
+			<li ><span><i class="icon-minus-sign"></i>舒璘公</span>
+			     <ul>
+				  <li><span><i class="icon-minus-sign"></i>元文公</span>
+				      <ul>
+					  <li><span><i class="icon-minus-sign"></i>雍邦公</span>
+					      <ul>
+						  <li><span><i class="icon-leaf"></i>以均公</span></li>
+						  </ul>
+					  </li>
+					  <li><span><i class="icon-leaf"></i>灿邦公</span></li>
+					  <li><span><i class="icon-minus-sign"></i>莅邦公</span>
+					  	  <ul>
+						  <li><span><i class="icon-leaf"></i>以合公</span></li>
+						  </ul>
+					  </li>
+					  <li><span><i class="icon-minus-sign"></i>懿邦公</span>
+					      <ul>
+						  <li><span><i class="icon-leaf"></i>以和公</span></li>
+						  </ul>
+					  </li>
+					  </ul>
+				  </li>
+				 </ul>
+			</li>
+			
+			<li><span><i class="icon-minus-sign"></i>舒典公</span>
+			    <ul>
+				<li><span><i class="icon-minus-sign"></i>启文公</span>
+				    <ul>
+					<li><span><i class="icon-minus-sign"></i>翼邦公</span>
+					    <ul>
+						<li><span><i class="icon-minus-sign"></i>以升公</span>
+						     <ul>
+							 <li><span><i class="icon-minus-sign"></i>澄泰公</span>
+							     <ul>
+								 <li><span><i class="icon-leaf"></i>积峰公</span></li>
+								 </ul>
+							 </li>
+							 </ul>
+						</li>
+						<li><span><i class="icon-minus-sign"></i>以彰公</span>
+						    <ul>
+							<li><span><i class="icon-minus-sign"></i>启泰公</span>
+							    <ul>
+								<li><span><i class="icon-minus-sign"></i>积孜公</span>
+								    <ul>
+									<li><span><i class="icon-minus-sign"></i>善海</span>
+									     <ul>
+										 <li><span><i class="icon-minus-sign"></i>徐彪</span>
+										     <ul>
+											 <li><span><i class="icon-leaf"></i>亚文</span></li>
+											 </ul>
+										 </li>
+										 <li><span><i class="icon-leaf"></i>世荣</span></li>
+										 </ul>
+									</li>
+									</ul> 
+								</li>
+								</ul> 
+							</li>
+							<li><span><i class="icon-minus-sign"></i>更泰公</span>
+							    <ul>
+								<li><span><i class="icon-minus-sign"></i>积称公</span>
+								    <ul>
+									<li><span><i class="icon-leaf"></i>善熙</span></li>
+									</ul> 
+								</li>
+								</ul>
+							</li>
+							</ul>
+						</li>
+						<li><span><i class="icon-leaf"></i>以鼎公</span></li>
+						<li><span><i class="icon-leaf"></i>以颖公</span></li>
+						</ul>
+					</li>
+					</ul>
+				</li>
+				<li><span><i class="icon-minus-sign"></i>瓒文公</span>
+				    <ul>
+					<li><span><i class="icon-minus-sign"></i>靖邦公</span>
+					    <ul>
+						<li><span><i class="icon-leaf"></i>以新公</span></li>
+						<li><span><i class="icon-leaf"></i>以联公</span></li>
+						<li><span><i class="icon-leaf"></i>以培公</span></li>
+						</ul>
+					</li>
+					<li><span><i class="icon-minus-sign"></i>存邦公</span>
+					    <ul>
+						<li><span><i class="icon-leaf"></i>以谆公</span></li>
+						<li><span><i class="icon-leaf"></i>以深公</span></li>
+						<li><span><i class="icon-minus-sign"></i>以浩公</span>
+						    <ul>
+							<li><span><i class="icon-minus-sign"></i>初泰公</span>
+							    <ul>
+								<li><span><i class="icon-leaf"></i>积森</span></li>
+								</ul>
+							</li>
+							<li><span><i class="icon-leaf"></i>贤泰公</span></li>
+							<li><span><i class="icon-minus-sign"></i>光泰公</span>
+							    <ul>
+								<li><span><i class="icon-minus-sign"></i>积波</span>
+								    <ul>
+									<li><span><i class="icon-minus-sign"></i>善寿</span>
+									    <ul>
+										<li><span><i class="icon-minus-sign"></i>世凯</span>
+										    <ul>
+											<li><span><i class="icon-leaf"></i>硕斯</span></li>
+											<li><span><i class="icon-leaf"></i>甲斯</span></li>
+											</ul>
+										</li>
+										</ul>
+									</li>
+									</ul>
+								</li>
+								</ul>
+							</li>
+							<li><span><i class="icon-leaf"></i>裕泰公</span></li>
+							<li><span><i class="icon-leaf"></i>养泰公</span></li>
+							<li><span><i class="icon-leaf"></i>蓝泰公</span></li>
+							</ul>
+						</li>
+						</ul>
+					</li>
+					<li><span><i class="icon-leaf"></i>永邦公</span></li>
+					</ul>
+				</li>
+				</ul>
+			</li>
+			<li><span><i class="icon-minus-sign"></i>舒珍公</span>
+			    <ul>
+				<li><span><i class="icon-minus-sign"></i>成文公</span>
+				    <ul>
+					<li><span><i class="icon-minus-sign"></i>禹邦公</span>
+					    <ul>
+						<li><span><i class="icon-minus-sign"></i>以弼公</span>
+						     <ul>
+							 <li><span><i class="icon-minus-sign"></i>钰泰公</span>
+							     <ul>
+								 <li><span><i class="icon-minus-sign"></i>积焕</span>
+								     <ul>
+									 <li><span><i class="icon-minus-sign"></i>善文</span>
+									     <ul>
+										 <li><span><i class="icon-minus-sign"></i>世昌</span>
+										     <ul>
+											 <li><span><i class="icon-leaf"></i>朋斯</span></li>
+											 <li><span><i class="icon-minus-sign"></i>羽斯</span>
+											     <ul>
+												 <li><span><i class="icon-leaf"></i>亚大</span></li>
+												 <li><span><i class="icon-leaf"></i>亚二</span></li>
+												 <li><span><i class="icon-leaf"></i>亚四</span></li>
+												 </ul>
+											 </li>
+											 <li><span><i class="icon-leaf"></i>亚四</span></li>
+											 <li><span><i class="icon-leaf"></i>飞斯</span></li>
+											 </ul>
+										 </li>
+										 <li><span><i class="icon-minus-sign"></i>世明</span>
+										     <ul>
+											 <li><span><i class="icon-leaf"></i>信斯</span></li>
+											 <li><span><i class="icon-leaf"></i>亚六</span></li>
+											 </ul>
+										 </li>
+										 <li><span><i class="icon-minus-sign"></i>世新</span>
+										     <ul>
+											 <li><span><i class="icon-leaf"></i>亚彬</span></li>
+											 </ul>
+										 </li>
+										 </ul>
+									 </li>
+									 
+									 <li><span><i class="icon-minus-sign"></i>善瑞</span>
+									     <ul>
+										 <li><span><i class="icon-minus-sign"></i>世忠</span>
+										     <ul>
+											 <li><span><i class="icon-leaf"></i>亚八</span></li>
+											 </ul>
+										 </li>
+										 <li><span><i class="icon-leaf"></i>世坚</span></li>
+										 </ul>
+									 </li>
+									 <li><span><i class="icon-leaf"></i>善钊</span></li>
+									 <li><span><i class="icon-minus-sign"></i>善西</span>
+									     <ul>
+										 <li><span><i class="icon-leaf"></i>世勇</span></li>
+										 <li><span><i class="icon-leaf"></i>世丽</span></li>
+										 </ul>
+									 </li>
+									 </ul>
+								 </li>
+								 </ul>
+							 </li>
+							 <li><span><i class="icon-minus-sign"></i>滋泰公</span>
+							     <ul>
+								 <li><span><i class="icon-minus-sign"></i>积清公</span>
+								     <ul>
+									 <li><span><i class="icon-minus-sign"></i>善林</span>
+									     <ul>
+										 <li><span><i class="icon-minus-sign"></i>世育</span>
+										     <ul>
+											 <li><span><i class="icon-leaf"></i>炳坤</span></li>
+											 <li><span><i class="icon-leaf"></i>旭荣</span></li>
+											 </ul>
+										 </li>
+										 <li><span><i class="icon-minus-sign"></i>世葵</span>
+										     <ul>
+											 <li><span><i class="icon-leaf"></i>宁斯</span></li>
+											 <li><span><i class="icon-leaf"></i>保斯</span></li>
+											 </ul>
+										 </li>
+										 </ul>
+									 </li>
+									 <li><span><i class="icon-minus-sign"></i>善来</span>
+									     <ul>
+										 <li><span><i class="icon-leaf"></i>世添</span></li>
+										 <li><span><i class="icon-leaf"></i>世官</span></li>
+										 <li><span><i class="icon-leaf"></i>世仕</span></li>
+										 </ul>
+									 </li>
+									 </ul>
+								 </li>
+								 <li><span><i class="icon-minus-sign"></i>积辉公</span>
+								     <ul>
+									 <li><span><i class="icon-minus-sign"></i>善松</span>
+									     <ul>
+										 <li><span><i class="icon-leaf"></i>世楷</span></li>
+										 <li><span><i class="icon-minus-sign"></i>世磻</span>
+										     <ul>
+											 <li><span><i class="icon-leaf"></i>徐锋</span></li>
+											 </ul>
+										 </li>
+										 <li><span><i class="icon-leaf"></i>世满</span></li>
+										 <li><span><i class="icon-leaf"></i>世尧</span></li>
+										 <li><span><i class="icon-leaf"></i>世显</span></li>
+										 </ul>
+									 </li>
+									 <li><span><i class="icon-minus-sign"></i>善柏</span>
+									     <ul>
+										 <li><span><i class="icon-leaf"></i>宁平</span></li>
+										 </ul>
+									 </li>
+									 <li><span><i class="icon-minus-sign"></i>善喜</span>
+									     <ul>
+										 <li><span><i class="icon-leaf"></i>世生</span></li>
+										 <li><span><i class="icon-leaf"></i>世全</span></li>
+										 </ul>
+									 </li>
+									 <li><span><i class="icon-minus-sign"></i>善高</span>
+									     <ul>
+										 <li><span><i class="icon-leaf"></i>亚海</span></li>
+										 <li><span><i class="icon-leaf"></i>亚弟</span></li>
+										 </ul>
+									 </li>
+									 </ul>
+								 </li>
+								 </ul>
+							 </li>
+							 <li><span><i class="icon-leaf"></i>炽泰公(养积辉）</span></li>
+							 <li><span><i class="icon-minus-sign"></i>能泰公</span>
+							     <ul>
+								 <li><span><i class="icon-minus-sign"></i>积家</span>
+								    <ul> 
+									<li><span><i class="icon-minus-sign"></i>善成</span>
+									    <ul> 
+										 <li><span><i class="icon-minus-sign"></i>世堂</span>
+										     <ul>
+											 <li><span><i class="icon-leaf"></i>徐伟</span></li>
+											 </ul>
+										 </li>
+										</ul> 
+									</li>
+									</ul> 
+								 </li>
+								 <li><span><i class="icon-leaf"></i>积期</span></li>
+							     </ul>
+							 </li>
+							 </ul>
+						</li>
+						<li><span><i class="icon-minus-sign"></i>以寿公</span>
+						    <ul>
+							<li><span><i class="icon-minus-sign"></i>煜泰公</span>
+							   <ul> 
+							   <li><span><i class="icon-minus-sign"></i>积兴</span>
+							       <ul>
+								   <li><span><i class="icon-minus-sign"></i>善芬</span>
+								       <ul>
+									   <li><span><i class="icon-minus-sign"></i>世谷</span>
+									      <ul>
+										  <li><span><i class="icon-minus-sign"></i>金配</span>
+										      <ul>
+											  <li><span><i class="icon-leaf"></i>亚弟</span></li>
+											  </ul>
+										  </li>
+										  <li><span><i class="icon-leaf"></i>铭军</span></li>
+										   </ul>
+									   </li>
+									   <li><span><i class="icon-minus-sign"></i>世康</span>
+									       <ul>
+										   <li><span><i class="icon-minus-sign"></i>石权</span>
+										       <ul>
+											   <li><span><i class="icon-leaf"></i>亚弟</span></li>
+											   </ul>
+										   </li>
+										   </ul>
+									   </li>
+									   </ul>
+								   </li>
+								   </ul>
+							   </li>
+							   <li><span><i class="icon-minus-sign"></i>积汉</span>
+							       <ul>
+								   <li><span><i class="icon-leaf"></i>善贞</span></li>
+								   <li><span><i class="icon-minus-sign"></i>善坤</span>
+								       <ul>
+									   <li><span><i class="icon-minus-sign"></i>世夫</span>
+									       <ul>
+										   <li><span><i class="icon-leaf"></i>钊斯</span></li>
+										   <li><span><i class="icon-leaf"></i>烽斯</span></li>
+										   <li><span><i class="icon-leaf"></i>松斯</span></li>
+										   </ul>
+									   </li>
+									   <li><span><i class="icon-minus-sign"></i>世忠</span>
+									       <ul>
+										   <li><span><i class="icon-leaf"></i>木合</span></li>
+										   <li><span><i class="icon-leaf"></i>柱斯</span></li>
+										   </ul>
+									   </li>
+									   </ul>
+								   </li>
+								   </ul>
+							   </li>
+							   <li><span><i class="icon-minus-sign"></i>积玉</span>
+							       <ul>
+								   <li><span><i class="icon-minus-sign"></i>善针</span>
+								      <ul>
+									  <li><span><i class="icon-minus-sign"></i>世杰</span>
+									      <ul>
+										  <li><span><i class="icon-leaf"></i>启忠</span></li>
+										  <li><span><i class="icon-leaf"></i>金全</span></li>
+										  <li><span><i class="icon-leaf"></i>海全</span></li>
+										  <li><span><i class="icon-leaf"></i>柱华</span></li>
+										  <li><span><i class="icon-leaf"></i>棋斯</span></li>
+										  </ul> 
+									  </li>
+									  </ul>
+								   </li>
+								   <li><span><i class="icon-minus-sign"></i>善汉</span>
+								       <ul>
+									   <li><span><i class="icon-minus-sign"></i>伟林</span>
+									       <ul>
+										   <li><span><i class="icon-leaf"></i>坤胜</span></li>
+										   <li><span><i class="icon-leaf"></i>金宏</span></li>
+										   </ul>
+									   </li>
+									   <li><span><i class="icon-leaf"></i>世列</span></li>
+									   </ul>
+								   </li>
+								   <li><span><i class="icon-minus-sign"></i>善本</span>
+								       <ul>
+									   <li><span><i class="icon-minus-sign"></i>世心</span>
+									       <ul>
+										   <li><span><i class="icon-leaf"></i>海兵</span></li>
+										   <li><span><i class="icon-leaf"></i>海勇</span></li>
+										   </ul>
+									   </li>
+									   </ul>
+								   </li>
+								   </ul>
+							   </li>
+							   <li><span><i class="icon-minus-sign"></i>积蟾</span>
+							      <ul>
+								  <li><span><i class="icon-minus-sign"></i>善良</span>
+								      <ul>
+									  <li><span><i class="icon-minus-sign"></i>世健</span>
+									      <ul>
+										  <li><span><i class="icon-leaf"></i>富斯</span></li>
+										  <li><span><i class="icon-leaf"></i>业斯</span></li>
+										  </ul>
+									  </li>
+									  </ul>
+								  </li>
+								  <li><span><i class="icon-minus-sign"></i>善彬</span>
+								      <ul>
+									  <li><span><i class="icon-leaf"></i>梧生</span></li>
+									  <li><span><i class="icon-minus-sign"></i>穗生</span>
+									      <ul>
+										  <li><span><i class="icon-leaf"></i>火新</span></li>
+										  <li><span><i class="icon-leaf"></i>桂海</span></li>
+										  </ul>
+									  </li>
+									  </ul>
+								  </li>
+								   <li><span><i class="icon-leaf"></i>善强</span></li>
+								  </ul>
+							   </li>
+							   </ul>
+							</li>
+							<li><span><i class="icon-minus-sign"></i>业泰公</span>
+							    <ul>
+								<li><span><i class="icon-minus-sign"></i>积棣</span>
+								    <ul>
+									<li><span><i class="icon-minus-sign"></i>善芳</span>
+									    <ul>
+										<li><span><i class="icon-leaf"></i>养世祥</span></li>
+										</ul>
+									</li>
+									<li><span><i class="icon-minus-sign"></i>善源</span>
+									    <ul>
+										<li><span><i class="icon-leaf"></i>徐平</span></li>
+										<li><span><i class="icon-leaf"></i>徐军</span></li>
+										<li><span><i class="icon-leaf"></i>徐明</span></li>
+										</ul>
+									</li>
+									<li><span><i class="icon-minus-sign"></i>善球</span>
+									    <ul>
+										<li><span><i class="icon-minus-sign"></i>徐华</span>
+										    <ul>
+											<li><span><i class="icon-leaf"></i>文勇</span></li>
+											<li><span><i class="icon-leaf"></i>斯威</span></li>
+											</ul>
+										</li>
+										<li><span><i class="icon-minus-sign"></i>徐新</span>
+										    <ul>
+											<li><span><i class="icon-leaf"></i>三弟</span></li>
+											</ul>
+										</li>
+										<li><span><i class="icon-minus-sign"></i>徐森</span>
+										    <ul>
+											<li><span><i class="icon-leaf"></i>四弟</span></li
+											></ul>
+										</li>
+										<li><span><i class="icon-leaf"></i>徐波</span></li>
+										</ul>
+									</li>
+									<li><span><i class="icon-leaf"></i>善环</span></li>
+									<li><span><i class="icon-minus-sign"></i>善晋</span>
+									    <ul>
+										<li><span><i class="icon-leaf"></i>世铭</span></li>
+										<li><span><i class="icon-leaf"></i>徐敏</span></li>
+										<li><span><i class="icon-leaf"></i>洪钊</span></li>
+										<li><span><i class="icon-leaf"></i>海钊</span></li>
+										</ul>
+									</li>
+									</ul>
+								</li>
+								<li><span><i class="icon-leaf"></i>积文(养善球)</span></li>
+	    						
+								<li><span><i class="icon-leaf"></i>积献(养善源)</span></li>
+								</ul>
+							</li>
+							</ul>
+						</li>
+						<li><span><i class="icon-minus-sign"></i>以尧公</span>
+						    <ul>
+							<li><span><i class="icon-leaf"></i>演泰公</span></li>
+							<li><span><i class="icon-minus-sign"></i>钦泰公</span>
+							    <ul>
+								<li><span><i class="icon-minus-sign"></i>积国</span>
+								    <ul>
+									<li><span><i class="icon-minus-sign"></i>善海</span>
+									    <ul>
+										<li><span><i class="icon-minus-sign"></i>日生</span>
+										    <ul>
+											<li><span><i class="icon-leaf"></i>河斯</span></li>
+											<li><span><i class="icon-leaf"></i>徐斯</span></li>
+											</ul>
+										</li>
+										</ul>
+									</li>
+									</ul>
+								</li>
+								</ul>
+							</li>
+							<li><span><i class="icon-minus-sign"></i>开泰公</span>
+							    <ul>
+								<li><span><i class="icon-minus-sign"></i>积富</span>
+								    <ul>
+									<li><span><i class="icon-minus-sign"></i>善发</span>
+									    <ul>
+										<li><span><i class="icon-minus-sign"></i>忠保</span>
+										   <ul>
+										   <li><span><i class="icon-minus-sign"></i>海生</span>
+										       <ul>
+											   <li><span><i class="icon-leaf"></i>焕长</span></li>
+											   <li><span><i class="icon-leaf"></i>桂清</span></li>
+											   </ul>
+										   </li>
+										   </ul>
+										</li>
+										<li><span><i class="icon-minus-sign"></i>世乐</span>
+										    <ul>
+											<li><span><i class="icon-leaf"></i>石新</span></li>
+											</ul>
+										</li>
+										<li><span><i class="icon-leaf"></i>世绵</span></li>
+										</ul>
+									</li>
+									<li><span><i class="icon-minus-sign"></i>善益</span>
+									    <ul>
+										<li><span><i class="icon-minus-sign"></i>世春</span>
+										    <ul>
+											<li><span><i class="icon-leaf"></i>梓洋</span></li>
+											<li><span><i class="icon-leaf"></i>亚弟</span></li>
+											</ul>
+										</li>
+										<li><span><i class="icon-leaf"></i>坤钊</span></li>
+										</ul>
+									</li>
+									<li><span><i class="icon-minus-sign"></i>善杰</span>
+									    <ul>
+										<li><span><i class="icon-minus-sign"></i>徐兴</span>
+										    <ul>
+											<li><span><i class="icon-leaf"></i>豪仔</span></li>
+											<li><span><i class="icon-leaf"></i>胜海</span></li>
+											<li><span><i class="icon-leaf"></i>亚弟</span></li>
+											<li><span><i class="icon-leaf"></i>细弟</span></li>
+											</ul>
+										</li>
+										<li><span><i class="icon-leaf"></i>徐旺</span></li>
+										<li><span><i class="icon-leaf"></i>十弟</span></li>
+										</ul>
+									</li>
+									</ul>
+								</li>
+								<li><span><i class="icon-leaf"></i>积贵</span></li>
+								<li><span><i class="icon-minus-sign"></i>积荣</span>
+								    <ul>
+									<li><span><i class="icon-minus-sign"></i>徐彬</span>
+									    <ul>
+										<li><span><i class="icon-leaf"></i>洋波</span></li>
+										<li><span><i class="icon-leaf"></i>桂华</span></li>
+										</ul>
+									</li>
+									<li><span><i class="icon-minus-sign"></i>徐荣</span>
+									    <ul>
+										<li><span><i class="icon-leaf"></i>佳明</span></li>
+										<li><span><i class="icon-leaf"></i>世都</span></li>
+										</ul>
+									</li>
+									</ul>
+								</li>
+								<li><span><i class="icon-minus-sign"></i>积华</span>
+								    <ul>
+									<li><span><i class="icon-minus-sign"></i>文中</span>
+									    <ul>
+										<li><span><i class="icon-leaf"></i>啊林</span></li>
+										</ul>
+									</li>
+									<li><span><i class="icon-leaf"></i>善文</span></li>
+									</ul>
+								</li>
+								</ul>
+							</li>
+							</ul>
+						</li>
+						</ul>
+					</li>
+					<li><span><i class="icon-leaf"></i>启邦公</span></li>
+					<li><span><i class="icon-leaf"></i>材邦公</span></li>
+					</ul>
+				</li>
+				<li><span><i class="icon-leaf"></i>轴文公</span></li>
+				<li><span><i class="icon-leaf"></i>业文公</span></li>
+				</ul>
+			</li>
+			</ul>
+														   </li>
+														   <li><span><i class="icon-leaf"></i>四房 逵公</span></li>
+														   <li><span><i class="icon-leaf"></i>五房 超公</span></li>
+														   <li><span><i class="icon-leaf"></i>六房 辉公</span></li>
+														   
+														   </ul>
+													   </li>
+													   <li><span><i class="icon-leaf"></i>七世祖 朝祯公</span></li>
+													   
+													   </ul>
+												  </li>
+												 </ul>
+											</li>
+											<li><span><i class="icon-leaf"></i>国聘公</span></li>
+										   </ul> 
+									   </li>
+									   </ul>
+								  </li>
+                                  <li><span><i class="icon-leaf"></i>旋般公</span></li>
+								  <li><span><i class="icon-leaf"></i>旋洁公</span></li>
+                             </ul>
+						</li>
+                        <li><span><i class="icon-leaf"></i>明虏公</span></li>
+						<li><span><i class="icon-leaf"></i>明钦公</span></li>
+                    </ul>
+                </li>
+              </ul>
+            </li>			  
+                    
+                
+            </ul>
+    </div>
+
+
+	<div style=" border-top-style:dashed;border-width:1px 0 0 ;border-color:#999999; padding:20px 0 5px; margin-top:150px;font-size:1em">
+	
+	<p style="float:right;background:#ddd;"><a href="dlmap.html"target="_blank">卫星地图</a></p>
+    <p>Copyright © 2017  xukzhao@foxmail.com </P>
+	</div>
 </div>
+
 </body>
 </html>
