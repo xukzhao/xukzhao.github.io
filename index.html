@@ -1,1 +1,258 @@
-hi,this txst
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<meta name="description" content="方便网络爱好收听广播电台,几十个网络电台,xukzhao收藏的广播电台" />
+<meta name="keywords" content="xukzhao网络电台 ,网络广播|电台,xukzhao" />
+<title>网络广播|电台-xukzhao</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="checkmail.js"></script>
+<script type="text/javascript" src="datetime.js"></script>
+<script type="text/javascript" src="weather.js"></script>
+<style type="text/css">
+#radio {
+	float: left;
+	width: 600px;
+	margin:0 0 10px 0;
+	border:1px #363 solid;
+}
+#radio li {
+	float:left;
+	width:75px;
+	border:1px #336633 solid;
+	margin-top:10px;
+}
+#radio h2 {
+	border-bottom: 1px solid #363;
+	padding:0 0 5px 180px;
+}
+#iframe {
+	margin:0;
+	float:left;
+	padding:50px 0 0 116px;
+}
+span {
+	font-size:40px;
+	color:#900;
+}
+#out {
+	margin-top:50px;
+}
+#shenghuo {
+	margin-top:10px;
+}
+#radio span{font-size:12px;color:#999;}
+</style>
+</head>
+<body >
+<div class="content" id="top">
+  <div id="email">
+    <form  id="mailcheck" name="gomail" onsubmit="return clickMail()"   action=""  method="post"  target="_blank">
+      <input type="hidden" name="url" />
+      <input type="hidden" name="username" />
+      <input type="hidden" name="type" />
+      <input type="hidden" name="password" />
+      <input type="hidden" name="domain" />
+      <input type="hidden" value="http://cn.mail.yahoo.com/inset.html?rr=529401327" name=".done" />
+      <input type="hidden" name="user" />
+      <input type="hidden" name="pass" />
+      <input type="hidden" value="true" name="enterVip" />
+      <input type="hidden" name="UserName" />
+      <input type="hidden" name="Password" />
+      <input type="hidden" name="u" />
+      <input type="hidden" name="psw" />
+      <input type="hidden" name="login" />
+      <input type="hidden" name="LoginName" />
+      <input type="hidden" name="usr" />
+      <input type="hidden" name="func" />
+      <input type="hidden" name="login_name" />
+      <input type="hidden" name="login_password" />
+      <input type="hidden" name="BackURL" />
+      <input type="hidden" value="http://mail.google.com/mail?ui=html&amp;zy=l" name="continue" />
+      <input type="hidden" name="Email" />
+      <input type="hidden" name="Passwd" />
+      <input type="hidden" name="domainname" />
+      <input type="hidden" value="false" name="firstlogin" />
+      <input type="hidden" name="starttime" />
+      <input type="hidden" name="p2" />
+      <input type="hidden" name="passwd" />
+      <input type="hidden" name="id" />
+      <input type="hidden" name="m" />
+      <input type="hidden" name="mpass" />
+      <input type="hidden" name="loginid" />
+      <input type="hidden" name="appid" />
+      <input type="hidden" name="ru" />
+      <input type="hidden" name="eru" />
+      <input type="hidden" name="fl" />
+      <input type="hidden" name="ct" />
+      <input type="hidden" name="vr" />
+      <input type="hidden" name="sg" />
+      <input type="hidden" name="vwriter" />
+      <input type="hidden" name="vpassword" />
+      <select tabindex="0" class="vpassword" name="domains">
+        <option selected="selected"  >请选择邮箱</option>
+        <option value="gmail">@gmail.com</option>
+        <option value="163">@163.com 网易</option>
+        <option value="sina">@sina.com 新浪</option>
+        <option value="126">@126.com 网易</option>
+        <option value="yahoo">@yahoo.com.cn</option>
+        <option value="21cn">@21cn.com</option>
+        <option value="sohu">@sohu.com 搜狐</option>
+        <option value="tom">@tom.com</option>
+        <option value="188">@188.com</option>
+        <option value="yeah">@yeah.net</option>
+        <option>-请选择其他服务-</option>
+        <option value="baidu">百度账号</option>
+        <option value="chinaren">ChinaRen校友录</option>
+      </select>
+      用户名：
+      <input  class="name" tabindex="1" size="12" name="uName" />
+      密码：
+      <input tabindex="2" type="password"  class="password" size="12" name="uPw" />
+      <input tabindex="3" type="submit" value=" 登录 " name="sub" class="sub"/>
+      <input type="hidden" value="submit" name="cmd" />
+    </form>
+  </div>
+  <div id="time">
+    <script type="text/javascript">document.write(clock());</script>
+  </div>
+  <div id="header">
+    <div class="info">
+      <h1><span>网络电台</span></h1>
+      <p>http://www.dcom.cn.st</p>
+    </div>
+  </div>
+  <div id="subheader">
+    <ul>
+      <li><a href="../index.html" title="xukzhao网络电台">首页</a></li>
+      <li><a href="../bbs" target="_blank"  title="xukzhao论坛">论坛</a></li>
+      <li><a href="../blog" target="_blank" title="xukzhao web">博客</a></li>
+      
+    </ul>
+  </div>
+  <div id="Wealth" class="weather">
+    <script type="text/javascript">  
+MiniSite.Weather.print("Wealth");</script>
+    天气加载中...</div>
+  <div id="main" >
+    <div class="right_side">
+      <h2>电台分类</h2>
+      <ul>
+        <li> <a href="radio/radioyy.html" target="_blank" >音乐台</a> <a href="radio/radiojt.html"  target="_blank">交通台</a></li>
+        <li> <a href="radio/radioxw.html" target="_blank" >新闻台</a> <a href="radio/radiojj.html" target="_blank" >经济台</a></li>
+        <li> <a href="radio/radiowy.html" target="_blank" >文艺台</a> <a href="radio/radiogj.html" target="_blank" >国际台</a></li>
+      </ul>
+      <h2 id="out">外站电台</h2>
+      <ul>
+        <li> <a href="http://www.tinggb.com/" target="_blank">听广播</a> <a href="http://www.sowang.com/zt/radio.htm" target="_blank" >在线电台</a></li>
+        <li> <a href="http://hichannel.hinet.net/player/radio-f1.jsp?id=202" target="_blank" >台湾的电台</a></li>
+        <li> <a href="http://www.654789.com/" target="_blank" >星空网络电台</a></li>
+        <li> <a href="http://list.mp3.baidu.com/radio/" target="_blank">百度电台联盟</a></li>
+      </ul>
+      <div id="shenghuo">
+        <h3>生活服务</h3>
+        <p> <a href="http://www.zhcw.com/" target="_blank" >福彩</a> <a href="http://www.ip138.com/" target="_blank" >查询网</a> <a href="../wnl.html"  target="_blank">万年历 </a> <a href="http://www.8684.cn/" target="_blank" >公交查询</a> <a href="http://www.google.cn/language_tools" target="_blank" >在线翻译</a> <a href="http://timewe.net/cdr" target="_blank" >浏览手机网</a> <a href="http://www.zdic.net/" target="_blank" >汉语字典词典</a> <a href="../chepai.html" target="_blank" >车牌归属地查询</a> 
+      </div>
+    </div>
+    <div  id="radio" >
+      <h2>网络电台  <span>(并非所有电台都24小时广播)</span> </h2>
+      <ul>
+        <li> <a  href="radio/mgzy.html" target="mainframe">美国猪音</a></li>
+        <li> <a  href="radio/fggj.html" target="mainframe">法果中文</a></li>
+        <li><a href="radio/bbc.html" target="mainframe">bbc</a> </li>
+        <li><a href="radio/dgzw.html" target="mainframe">得国中文</a></li>
+        <li><a href="radio/qqpd.html" target="mainframe">QQ音乐派对</a></li>
+        <li><a href="radio/qmyy.html" target="mainframe">青檬音乐台</a></li>
+        <li><a href="radio/cri.html" target="mainframe">CRI:劲曲</a></li>
+        <li><a href="radio/crixyy.html" target="mainframe">CRI学英语台</a></li>
+        
+        <li><a href="radio/mpwl.html" target="mainframe">猫扑网络电台</a></li>
+        
+        <li><a href="radio/dslx.html" target="mainframe">都市流行频道</a></li>
+        <li><a href="radio/hqjq.html" target="mainframe">怀旧金曲频道</a></li>
+        <li><a href="radio/shcj.html" target="mainframe">上海财经广播</a></li>
+        <li><a href="radio/gdgs.html" target="mainframe">广东股市广播</a></li>
+        <li><a href="radio/zjjj.html" target="mainframe">珠江经济</a></li>
+        <li><a href="radio/hs.html" target="mainframe">鹤山电台</a></li>
+        <li><a href="radio/sz971.html" target="mainframe">深圳电台971</a></li>
+        <li><a href="radio/sz898.html" target="mainframe">深圳电台898</a></li>
+        <li><a href="radio/sz942.html" target="mainframe">深圳电台942</a></li>
+        <li> <a href="radio/gdyy.html" target="mainframe">广东音乐之声</a></li>
+        <li><a href="radio/gdcs.html" target="mainframe">广东城市之声</a></li>
+        <li><a href="radio/gdwt.html" target="mainframe">广东文体广播</a></li>
+        <li><a href="radio/gdwx.html" target="mainframe">广东卫星广播</a></li>
+        <li><a href="radio/nyzs.html" target="mainframe">南粤之声</a></li>
+        <li><a href="radio/gzxw.html" target="mainframe">广州电台新闻</a></li>
+        <li><a href="radio/fs985.html" target="mainframe">佛山千色985</a></li>
+        <li><a href="radio/fs883.html" target="mainframe">佛山畅游883</a></li>
+        <li><a href="radio/fs942.html" target="mainframe">佛山飞跃924</a></li>
+        <li><a href="radio/fs901.html" target="mainframe">佛山顺德901</a></li>
+        <li><a href="radio/fs946.html" target="mainframe">佛山真爱946</a></li>
+        <li><a href="radio/fs906.html" target="mainframe">佛山缤纷906</a></li>
+        
+        <li><a href="radio/babf.html" target="mainframe">宝安缤纷广播</a></li>
+        <li><a href="radio/ball.html" target="mainframe">宝安流连广播</a></li>
+        <li><a href="radio/jmlyy.html" target="mainframe">江门旅游音乐</a></li>
+        <li><a href="radio/jmdt.html" target="mainframe">江门新闻综合</a></li>
+        <li><a href="radio/dgjtyy.html" target="mainframe">东莞交通音乐</a></li>
+        <li><a href="radio/dgxwzh.html" target="mainframe">东莞新闻综合</a></li>
+        <li><a href="radio/zsfm888.html" target="mainframe">中山FM88.8</a></li>
+        <li><a href="radio/zsfm967.html" target="mainframe">中山FM96.7</a></li>
+        <li><a href="radio/amdt.html" target="mainframe">澳门电台</a></li>
+        <li><a href="radio/cngj.html" target="mainframe">HIT FM</a></li>
+        
+        
+        <li><a href="radio/xmyy.html" target="mainframe">厦门音乐电台</a></li>
+        <li><a href="radio/" target="mainframe">东广love</a></li>
+        <li><a href="radio/dgdg.html" target="mainframe">东广动感</a></li>
+        <li><a href="radio/cn.html" target="mainframe">中国之声</a></li>
+        <li><a href="radio/cnds.html" target="mainframe">中国都市之声</a></li>
+        <li><a href="radio/cnjj.html" target="mainframe">中国经济之声</a></li>
+        <li><a href="radio/cnyy.html" target="mainframe">中国音乐</a></li>
+        <li><a href="radio/cnzx.html" target="mainframe">环球资讯</a></li>
+
+        <li><a href="radio/yhlx.html" target="mainframe">银河流行音乐</a></li>
+        
+        
+        <li><a href="radio/gxwy.html" target="mainframe">广西文艺广播</a></li>
+        <li><a href="radio/gxxw.html" target="mainframe">广西新闻综合</a></li>
+        <li><a href="radio/gxjj.html" target="mainframe">广西经济广播</a></li>
+        <li><a href="radio/gxjy.html" target="mainframe">广西教育生活</a></li>
+        <li><a href="radio/hkpth.html" target="mainframe">香港普通话台</a></li>
+        <li><a href="radio/hk1t.html" target="mainframe">香港电台一台</a></li>
+        <li><a href="radio/hk2t.html" target="mainframe">香港电台二台</a></li>
+        <li><a href="radio/tjxs.html" target="mainframe">天津相声广播</a></li>
+        
+        <li><a href="radio/bjwy.html" target="mainframe">北京外语广播</a></li>
+        <li><a href="radio/bjjx.html" target="mainframe">北京教学广播</a></li>
+        <li><a href="radio/shty.html" target="mainframe">上海体育频道</a></li>
+      </ul>
+      <p id="iframe">
+        <iframe src="radio/hqjq.html"  width="368" height="104" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" name="mainframe"></iframe>
+      </p>
+      <div id="search">
+        <form name="searchform" method="get" action="http://www1.baidu.com/baidu" target="_blank">
+          <p id="searchp">电台搜索：</p>
+          <input type="hidden" name="tn" value="qqjhx" />
+          <input name="word" type="text" id="query" class='inputsear'/>
+          <input type="submit"  value="百  度" class='searther'/>
+          <input type="button" name="google" value="Google" onclick="window.open('http://www.google.com/search?q='+form.query.value)"  class='searther' />
+          <input type="button" name="gougou" value="狗狗" onclick=" window.open('http://www.gougou.com/search?search='+form.query.value)" class='searther' />
+          <input type="button"  name="yahoo" value="雅 虎" onclick="window.open('http://www.yahoo.com.cn/search?p='+form.query.value)" class='searther' />
+          <input type="button" name="3721" value="有 道" onclick=" window.open('http://www.youdao.com/search?q='+form.query.value)" class='searther' />
+        </form>
+      </div>
+    </div>
+    <div id="footer">
+      <p> Copyright &copy; 2008 <b>xukzhao网络电台</b>| E-mail：<a href="mailto:xukzhao@gmail.com">xukzhao@gmail.com</a>  <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=13249221&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:13249221:41 &r=0.16136204241774976" alt="点击这里给我发消息" title="点击这里给我发消息"></a></p>
+      <p> <a  href="http://validator.w3.org/check?uri=referer" target="_blank" title="xukzhaoW3C认证"><img
+        src="http://www.w3.org/Icons/valid-xhtml10"
+        alt="xukzhao网络广播电台的W3C认证" height="30" width="80" /></a> </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
