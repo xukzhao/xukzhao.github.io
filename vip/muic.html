@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>muic</title>
+<link href="./favicon.ico" rel="shortcut icon" />
+  <meta name="keywords" content="muic,音乐">
+  <meta name="description" content="随机音乐">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+  
+   </head>
+<body background="body.png">
+  
+  
+
+<audio autoplay="autoplay" src="http://jx.618g.com/kuwo.php" onended="this.load();"></audio>
+  <script>
+    $('body').click(function(){
+		$('audio').get(0).play();
+    });
+  </script>
+
+</body>
+</html>
