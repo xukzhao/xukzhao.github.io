@@ -9,11 +9,11 @@
 		<meta name="keywords" content="免费VIP视频,VIP解析,VIP视频解析,VIP视频云解析,手机VIP视频解析,爱奇艺VIP解析,优酷VIP解析,腾讯VIP解析,乐视VIP解析,芒果VIP解析" />
 		<meta name="description" content="VIP视频免费看，在线解析，vip视频解析，优酷vip解析，爱奇艺vip解析，腾讯vip解析，乐视vip解析，全网影视vip，芒果vip解析方便广大用户VIP视频服务 />
 		<meta name=viewport content="width=device-width,anicital-scale=1">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="bootstrap.css" />
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="bootstrap.js"></script>
 		<link rel="stylesheet" href="style.css" />
-		
+		<script type="text/javascript" src="vip.js"> </script>
 		<!--浏览器标签ico-->
 		<link rel="shortcut icon" href="./favicon.ico" />
 		<!--书签标签-->
@@ -21,51 +21,7 @@
 		<!--苹果桌面标题-->
 		<meta name="apple-mobile-web-app-title" content="全网VIP视频解析">
 		<!--苹果桌面图标-->
-		<script>
-		function play() {
-	var rul = document.getElementById("url").value; //获取input链接
-	if(rul == "") {
-		alert("请输入你要解析的视频播放地址！")
-	} else {
-		var jxApi = document.getElementById("jk"); //获取选择按钮
-		var jxurl = document.getElementById("jk").selectedIndex; //获取选中的
-		var jkv = jxApi.options[jxurl].value; //获取选择接口链接
-		var paly = document.getElementById("palybox"); //获取播放窗口位置
-		paly.src = jkv + rul; //接口赋值
-
-		//ajax数据传递
-
-		var tittext = document.getElementById("tittext");
-		//1,create ajax核心对象：
-		var xhr = getxhr();
-		//2,以post的方式与服务器建立连接；
-		xhr.open("post", "data/title.php", true);
-		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-		//3,发送一个http请求:
-		xhr.send("titurl=" + rul);
-		console.log(xhr.readyState);
-		//获取服务器状态码
-		xhr.onreadystatechange = function() {
-			console.log(xhr.readyState)
-			console.log(xhr.status)
-			if(xhr.readyState == 4 && xhr.status == 200) {
-				tittext.innerHTML = xhr.responseText; //获取服务器响应数据
-			}
-		}
-
-		function getxhr() {
-			var xhr = null;
-			if(window.XMLHttpRequest) {
-				xhr = new XMLHttpRequest();
-			} else {
-				xhr = new ActiveXObject("Microsoft.XMLHttp");
-			}
-			return xhr;
-		}
-	}
-}
-
-		</script>
+	
 		
 			</head>
 
