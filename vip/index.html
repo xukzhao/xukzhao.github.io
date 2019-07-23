@@ -1,86 +1,210 @@
 
+
+
 <!DOCTYPE html>
-<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>vip视频在线解析</title>
-<link href="./favicon.ico" rel="shortcut icon" />
-  <meta name="keywords" content="vip视频解析,vip视频在线解析,vip解析,万能vip视频解析,vip视频全能解析,vip视频,手机vip视频解析,手机在线解析vip视频,优酷vip解析,爱奇艺vip解析,腾讯vip解析,乐视vip解析,芒果vip解析,vip音乐解析">
-  <meta name="description" content="全民解析VIP视频免费看，在线解析，vip视频解析，优酷vip解析，爱奇艺vip解析，腾讯vip解析，乐视vip解析，全网影视vip，芒果vip解析方便广大用户VIP视频服务，最新电影最新电视剧在线免费观看">
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <script type="text/javascript">eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('b a(){0 6=1.2("9").4;0 5=1.2("3");0 3=1.2("3").c;0 8=5.e[3].4;0 7=1.2("f");7.d=8+6}',16,16,'var|document|getElementById|jk|value|jkurl|diz|cljurl|jkv|url|dihejk|function|selectedIndex|src|options|player'.split('|'),0,{}))
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>VIP视频解析	</title>	
+		<meta name="keywords" content="免费VIP视频,VIP解析,VIP视频解析,VIP视频云解析,手机VIP视频解析,爱奇艺VIP解析,优酷VIP解析,腾讯VIP解析,乐视VIP解析,芒果VIP解析" />
+		<meta name="description" content="VIP视频免费看，在线解析，vip视频解析，优酷vip解析，爱奇艺vip解析，腾讯vip解析，乐视vip解析，全网影视vip，芒果vip解析方便广大用户VIP视频服务 />
+		<meta name=viewport content="width=device-width,anicital-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		
+		<!--浏览器标签ico-->
+		<link rel="shortcut icon" href="./favicon.ico" />
+		<!--书签标签-->
+		<link rel="bookmark" href="./favicon.ico" type="image/x-icon" />
+		<!--苹果桌面标题-->
+		<meta name="apple-mobile-web-app-title" content="全网VIP视频解析">
+		<!--苹果桌面图标-->
+		<script>
+		function play() {
+	var rul = document.getElementById("url").value; //获取input链接
+	if(rul == "") {
+		alert("请输入你要解析的视频播放地址！")
+	} else {
+		var jxApi = document.getElementById("jk"); //获取选择按钮
+		var jxurl = document.getElementById("jk").selectedIndex; //获取选中的
+		var jkv = jxApi.options[jxurl].value; //获取选择接口链接
+		var paly = document.getElementById("palybox"); //获取播放窗口位置
+		paly.src = jkv + rul; //接口赋值
 
-   function dihejk2() {
-       var diz = document.getElementById("url").value;
-       var jkurl = document.getElementById("jk");
-       var jk = document.getElementById("jk").selectedIndex;
-       var jkv = jkurl.options[jk].value;
-       var cljurl = document.getElementById("player");
-       window.open(jkv + diz,"_blank");
-   }
+		//ajax数据传递
 
-   </script>
+		var tittext = document.getElementById("tittext");
+		//1,create ajax核心对象：
+		var xhr = getxhr();
+		//2,以post的方式与服务器建立连接；
+		xhr.open("post", "data/title.php", true);
+		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		//3,发送一个http请求:
+		xhr.send("titurl=" + rul);
+		console.log(xhr.readyState);
+		//获取服务器状态码
+		xhr.onreadystatechange = function() {
+			console.log(xhr.readyState)
+			console.log(xhr.status)
+			if(xhr.readyState == 4 && xhr.status == 200) {
+				tittext.innerHTML = xhr.responseText; //获取服务器响应数据
+			}
+		}
 
-   </head>
-<body background="body.png">
-  
-  <div class="col-xs-12 col-sm-10 col-md-8 col-lg-7 center-block" style="float: none; background">
-  <h3 class="text-muted" align="center">vip视频在线解析</h3>
+		function getxhr() {
+			var xhr = null;
+			if(window.XMLHttpRequest) {
+				xhr = new XMLHttpRequest();
+			} else {
+				xhr = new ActiveXObject("Microsoft.XMLHttp");
+			}
+			return xhr;
+		}
+	}
+}
 
-   
+		</script>
+		
+			</head>
 
-	<div class="col-md-14 column">
-    <div class="panel panel-default">
-     <div id="kj" class="panel-body" >
-     <iframe src="./time.html"id="player"width="100%"height="600px"allowTransparency="true"allowfullscreen="true"frameborder="0"scrolling="no"></iframe>	 
-     </div>
-    </div>
+	<body>
+		<header>
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<!-- 手机自适应样式 -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">导航切换</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+							<!--logo图标-->
+							<a class="navbar-brand logo" href="#"></a>
+						</div>
 
-<script>
-    if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
-        document.getElementById("sdfdf").style.display = "block";
-    }
-</script>
-   </div>
-   <div class="col-md-14 column">  
-    <form method="get" id="1233911832"></form>
-     <div class="input-group" style="width: 100%;">
-      <span class="input-group-addon input-lg" style="width: 80px; ">选择接口</span>
-      <select class="form-control input-lg" id="jk">
-	    <option value="http://www.fantee.net/fantee/?url=" selected="">测试5</option>
-	    <option value="http://jx.momimi.cn/?url=" selected="">测试4</option>
-	    <option value="http://api.tv920.com/vip/?url=" selected="">测试3</option>
-	    <option value="https://okjx.cc/?url=" selected="">测试2</option>
-	    <option value="https://v.wu65t.cn/v.php?url=" selected="">测试1</option> 
-	    
-      	<option value="http://jx.du2.cc/?url=" selected="">⑤号通用vip引擎系统【稳定通用】</option> 
-      	<option value="http://jx.drgxj.com/?url=" selected="">④号通用vip引擎系统【超级稳定通用】</option>
-	  <option value="http://jx.618ge.com/?url=" selected="">③号通用vip引擎系统【稳定通用】</option>
-    <option value="http://vip.jlsprh.com/?url=" selected="">②号通用vip引擎系统【稳定通用】</option>
-      <option value="http://jx.598110.com/?url=" selected="">①号通用vip引擎系统【稳定通用】</option> 
+						<!-- pc导航样式 -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+						
+								<li>
+									<a href="#" target="_blank"> <span class="badge" style="background: red;margin-right:5px ;">HOT</span>首页<span class="sr-only">(current)</span></a>
+								</li>
 	
-  </select>
+							</ul>
+							<!--导航 右侧-->
+							<ul class="nav navbar-nav navbar-right">
+								
+								
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!--视频box区域-->
+		<div class="container-fluid video-box">
+			<div class="container ">
+				
+				
+
+				<div class="url-box">
+					<div class="input-group">
+						<input type="text" id="url" class="form-control url-text" aria-label="Text input with segmented button dropdown" placeholder="请粘贴视频播放网址" title="请复制你想要看的视频网址，粘贴到此处点击播放即可！">
+						<div class="input-group-addon">
+							<select class="url-c url-text" title="如发现视频无法正常播放请尝试更换视频线路！" id="jk">
+								<option value="https://v.wu65t.cn/v.php?url=" selected>
+									推荐一								</option>
+								<option value="http://vip.jlsprh.com/?url=">
+									推荐二								</option>
+								<option value="http://jx.598110.com/?url=">
+									线路三								</option>
+								<option value="http://jx.momimi.cn/?url=">
+									线路四								</option>
+								<option value="http://api.tv920.com/vip/?url=">
+									线路五								</option>
+								<option value="http://www.fantee.net/fantee/?url=">
+									线路六								</option>
+								<option value="http://jx.618ge.com/?url=">
+									线路七								</option>
+								<option value="http://jx.du2.cc/?url=">
+									线路八								</option>
+								<option value="http://jx.drgxj.com/?url=">
+									线路九								</option>
+								
+							</select>
+						</div>
+						<div class="input-group-btn">
+
+							<button type="button" class="btn btn-default btn-play" title="点击开始解析并开始播放" onclick="play()">解析播放</button>
+						</div>
+					</div>
+
+				</div>
+				<div class="tit-name">
+					<span>正在播放:</span>
+					<h1 id="tittext">欢迎您使用vip频解析服务</h1> 
+				
+				</div>
+				<iframe id="palybox" src="time.html" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="true" allowtransparency="true"></iframe>
+				
+			</div>
+		</div>
+		
+			
+
+			
 	
-     </div>
-     <br>
-     
-     <div class="input-group" style="width: 100%; ">
-      <span class="input-group-addon input-lg" style="width: 80px;">播放地址</span>
-      <input class="form-control input-lg" type="search" placeholder="粘贴要播放的网址" id="url">
-     </div>
-     <br>
-     <div>
-      <button id="bf" type="button" class="btn btn-success btn-lg btn-block" onClick="dihejk()">开始解析</button>
-      <button id="bf" type="button" class="btn btn-success btn-lg btn-block" onClick="dihejk2()">新窗口解析</button>
-	 </div>
+		<footer class="footer">
+		<!--居中部分-->
+		<hr style="display: block;height: 1px;margin-bottom: 10px;background-color: #4f4f4f;    margin-top: 30px;margin-bottom: 20px;border: 0;"/>
+		<div class="container footer-tit">		
+			<p><p>所有资源来自互联网，如果侵犯了你的权益，请联系通知我们。</p><p>Copyright © 2019 xukzhao@foxmail.com</p></p>
 
-</div>
-<div style=" border-top-style:dashed;border-width:1px 0 0 ;border-color:#999999; padding:20px 0 5px; margin-top:100px;font-size:1em ;text-align: center">
-Copyright © 2019 xukzhao@foxmail.com
-</div>
-</div>
+			
 
+		</div>
+
+
+
+<!--<script type="text/javascript">
+		//判断F12审查元素
+function fuckyou() {
+	window.close(); //关闭当前窗口(防抽)
+	window.location = "about:blank"; //将当前窗口跳转置空白页
+}
+
+function ck() {
+	console.profile();
+	console.profileEnd();
+	//我们判断一下profiles里面有没有东西，如果有，肯定有人按F12了，没错！！
+	if(console.clear) {
+		console.clear()
+	};
+	if(typeof console.profiles == "object") {
+		return console.profiles.length > 0;
+	}
+}
+
+function hehe() {
+	if((window.console && (console.firebug || console.table && /firebug/i.test(console.table()))) || (typeof opera == 'object' && typeof opera.postError == 'function' && console.profile.length > 0)) {
+		fuckyou();
+	}
+	if(typeof console.profiles == "object" && console.profiles.length > 0) {
+		fuckyou();
+	}
+}
+hehe();
+window.onresize = function() {
+	if((window.outerHeight - window.innerHeight) > 200)
+		//判断当前窗口内页高度和窗口高度，如果差值大于200，那么呵呵
+		fuckyou();
+}
+</script>-->
 
 </body>
 </html>
