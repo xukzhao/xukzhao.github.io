@@ -96,8 +96,7 @@ header .navbar-toggle {
 	height: 60px;
 
 	float: left;
-	background-image: url(../img/logo.png);
-	background-repeat: no-repeat;
+
 }
 
 
@@ -163,8 +162,8 @@ header .navbar-toggle {
 	/*background: #0f1856;*/
 	filter: Alpha(Opacity=30)
 	padding: 10px 5px;
-	margin-top: 30px;
-	margin-bottom:-25px;
+	margin-top: 40px;
+	
 }
 
 div.url-box .input-group-addon {
@@ -320,8 +319,10 @@ div.url-box .btn-play:hover {
 	a:hover{
 		text-decoration: none;
 	}
+	
 
 	/*头部导航样式*/
+	
 	header {
 		background: #fff;
 		background: #FFFFFF;
@@ -395,7 +396,7 @@ div.url-box .btn-play:hover {
 	}
 	.tit-name {
 		text-align: left;
-		margin-top: 30px;
+		margin-top: 5px;
 		padding: 10px 20px;
 		color: #fff;
 		/*background: #fff;*/
@@ -413,8 +414,9 @@ div.url-box .btn-play:hover {
 		vertical-align: middle;
 	}
 	.url-box {
-		background: #fff;
-		padding: 15px 15px;
+		background: rgba(0,0,0,.1);
+		
+		padding: 2px;
 	}
 	.url-text {
 		height: 40px;
