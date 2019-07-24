@@ -154,7 +154,7 @@ header .navbar-toggle {
 .url-text {
 	height: 35px;
 	border: 1px solid #060c37;
-	background: #060c37;
+	background: #555;
 	color: #3376f3;
 }
 
@@ -414,14 +414,14 @@ div.url-box .btn-play:hover {
 		vertical-align: middle;
 	}
 	.url-box {
-		background: rgba(0,0,0,.1);
+		background: rgba(0,0,0,0);
 		
 		padding: 2px;
 	}
 	.url-text {
 		height: 40px;
 		background: #f2f3f5;
-		border: 1px solid #f2f3f5;
+		border: 1px solid #999;
 		border-right: 0px;
 		border-radius: 20px 0 0 20px;
 	}
