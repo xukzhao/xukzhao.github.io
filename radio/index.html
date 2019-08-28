@@ -4,27 +4,20 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>VIP视频解析</title>
+	<title>网络电台</title>
 	<link rel="stylesheet" href="../css/reset.css" />
 	<link rel="stylesheet" href="../css/swiper.min.css" />
-	<link rel="stylesheet" href="../css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
 	<link rel="stylesheet" href="../css/head.css" />
 	<link rel="stylesheet" href="../css/a1.css" />
-	<link rel="stylesheet" href="../css/vipstyle.css" />
-	
-		
-		
 	<style type="text/css">
-	.url-box{margin-top:60px;}
-	
-	@media screen and (max-width:768px) {
-	.url-box{margin-top:100px;padding:0px 2px}
-	.container{padding:0px;}
+	@media screen and (min-device-width:360px) and (max-device-width:480px) {
+	iframe{height:120px;}
 	}
 	</style>
 	
 </head>
-<body>
+<body style="background-image:url('../image/body.png')">
 	<!-- 导航 -->
 	<header class="header"> 
 		<div class="container clearfix"> 
@@ -88,55 +81,37 @@
 			
 		</ul>
 	</div>
-    
-			<div class="container ">
-				
-				
 
-				<div class="url-box">
-					<div class="input-group">
-						<input type="text" id="url" class="form-control url-text" aria-label="Text input with segmented button dropdown" placeholder="请粘贴视频播放网址" title="请复制你想要看的视频网址，粘贴到此处点击播放即可！">
-						<div class="input-group-addon">
-							<select class="url-c url-text" title="如发现视频无法正常播放请尝试更换视频线路！" id="jk">
-							
-								<option value="https://v.wu65t.cn/v.php?url=" selected>
-									推荐一								</option>
-								<option value="https://jx.dy-jx.com/?url=">
-									推荐二								</option>
-								<option value="http://www.fantee.net/fantee/?url=">
-									线路三								</option>
-								<option value="https://vip.zynta.cn/vip/?url=">
-									线路四								</option>
-								<option value="http://jx.momimi.cn/?url=">
-									线路五								</option>
-								<option value="http://jx.drgxj.com/?url=">
-									线路六								</option>
-								<option value="http://jx.618ge.com/?url=">
-									线路七								</option>
-								<option value="http://vip.jlsprh.com/?url=">
-									线路八								</option>
-								<option value="http://jx.598110.com/?url=">
-									线路九								</option>
-								
-							</select>
-						</div>
-						<div class="input-group-btn">
-
-							<button type="button" class="btn btn-default btn-play" title="点击开始解析并开始播放" onclick="play()">解析播放</button>
-						</div>
-					</div>
-
-				</div>
-				<div class="tit-name">
-					
-					<h1 id="tittext">播放窗口</h1> 
+	<div id="liebiao">
+	     <div id="liebiao2">
+				<iframe  src="cnzgzs.html" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="true" allowtransparency="true"name="abc"></iframe>
 				
-				</div>
-				<iframe id="palybox" src="time.html" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="true" allowtransparency="true"></iframe>
-				
-			</div>
-		
-	
+				<ul>
+				<span class="m1"><li><a href="hk1t.html" target="abc">香港1台</a> </li></span>
+				<li><a href="cnzgzs.html" target="abc">中国之声</a> </li>
+				<li><a href="cnjjzs.html" target="abc">CNR经济之声</a> </li>
+				<li><a href="cnhqzx.html" target="abc">CNR环球资讯</a> </li>
+				<li><a href="cnyyzs.html" target="abc">CNR音乐之声</a> </li>
+				<li><a href="cnxsxp.html" target="abc">CNR相声小品</a> </li>
+				<li><a href="qpgyyt.html" target="abc">青苹果音乐台</a> </li>
+				<li><a href="qcyyt.html" target="abc">清晨音乐台</a> </li>
+				<li><a href="dycj.html" target="abc">第一财经</a> </li>
+				<li><a href="zjjj.html" target="abc">珠江经济</a> </li>
+				<li><a href="gdgs.html" target="abc">广东股市</a> </li>
+				<li><a href="gdycjt.html" target="abc">羊城交通</a> </li>
+				<li><a href="szxf.html" target="abc">深圳先锋898</a> </li>
+				<li><a href="zshl.html" target="abc">中山快乐888</a> </li>
+				<li><a href="fs906.html" target="abc">佛山906</a> </li>
+				<li><a href="fs946.html" target="abc">佛山真爱946</a> </li>
+				<li><a href="fs985.html" target="abc">佛山千色985</a> </li>
+				<li><a href="fs924.html" target="abc">佛山飞跃924</a> </li>
+				<li><a href="fs901.html" target="abc">佛山顺德台</a> </li>
+				<li><a href="fs883.html" target="abc">佛山高明台</a> </li>
+				<li><a href="gxxw.html" target="abc">广西新闻台</a> </li>
+				</ul>
+				<div style="clear:both"></div>
+		</div>		
+	</div>
 			
 
 			
@@ -152,9 +127,8 @@
 		
 	
 	
-	<script src="../js/jquery.js"></script>
-	<script src="../js/bootstrap.js"></script>
-	<script type="text/javascript" src="../js/vip.js"> </script>
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
 	<script src="../js/swiper.min.js"></script>
 	<script>
 		$(function(){

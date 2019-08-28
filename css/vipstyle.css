@@ -1,0 +1,252 @@
+
+/*body滚动条开始*/
+
+body::-webkit-scrollbar {
+	
+	width: 5px;
+	height: 5px;
+}
+
+body::-webkit-scrollbar-button {
+	width: 0;
+	height: 0;
+	background-color: royalblue;
+}
+
+body::-webkit-scrollbar-track {
+	background: #ccc;
+	border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #0093ff;
+	border-radius: 5px;
+}
+
+body::-webkit-scrollbar-corner {
+	background: #82AFFF;
+}
+
+body::-webkit-scrollbar-resizer {
+	background: #FF0BEE;
+}
+
+.btnColor-jb {}
+
+
+/*body滚动结束*/
+
+
+/*video-box样式*/
+
+
+
+.video-box>.container {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+#palybox {
+	width: 100%;
+	height: 224px;
+}
+
+.tit-name {
+	text-align: center;
+	line-height: 35px;
+	margin-top: 5px;
+	vertical-align: middle;
+	color: #13151a;
+	background: #8e8a7f;
+	vertical-align: middle;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+}
+
+.tit-name h1 {
+	display: inline-block;
+	font-size: 16px;
+	width: 70%;
+	overflow: hidden;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	vertical-align: middle;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+}
+
+
+/*输入input样式*/
+
+.url-text {
+	height: 35px;
+	border: 1px solid #060c37;
+	background: #efede0;
+	color: #3376f3;
+}
+
+.url-box {
+	/*background: #0f1856;*/
+	filter: Alpha(Opacity=30)
+	padding: 10px 5px;
+	margin-top: 40px;
+	
+}
+
+div.url-box .input-group-addon {
+	padding: 0;
+	border: none;
+}
+
+.url-text:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.btn-play {
+	height: 35px;
+	padding: 0 10px;
+	color: #fff;
+	border: none;
+	background: -webkit-linear-gradient(left, #19c3ff, #0093ff);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(left, #19c3ff, #0093ff);
+	/* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(left, #19c3ff, #0093ff);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(left, #19c3ff, #0093ff);
+	/* 标准的语法 */
+}
+
+div.url-box .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+div.url-box .btn-play:focus {
+	outline-style: none;
+	color: #FFFFFF;
+}
+
+div.url-box .btn-play:active {
+	color: #0093ff;
+	background: -webkit-linear-gradient(left, #ffb199, #fa709a);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(left, #ffb199, #fa709a);
+	/* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(left, #ffb199, #fa709a);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(left, #ffb199, #fa709a);
+	/* 标准的语法 */
+}
+
+div.url-box .btn-play:hover {
+	color: #FFFFFF;
+}
+
+.tit-gg {
+	text-align: center;
+	line-height: 35px;
+	margin-bottom: 80px;
+	vertical-align: middle;
+	color: #3376f3;
+	background: #0f1856;
+	vertical-align: middle;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+}
+
+
+
+
+/*屏幕最小768px匹配样式*/
+
+@media (min-width: 768px) {
+	a{
+		text-decoration: none;
+	}
+	a:hover{
+		text-decoration: none;
+    
+	}
+
+
+	
+	/*video-box样式*/
+	.video-box {
+		background: url(../img/video.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+	}
+	/*palybox视频窗口*/
+	#palybox {
+		height: 660px;
+	}
+	.tit-name {
+		text-align:left;
+		margin-top: 5px;
+		padding: 10px 20px;
+		color: #fff;
+		/*background: #fff;*/
+		/*color: #333;*/
+		border-radius: 5px 5px 0 0;
+		background: rgba(0,0,0,.49);
+	}
+	.tit-name h1{
+		font-size: 1.2em;
+	}
+	
+	
+	.url-box {
+		background: rgba(0,0,0,0);
+		
+		padding: 2px;
+	}
+	.url-text {
+		height: 40px;
+		background: #f2f3f5;
+		border: 1px solid #999;
+		border-right: 0px;
+		border-radius: 20px 0 0 20px;
+	}
+	.btn-play {
+		height: 40px;
+		color: #fff;
+		padding: 0 40px;
+		border-radius: 20px;
+	}
+	div.url-box .btn-play:hover {
+		color: #FFFFFF;
+		background: -webkit-linear-gradient(left, #ffb199, #fa709a);
+		/* Safari 5.1 - 6.0 */
+		background: -o-linear-gradient(left, #ffb199, #fa709a);
+		/* Opera 11.1 - 12.0 */
+		background: -moz-linear-gradient(left, #ffb199, #fa709a);
+		/* Firefox 3.6 - 15 */
+		background: linear-gradient(left, #ffb199, #fa709a);
+		/* 标准的语法 */
+	}
+	.url-c {
+		border-radius: 0px 0 0 0px;
+		padding: 0 15px;
+		box-shadow: 0px 1px 2px rgba(153, 153, 153, 0.32) inset;
+	}
+	div.url-box .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
+	.tit-gg {
+		text-align: left;
+		border-top: 1px solid #F5F5F5;
+		padding: 10px 20px;
+		background: #fff;
+		color: #999;
+	}
+	
+	

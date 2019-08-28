@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>LIVE</title>
+<style type="text/css"> 
+<!--
+html,body,form{width:100%;height:100%;margin:0;padding:0;overflow:hidden;}*{margin:0;padding:0;}
+#dplayer {height:100%; width:100%;}
+-->
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css" type="text/css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+</head>
+<body>
+<div class="dplayer dplayer-no-danmaku dplayer-live dplayer-playing dplayer-hide-controller" id="dplayer">
+<script>
+var vid='http://ydn6.venomium.com/fhzx.m3u8';
+var isWap = navigator.userAgent.match(/iPad|iPhone|iPod|Android/i) != null;
+if(isWap){
+document.getElementById('dplayer').innerHTML='<video src="'+vid+'" controls="controls" preload="preload" width="100%" height="240px" autoplay="autoplay"></video>';
+}else{
+var dp = new DPlayer({element: document.getElementById('dplayer'),live: true,autoplay: true,loop: false,screenshot: false,video:{name: 'play',type: 'hls',url: ''+vid+'',}
+});
+}
+</script>
+</body></html>

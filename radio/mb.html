@@ -1,0 +1,40 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+body{margin:0;padding:0;text-align:center;}
+header{margin:10px 0px;}
+</style>
+</head>
+<body>
+
+<div id="a1">音频加载中，请稍候...</div>
+<script type="text/javascript" src="http://www.radio366.com/tv/images/ckplayers/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+            if(isiPad){
+ var flashvars = {
+	f: 'http://www.radio366.com/tv/images/ckplayers/m3u8.swf',
+	a: 'https://ls.qingting.fm/live/1259/64k.m3u8',
+	c: 0,
+	p: 1,
+	s: 4,
+	lv: 1,
+	loaded: 'loadedHandler'};
+
+    var video=['https://ls.qingting.fm/live/1259/64k.m3u8'];
+    CKobject.embed('http://www.radio366.com/tv/images/ckplayers/ckplayer.swf','a1','ckplayer_a1','336','65',false,flashvars,video);   
+	
+	
+}else{
+	document.getElementById('a1').innerHTML = ' <audio  controls="controls" autoplay="autoplay" src="http://lhttp.qingting.fm/live/1259/64k.mp3" ></audio>';
+	
+	}
+	
+	
+</script>
+
+</body>
+</html>

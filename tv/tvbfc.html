@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TVB翡翠</title>
+<style type="text/css">
+body,html{padding: 0;margin: 0;width:100%;height:100%;background-color:#000; color:#999;}
+#a1,#loading,#error{padding: 0;margin: 0;width:100%;height:100%;background-color:#000; color:#999;}
+#db{background-color:#000;}
+#db span{vertical-align:middle; display:none;
+}
+
+@media screen and (min-device-width:360px) and (max-device-width:480px) {
+.tit-name{background-color:#000;text-align:center;}
+#db span{color:#655555;display:inline;}
+video#ck-video{height:200px}
+}
+
+</style>
+<script src="http://jx.178du.com/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://mini.javaa.cn/zhibo/tv/ckplayer/ckplayer.js" charset="utf-8"></script>
+</head>
+<body style="overflow-y:hidden;">
+<div id="db">
+<div class="tit-name">
+<span>TVB翡翠</span>
+</div>
+</div>
+<div id="a1"></div>
+<script type="text/javascript">
+
+            var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+            if(isiPad){
+                document.getElementById('a1').innerHTML = '<video src="http://116.199.5.52:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=188&Fsv_rate_id=0&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=&Fsv_CMSID=&Fsv_otype=1" controls="controls" autoplay="autoplay" width="100%" height="100%"></video>';
+            }else{
+                 
+                    var flashvars={f:'http://mini.javaa.cn/zhibo/tv/ckplayer/m3u8.swf',a:'http%3A%2F%2F116.199.5.52%3A8114%2F00000000%2Findex.m3u8%3F%26Fsv_ctype%3DLIVES%26Fsv_otype%3D1%26FvSeid%3D5abd1660af1babb4%26Fsv_filetype%3D1%26Fsv_ctype%3DLIVES%26Fsv_cid%3D0%26Fsv_chan_hls_se_idx%3D188%26Fsv_rate_id%3D0%26Fsv_SV_PARAM1%3D0%26Fsv_ShiftEnable%3D0%26Fsv_ShiftTsp%3D0%26Provider_id%3D%26Pcontent_id%3D%26Fsv_CMSID%3D%26Fsv_otype%3D1',c:0,s:4,lv:0,p:1,v:100,b:1}
+      
+                var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
+                CKobject.embedSWF('http://mini.javaa.cn/zhibo/tv/ckplayer/ckplayer.swf','a1','ckplayer_a1','100%','100%',flashvars,params);
+            }
+         
+</script>
+   
+</body>
+</html>

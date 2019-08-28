@@ -99,17 +99,17 @@ header .navbar-toggle {
 
 }
 
+ 
+
 
 /*video-box样式*/
 
 .video-box {
-	background-image: url(../img/mbj.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
+	
+	width:100%;
 	padding-right: 8px;
 	padding-left: 8px;
-	position: relative;
+	
 }
 
 .video-box>.container {
@@ -127,8 +127,8 @@ header .navbar-toggle {
 	line-height: 35px;
 	margin-top: 5px;
 	vertical-align: middle;
-	color: #3376f3;
-	background: #0f1856;
+	color: #13151a;
+	background: #8e8a7f;
 	vertical-align: middle;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -154,7 +154,7 @@ header .navbar-toggle {
 .url-text {
 	height: 35px;
 	border: 1px solid #060c37;
-	background: #555;
+	background: #efede0;
 	color: #3376f3;
 }
 
@@ -318,8 +318,9 @@ div.url-box .btn-play:hover {
 	}
 	a:hover{
 		text-decoration: none;
+    
 	}
-	
+
 
 	/*头部导航样式*/
 	
