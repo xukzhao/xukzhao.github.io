@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="zh">
-<head>
+<head style="background-color:#222;">
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="../css/a1.css" />
 	<link rel="stylesheet" href="../css/vipstyle.css" />
 	<style type="text/css">
-		.container2{width:60%;text-align:center;margin:0 auto;margin-top:60px;}
+		.container2{width:65%;text-align:center;margin:0 auto;margin-top:60px;}
 	    #palybox{height:500px;}
 		#liebiao{width:100%;height: 100%;overflow: hidden ;margin-bottom:20px;margin-top:20px;}
 		#liebiao ul{
@@ -24,23 +24,28 @@
 		float:left;width:16.66%;
 		}
 	 
-		#liebiao ul li a {display:block; height:30px; line-height:30px; text-align:center; margin:0 auto; text-decoration:none; width:99%;background-color:#dae1dd;
-   border: 1px solid #aaa;margin-bottom:0.15em;}
+		#liebiao ul li a {display:block; height:30px; line-height:30px; text-align:center; margin:0 auto; text-decoration:none; width:99%;
+   border: 1px solid #3e3737;margin-bottom:0.15em;color:#999;}
 		
-		#liebiao li a:hover{ background-color:#e6bf42;box-sizing:border-box; box-shadow: inset 2px 2px 0 0 #eee,inset -2px -2px 0 0 #aaa; }
+		#liebiao li a:hover{ background-color:#111; }
 		
 		
    .m1{display:none}
-   footer{margin-top:30px;border-top:1px solid #aaa;}
-   
+   footer{margin-top:30px;border-top:1px solid #211e1e;color:#211e1e}
+ @media screen and (min-width:1024px){body{background-color:#000;background-image:none;} .container2{border:1px solid #211e1e;padding-left:2px;padding-right:2px;}.container2 .tit-name {display:none;} #liebiao ul li a{border:none;} #liebiao{border-top:1px solid #211e1e;padding-top:10px;}}
  @media screen and (max-width:1024px){#liebiao ul li{width:20%;}
- .container2{width:90%;}  }
+ .container2{width:90%;} 
+ #liebiao ul li a{border-color:#aaa;}
+#liebiao li a:hover{background-color:#ecf5c8}
+footer{border-color:#aaa;color:#aaa;}
+ }
 @media screen and (min-width:360px) and (max-width:786px) {
 .container2{width:100%;margin-top:50px;}
  #palybox{height:220px;}
 #liebiao{margin-top:15px;padding-top:10px;border-top:1px solid #aaa;}
 #liebiao ul li{width:33.33%;}
-#liebiao ul li a{line-height:42px;  height:42px;padding:2px;font-size:100%;background-color:#e8fde330}
+#liebiao ul li a{line-height:42px;  height:42px;padding:2px;font-size:100%;background-color:#e8fde330;}
+#liebiao li a:hover{background-color:#ecf5c8}
 .container2 .tit-name {display:none;}
 .m1{display:inline;}
 .m2{display:none;}
