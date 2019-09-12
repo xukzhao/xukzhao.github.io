@@ -4,17 +4,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>中国经济之声</title>
+<title>中国</title>
 <link href="./favicon.ico" rel="shortcut icon" />
 <meta name="keywords" content="muic,音乐">
 <meta name="description" content="随机音乐">
 <style type="text/css">
 body{margin:0;padding:0;text-align:center;}
 header{margin:10px 0px;}
+#xl{margin-left:30px;text-decoration:none;font-size:0.8em;}
+#xl span {border-radius:8px;background-color:#90e080;}
 </style>
  </head>   
-  <body background="body.png"> 
-  <header>CNR经济之声</header>
+  <body background="body.png">
+  <header><b>经济之声</b><a id="xl" onclick="xl()" href="javascript:void(0)" ><span>线路二 </span></a></header>
 <div id="a1"></div>
 <script type="text/javascript">
 
@@ -23,9 +25,13 @@ header{margin:10px 0px;}
                 document.getElementById('a1').innerHTML = ' <audio  controls="controls" autoplay="autoplay" src="http://rtmpcnr002.cnr.cn/live28/jjzs/playlist.m3u8" ></audio>';
             }else{
                   document.getElementById('a1').innerHTML = ' <audio  controls="controls" autoplay="autoplay" src="http://lhttp.qingting.fm/live/387/64k.mp3" ></audio>';
-                   
-            }
-         
+           document.getElementById('xl').style.display="none";
+                }    
+           
+		   function xl(){
+          document.getElementById('a1').innerHTML = ' <audio  controls="controls" autoplay="autoplay" src="http://ls.qingting.fm/live/387/64k.m3u8" ></audio>';
+		   
+		   }
 </script>
    
   </body>

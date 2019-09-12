@@ -4,28 +4,34 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>高明883</title>
+<title>佛山高明883</title>
 <link href="./favicon.ico" rel="shortcut icon" />
 <meta name="keywords" content="muic,音乐">
 <meta name="description" content="随机音乐">
 <style type="text/css">
 body{margin:0;padding:0;text-align:center;}
 header{margin:10px 0px;}
+#xl{margin-left:30px;text-decoration:none;font-size:0.8em;}
+#xl span {border-radius:8px;background-color:#90e080;}
 </style>
  </head>   
-  <body background="body.png"> 
-  <header>高明883</header>
+  <body background="body.png">
+  <header><b>佛山高明883</b><a id="xl" onclick="xl()" href="javascript:void(0)" ><span>线路二 </span></a></header>
 <div id="a1"></div>
 <script type="text/javascript">
 
             var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
             if(isiPad){
-                document.getElementById('a1').innerHTML = ' <audio  controls="controls" autoplay="autoplay" src="http://ls.qingting.fm/live/1269/64k.m3u8" ></audio>';
+                document.getElementById('a1').innerHTML = ' <audio  controls="controls" autoplay="autoplay" src="http://live-hls.fs.linker.cc/fshs/fs_ts_06.m3u8" ></audio>';
             }else{
                   document.getElementById('a1').innerHTML = ' <audio  controls="controls" autoplay="autoplay" src="http://lhttp.qingting.fm/live/1269/64k.mp3" ></audio>';
-                   
-            }
-         
+                document.getElementById('xl').style.display="none";
+                }    
+           
+		   function xl(){
+          document.getElementById('a1').innerHTML = '<audio controls="controls" autoplay="autoplay" src="http://ls.qingting.fm/live/1269/64k.m3u8" ></audio>';
+		   
+		   }
 </script>
    
   </body>

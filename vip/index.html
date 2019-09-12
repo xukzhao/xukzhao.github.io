@@ -17,10 +17,17 @@
 	<style type="text/css">
 	html{position: relative;}
 	.url-box{margin-top:60px;}
+	 #container{width:70%;text-align:center;margin:auto;}
+	#palybox{height:500px;}
+	
+	@media screen and (max-width:1024px){
+	 #container{width:90%;}
+	} 
 	
 	@media screen and (max-width:768px) {
+	#palybox{height:224px;}
 	.url-box{margin-top:100px;padding:0px 2px}
-	.container{padding:0px;}
+	#container{padding:0px;width:100%;}
 	}
 	</style>
 	
@@ -52,7 +59,7 @@
 						</div>   -->
 					</li>
 					<li class="dropdown">
-						<a href="../tv/index.html">电视直播</a>
+						<a href="../tv/index.html">网络电视</a>
 					</li>
 					<li>
 						<a href="../radio/index.html">网络电台</a>
@@ -81,7 +88,7 @@
 				<a href="../vip">VIP视频解析</a>
 			</li>
 			<li class="dropdown">
-				<a href="../tv">电视直播</a>
+				<a href="../tv">网络电视</a>
 			</li>
 			<li class="dropdown">
 				<a href="../radio">网络电台</a>
@@ -90,7 +97,7 @@
 		</ul>
 	</div>
     
-			<div class="container ">
+			<div id="container">
 				
 				
 
@@ -100,24 +107,17 @@
 						<div class="input-group-addon">
 							<select class="url-c url-text" title="如发现视频无法正常播放请尝试更换视频线路！" id="jk">
 							
-								<option value="https://v.wu65t.cn/v.php?url=" selected>
+								<option value="https://hh.tt-hk.cn/jx.php?url=" selected>
 									推荐一								</option>
-								<option value="https://jx.dy-jx.com/?url=">
+								<option value="https://v.wu65t.cn/v.php?url=" id="u2">
 									推荐二								</option>
-								<option value="http://www.fantee.net/fantee/?url=">
+								<option value="https://vip.qianyicp.com/?url=">
 									线路三								</option>
-								<option value="https://vip.zynta.cn/vip/?url=">
+								<option value="https://dhyjiexi.arpps.com/?url=">
 									线路四								</option>
-								<option value="http://jx.momimi.cn/?url=">
-									线路五								</option>
-								<option value="http://jx.drgxj.com/?url=">
-									线路六								</option>
-								<option value="http://jx.618ge.com/?url=">
-									线路七								</option>
-								<option value="http://vip.jlsprh.com/?url=">
-									线路八								</option>
-								<option value="http://jx.598110.com/?url=">
-									线路九								</option>
+								
+								
+								
 								
 							</select>
 						</div>
@@ -159,6 +159,13 @@
 	<script type="text/javascript" src="../js/vip.js"> </script>
 	<script src="../js/swiper.min.js"></script>
 	<script>
+    
+/* 	var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+            if(isiPad){
+			document.getElementById("u2").selected=true;
+			}  */
+
+	
 		$(function(){
 			//超过一定高度导航添加类名
 			var nav=$("header"); //得到导航对象  

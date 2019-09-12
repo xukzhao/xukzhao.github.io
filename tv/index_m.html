@@ -1,56 +1,59 @@
+
+
 <!DOCTYPE html>
 <html lang="zh">
 <head style="background-color:#222;">
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>电视直播</title>
+	<title>网络电视</title>
 	<link rel="stylesheet" href="../css/reset.css" />
 	<link rel="stylesheet" href="../css/swiper.min.css" />
 	<link rel="stylesheet" href="../css/bootstrap.css" />
 	<link rel="stylesheet" href="../css/head.css" />
-	<script type="text/javascript">
-
- </script>
+	<link rel="stylesheet" href="../css/a1.css" />
+	<link rel="stylesheet" href="../css/vipstyle.css" />
 	<style type="text/css">
-::-webkit-scrollbar{width:5px;}
-::-webkit-scrollbar-track{background-color:#222;}
-::-webkit-scrollbar-thumb{background-color:#6d3636;}
-::-webkit-scrollbar-thumb:hover {background-color:#6d3636}
-::-webkit-scrollbar-thumb:active {background-color:#6d3636;}
-		#container2{width:80%;text-align:center;margin:0 auto;margin-top:100px;border:1px solid #6d3636}
-	    #myElement{width:80%;height:500px;float:left;border:1px solid #6d3636}
-		#palybox{width:100%;}
-		#liebiao{width:20%;float:right;overflow:auto;max-height:500px;}		
-		#liebiao ul{list-style:none;}
-		#liebiao ul li{	width:50%;float:left;border-bottom:1px solid #333;}
-		#liebiao ul li a{height:2em;line-height:2em;font-size:1em;color:#888;display:block;width:100%;text-decoration:none;}
-		#liebiao ul li a:hover{background-color:#502b2b;color:#eee;}
-	    .m1{display:none;}
+		#container2{width:65%;text-align:center;margin:0 auto;margin-top:60px;}
+	   
+		#liebiao{width:100%;height: 100%;overflow: hidden ;margin-bottom:20px;margin-top:20px;}
+		#liebiao ul{
+		list-style:none;}
 		
-		footer{;color:#aaa;clear:both;border-top:1px solid #333;text-align:center;margin-top:50px;color:#444;}	
-		
-		 @media screen and (max-width:1024px){
-		 #container2{width:98%;margin-top:80px;}
-		 #myElement{width:90%;}
-		 #liebiao{width:10%;}
-		 #liebiao ul li{width:100%;}
-		 }
-		@media screen and (max-width:768px){
-		#container2{width:100%;margin-top:50px;border-width:0px;}
-		#myElement{width:100%;border-width:0px;}
-		#liebiao{width:100%;border-width:0px;clear:both;margin-top:10px;}
-		#liebiao ul{border-bottom:1px solid #333;}
-		#liebiao ul li{	width:33.33%;}
-		.m1{display:inline;}
-		.m2{display:none;}
-		
+		#liebiao ul li{	
+		float:left;width:16.66%;
 		}
-	    
-
-
-	
-	
+	 
+		#liebiao ul li a {display:block; height:30px; line-height:30px; text-align:center; margin:0 auto; text-decoration:none; width:99%;
+   border: 1px solid #3e3737;margin-bottom:0.15em;color:#999;}
+		
+		#liebiao li a:hover{ background-color:#111; }
+		
+		
+   .m1{display:none}
+   footer{margin-top:30px;border-top:1px solid #211e1e;color:#211e1e}
+ @media screen and (min-width:1024px){body{background-color:#000;background-image:none;} #container2{border:1px solid #211e1e;padding-left:2px;padding-right:2px;}#container2 .tit-name {display:none;} #liebiao ul li a{border:none;} #liebiao{border-top:1px solid #211e1e;padding-top:10px;}}
+ @media screen and (max-width:1024px){#liebiao ul li{width:20%;}
+ #container2{width:90%;} 
+ #liebiao ul li a{border-color:#aaa;color:#000;}
+#liebiao li a:hover{background-color:#ecf5c8}
+footer{border-color:#aaa;color:#aaa;}
+ }
+@media screen and (min-width:360px) and (max-width:786px) {
+#container2{width:100%;margin-top:280px;}
+ #palybox{height:220px;}
+#liebiao{margin-top:15px;padding-top:10px;border-top:1px solid #aaa;}
+#liebiao ul li{width:33.33%;}
+#liebiao ul li a{line-height:42px;  height:42px;padding:2px;font-size:100%;background-color:none;border-color:}
+#liebiao li a:hover{background-color:#c5c7c6;font-weight: bold}
+#container2 .tit-name {display:none;}
+.m1{display:inline;}
+.m2{display:none;}
+#left{position:fixed;
+top:50px;width:100%;}
+}
+		
+		
 		</style>
 		
 		
@@ -60,8 +63,8 @@
 		<header class="header"> 
 		<div class="container clearfix"> 
 			<div class="fl left">
-				<a href="javascript:void(0)" ><img src="../image/logo.png" alt="" class="img1" /></a>
-				<a href="javascript:void(0)" ><img src="../image/logo2.jpg" alt="" class="img2" /></a>
+				<a href="../" ><img src="../image/logo.png" alt="" class="img1" /></a>
+				<a href="../" ><img src="../image/logo2.jpg" alt="" class="img2" /></a>
 			</div>
 			<div class="fr nav"> 
 				<ul class="navbar_nav" data-in="fadeInDown" data-out="fadeOutUp">
@@ -123,8 +126,11 @@
 		
 	<div id="container2" >
 				
-		<div id="myElement">		
-		    
+		<div id="left">		
+		    <div class="tit-name">
+			<span>正在播放</span>
+				
+		    </div>
 					 
 				<iframe id="palybox" src="cctv13.html" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="true" allowtransparency="true"name="abc"></iframe>
 		</div>		
@@ -161,27 +167,25 @@
 				<li><a href="tvbcj.html" target="abc">TVB财经</a> </li>
 				<li><a href="tvbj2.html" target="abc">TVBj2</a> </li>
 				<li><a href="xgws.html" target="abc">香港卫视</a> </li>
-				<li><a href="javascript:void(0);" onClick="uu('http://cctvcnch5c.v.wscdns.com/live/cctv13_2/index.m3u8')">线路二</a></li>
-				
-				
-				
-				<li><a href="zhws.html" target="abc">中华卫视</a> </li>
+				<li><a href="http://www.tvniu.com/player/dplayer.php?streamUrl=http://media.fantv.hk/m3u8/archive/channel2.m3u8" target="abc">香港开电视</a> </li>
+				<span class="m2"><li><a href="http://g.alicdn.com/de/prismplayer-flash/1.2.16/PrismPlayer.swf?vurl=http://pull.shanlanqing.com/live/playlist.m3u8" target="abc">中华卫视</a> </li></span>
+				<span class="m1"><li><a href="http://pull.shanlanqing.com/live/playlist.m3u8" target="abc">中华卫视</a> </li></span>
 				<li><a href="amws.html" target="abc">澳门卫视</a> </li>
 				<li><a href="twztxw.html" target="abc">中天新闻</a> </li>
 				<li><a href="twdsxw.html" target="abc">东森新闻</a> </li>
 				<li><a href="twhyxw.html" target="abc">寰宇新闻</a> </li>
 				<li><a href="twzsxw.html" target="abc">中視新聞</a> </li>
-				<span class="m1"><li><a href="twtvbsxw.html" target="abc">TVBS新聞</a> </li></span>
-				
-				<span class="m2"><li><a href="index2.html" target="_blank">更多>></a> </li></span>
+				<li><a href="twtvbs.html" target="abc">TVBS</a> </li>
 				
 				
 				
-				</ul>
+				
+				
+				
+				
+				</ul><div style="clear:both"></div>
 				
 			</div>
-			<div style="clear:both"></div>
-			
 		 </div>
 		
 		
@@ -197,24 +201,18 @@
 	<script src="../js/bootstrap.js"></script>
 	<script src="../js/vip.js"> </script>
 	<script src="../js/swiper.min.js"></script>
-	<script type="text/javascript" src="http://www.icantv.cn/ckplayer/ckplayer.js" charset="utf-8"></script>
-    <script type="text/javascript" src="tv.js" charset="utf-8"></script>
-	
 	<script>
 	
-	
-	
-	window.onload = function(){
+window.onload = function(){
 function hh(){	
- var div1 = document.getElementById("liebiao");
+ var div1 = document.getElementById("container2");
  var div = document.getElementById("palybox");
- var width=parseInt(div.style.width) || div.offsetWidth;
- div1.style.height=div.style.height=width*0.6 + "px";
- 
- }
+ var width=parseInt(div1.style.width) || div1.offsetWidth;
+ div.style.height=width*0.6 + "px";}
  hh();
  window.onresize=function(){hh()}
  }
+	
 		$(function(){
 			//超过一定高度导航添加类名
 			var nav=$("header"); //得到导航对象  

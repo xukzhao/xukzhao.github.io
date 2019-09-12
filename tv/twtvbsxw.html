@@ -4,9 +4,10 @@
 <head>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>凤凰卫视</title>
+<title>台湾TVBS新闻</title>
 <style type="text/css">
 body,html{padding: 0;margin: 0;width:100%;height:100%;background-color:#000; color:#999;}
+
 #a1,#loading,#error{padding: 0;margin: 0;width:100%;height:100%;background-color:#000; color:#999;}
 a{color:#000}
 </style>
@@ -15,10 +16,10 @@ a{color:#000}
 </head>
 <body style="overflow-y:hidden;">
 <div id="a1" style="text-align:center;">
-<!-- 贵州移动-->
+
     <script type="text/javascript" src="http://mini.javaa.cn/zhibo/tv/ckplayer/ckplayer.js" charset="utf-8"></script>
     <script type="text/javascript">
-        window.onload = showPlayer('http://nlds228.cdnak.dal.neulion.com/nlds/kylin/pxasia/as/live/pxasia_4_ipad.m3u8?hdnea=expires%3D1509068943%7Eaccess%3D%2Fnlds%2Fkylin%2Fpxasia%2Fas%2Flive%2F*%7Emd5%3De7db5e1acea5eb2061e7e0c2cfbff34f', 'a1');
+        window.onload = showPlayer('http://60.199.188.65/HLS/WG_TVBS-N/01.m3u8', 'a1');
         function showPlayer(src, id) {
             //player
             var flashvars = {
@@ -27,7 +28,7 @@ a{color:#000}
                 c: 0,
                 s: 4,
        p: 1,
-       lv: 1,
+       lv: 1,//注意，如果是直播，需设置lv:1
        my_pic: "loading.jpg"
             };
             var params = { bgcolor: '#FFF', allowFullScreen: true, allowScriptAccess: 'always', wmode: 'transparent' };

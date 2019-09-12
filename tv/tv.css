@@ -1,0 +1,13 @@
+body,html{padding: 0;margin: 0;color:#999;background-color:#000;}
+#myElement{width:100%;}
+.tit-name{margin-top:0px;background-color:#000;text-align:center;height:1.5em;line-height:1.5em;}
+.tit-name ul{list-style:none; float:right;margin:0;}
+.tit-name ul li{float:right;margin:0 5px;}
+.tit-name ul li a{text-decoration:none;color:#9a9068;line-height:1.5em; text-align: center; }
+.tit-name ul li a:hover{background-color:#ab9048;color:#000;}
+
+@media(min-width:480px) {
+.tit-name span{display:none;}
+#db .tit-name{position: absolute;right:0px; top:0px;margin:0;padding:0;}
+}
+@media(max-width:480px) { .tit-name{ background-color:#000}}

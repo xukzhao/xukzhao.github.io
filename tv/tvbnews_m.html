@@ -3,12 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /> 
-<title>TVB新闻</title>
+<title>TVB新闻M</title>
 <link rel="stylesheet" href="tv.css" />
-<script type="text/javascript">
- (function(){var ua=navigator.userAgent.toLowerCase();var bIsIpad=ua.match(/ipad/i)=="ipad";var bIsIphoneOs=ua.match(/iphone os/i)=="iphone os";var bIsAndroid=ua.match(/android/i)=="android";var bIsWM=ua.match(/windows mobile/i)=="windows mobile";if(bIsIpad||bIsIphoneOs||bIsAndroid||bIsWM){window.location.href="tvbnews_m.html"}})();
- </script>
-
 </head>
 
 <body>
@@ -19,6 +15,7 @@
 <li><a href="javascript:void(0);" onClick="frame('tvbnewsgw.html')">官网</a></li>
 <li><a href="javascript:void(0);" onClick="uu('http://wowza-live.edge-global.akamai.tvb.com/newslive/smil:mobile_inews.smil/chunklist_b712704.m3u8')">标清</a></li>
 <li><a href="javascript:void(0);" onClick="uu('http://wowza-live.edge-global.akamai.tvb.com/newslive/smil:mobile_inews.smil/chunklist_b151552.m3u8')">流畅</a></li>
+<li><a href="javascript:void(0);" onClick="uu('http://104.233.205.110:12361/v/inews.php?id=inews')">默认</a></li>
 </ul>
 </div>
 
@@ -26,16 +23,9 @@
 <script type="text/javascript" src="http://www.icantv.cn/ckplayer/ckplayer.js" charset="utf-8"></script>
 <script type="text/javascript" src="tv.js" charset="utf-8"></script>
 <script type="text/javascript">
-uu('http://wowza-live.edge-global.akamai.tvb.com/newslive/smil:mobile_inews.smil/chunklist_b151552.m3u8');
-m();
+uu('http://104.233.205.110:12361/v/inews.php?id=inews');
+
 </script>
-<!--
-
-高清http://wowza-live.edge-global.akamai.tvb.com/newslive/smil:mobilehd_inews.smil/chunklist_b1096000.m3u8
-http://wowza-live.edge-global.akamai.tvb.com/newslive/smil:mobile_inews.smil/chunklist_b491520.m3u8
-http://wowza-live.edge-global.akamai.tvb.com/newslive/smil:mobile_inews.smil/chunklist_b712704.m3u8
-
--->
 
 </body>
 </html>
