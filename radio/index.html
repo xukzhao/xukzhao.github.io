@@ -11,6 +11,9 @@
 	<link rel="stylesheet" href="../css/head.css" />
 	<link rel="stylesheet" href="../css/a1.css" />
 	<style type="text/css">
+	
+	iframe{width:100%}
+	
 	@media screen and (min-device-width:360px) and (max-device-width:480px) {
 	iframe{height:120px;}
 	}
@@ -87,16 +90,26 @@
 				<iframe  src="cnzgzs.html" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="true" allowtransparency="true"name="abc"></iframe>
 				
 				<ul>
-				<span class="m1"><li><a href="hk1t.html" target="abc">香港1台</a> </li></span>
-				<li><a href="cnzgzs.html" target="abc">中国之声</a> </li>
-				<li><a href="cnjjzs.html" target="abc">CNR经济之声</a> </li>
-				<li><a href="cnhqzx.html" target="abc">CNR环球资讯</a> </li>
-				<li><a href="cnyyzs.html" target="abc">CNR音乐之声</a> </li>
 				
+				<li><a href="cnzgzs.html" target="abc">中国之声</a> </li>
+				<li><a href="cnhqzx.html" target="abc">CNR环球资讯</a> </li>
+				<li><a href="cnjjzs.html" target="abc">CNR经济之声</a> </li>
+				<li><a href="cnyyzs.html" target="abc">CNR音乐之声</a> </li>
 				<li><a href="cnxgzs.html" target="abc">香港之声</a> </li>
+				<li id="m1"><a href="hk1t.html" target="abc">香港1台</a> </li>
+				<li id="m2"><a href="hk1t2.html" target="abc">香港1台</a> </li>
+				
+				<li><a href="qcyyt.html" target="abc">清晨音乐台</a> </li>
+				
+				<li><a href="hitfm.html" target="abc">HitFM 88.7</a> </li>
+				<li><a href="dtyy.html" target="abc">动听音乐</a> </li>
+				
+				<li><a href="gdyyzs.html" target="abc">广东音乐之声</a> </li>
+				
+				
 				<li><a href="gdycjt.html" target="abc">羊城交通</a> </li>
 				<li><a href="zjjj.html" target="abc">珠江经济</a> </li>
-				<li><a href="qcyyt.html" target="abc">清晨音乐台</a> </li>
+				
 				<li><a href="dycj.html" target="abc">第一财经</a> </li>				
 				<li><a href="gdgs.html" target="abc">广东股市</a> </li>
 				
@@ -110,7 +123,11 @@
 				<li><a href="fs883.html" target="abc">佛山高明台</a> </li>
 				<li><a href="fs906.html" target="abc">佛山三水台</a> </li>
 				<li><a href="gxxw.html" target="abc">广西新闻台</a> </li>
+				<li><a href="gxyy.html" target="abc">广西音乐广播</a> </li>
+				
 				<li><a href="gpdt.html" target="abc">桂平电台</a> </li>
+				
+				
 				</ul>
 				<div style="clear:both"></div>
 		</div>		
@@ -134,6 +151,18 @@
 	<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
 	<script src="../js/swiper.min.js"></script>
 	<script>
+	
+	function m(){
+ var	isMobile = /android|phone|mobi|ipad|ipod|blackberry|symbian|midp|ios/i.test(navigator.userAgent.toLowerCase());	
+var m1 = document.getElementById("m1");
+var m2 = document.getElementById("m2");
+if (isMobile){
+	m2.style.display="none";
+}else {
+m1.style.display="none";
+}}
+m();	
+	
 		$(function(){
 			//超过一定高度导航添加类名
 			var nav=$("header"); //得到导航对象  
