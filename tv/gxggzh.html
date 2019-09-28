@@ -19,8 +19,7 @@ video#ck-video{height:200px}
 }
 
 </style>
-<script src="http://jx.178du.com/js/jquery.min.js"></script>
-<script type="text/javascript" src="http://mini.javaa.cn/zhibo/tv/ckplayer/ckplayer.js" charset="utf-8"></script>
+
 </head>
 <body style="overflow-y:hidden;">
 <div id="db">
@@ -30,13 +29,13 @@ video#ck-video{height:200px}
 </div>
 <div id="a1" style="text-align:center;">
 
-    <script type="text/javascript" src="http://mini.javaa.cn/zhibo/tv/ckplayer/ckplayer.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.tvniu.com/ckplayer/ckplayer.js" charset="utf-8"></script>
     <script type="text/javascript">
         window.onload = showPlayer('http://nsul01u0.live2.danghongyun.com/live/hls/8c4dd3abb3394a199d2420aecc747d2e/a4e9f842e77b4450b82e5b13561bdcd9.m3u8', 'a1');
         function showPlayer(src, id) {
             //player
             var flashvars = {
-                f: 'http://mini.javaa.cn/zhibo/tv/ckplayer/m3u8.swf',
+                f: 'http://www.tvniu.com/ckplayer/m3u8.swf',
                 a: src,
                 c: 0,
                 s: 4,
@@ -51,7 +50,7 @@ video#ck-video{height:200px}
                 h = '100%';
                 
             }
-            CKobject.embed('http://mini.javaa.cn/zhibo/tv/ckplayer/ckplayer.swf', id, 'ck-video', '100%', h, false, flashvars, video, params);
+            CKobject.embed('http://www.tvniu.com/ckplayer/ckplayer.swf', id, 'ck-video', '100%', h, false, flashvars, video, params);
             console.log(h);
         }
     </script>

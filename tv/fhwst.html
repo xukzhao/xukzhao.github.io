@@ -7,8 +7,8 @@
 <link rel="stylesheet" href="tv.css" />
 <style type="text/css">
 @media screen and (max-width:786px) {
-.tit-name span , #m3{display:none;}
-
+.tit-name span , .m3{display:none;}
+.tit-name ul {padding-left:0px;}
 }
 
 </style>
@@ -20,13 +20,13 @@
 <span>凤凰卫视</span>
 <ul>
 
-<li id="m3"><a href="javascript:void(0);" onClick="frame('fhws2.html')">线路五</a></li>
-<li id="m2"><a href="javascript:void(0);" onClick="frame('http://g.alicdn.com/de/prismplayer-flash/1.2.16/PrismPlayer.swf?vurl=rtmp://218.94.137.117/iptv/fhzw')">线路四</a></li>
-<li id="m1"><a href="javascript:void(0);" onClick="uu('http://125.210.152.18:9090/live/FHZW_1200.m3u8')">线路四</a></li>
-<li><a href="javascript:void(0);" onClick="uu('http://117.169.120.217:8080/live/fhchinese/1.m3u8')">线路三</a></li>
-<li><a href="javascript:void(0);" onClick="uu('http://117.169.120.217:8080/live/fhchinese/1.m3u8')">线路二</a></li>
+<li class="m3"><a href="javascript:void(0);" onClick="frame('http://g.alicdn.com/de/prismplayer-flash/1.2.16/PrismPlayer.swf?vurl=rtmp://ivi.bupt.edu.cn:1935/livetv/fhzw')">线路五</a></li>
+<li><a href="javascript:void(0);" onClick="frame('fhws2.html')">线路四</a></li>
+<li><a href="javascript:void(0);" onClick="uu('http://116.199.5.51:8114/index.m3u8?Fsv_chan_hls_se_idx=190&FvSeid=1&Fsv_ctype=LIVES&Fsv_otype=1&Provider_id=&Pcontent_id=.m3u8')">线路三</a></li>
+<li><a href="javascript:void(0);" onClick="uu('http://117.169.120.217:8080/live/fhchinese/.m3u8')">线路二</a></li>
 <li><a href="javascript:void(0);" onClick="uu('http://nlds228.cdnak.dal.neulion.com/nlds/kylin/pxasia/as/live/pxasia_4_ipad.m3u8?hdnea=expires%3D1509068943%7Eaccess%3D%2Fnlds%2Fkylin%2Fpxasia%2Fas%2Flive%2F*%7Emd5%3De7db5e1acea5eb2061e7e0c2cfbff34f')">线路一</a></li>
-<li><a href="javascript:void(0);" onClick="uu('http://116.199.5.51:8114/index.m3u8?Fsv_chan_hls_se_idx=190&FvSeid=1&Fsv_ctype=LIVES&Fsv_otype=1&Provider_id=&Pcontent_id=.m3u8')">默认</a></li>
+<li id="m2"><a href="javascript:void(0);" onClick="frame('http://g.alicdn.com/de/prismplayer-flash/1.2.16/PrismPlayer.swf?vurl=rtmp://218.94.137.117/iptv/fhzw')">默认</a></li>
+<li id="m1"><a href="javascript:void(0);" onClick="uu('http://125.210.152.18:9090/live/FHZW_1200.m3u8')">默认</a></li>
 </ul>
 </div>
 
@@ -34,7 +34,14 @@
 <script type="text/javascript" src="http://www.icantv.cn/ckplayer/ckplayer.js" charset="utf-8"></script>
 <script type="text/javascript" src="tv.js" charset="utf-8"></script>
 <script type="text/javascript">
-uu('http://116.199.5.51:8114/index.m3u8?Fsv_chan_hls_se_idx=190&FvSeid=1&Fsv_ctype=LIVES&Fsv_otype=1&Provider_id=&Pcontent_id=.m3u8');
+var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+            if(isiPad){
+                  uu('http://125.210.152.18:9090/live/FHZW_1200.m3u8');
+            }else{
+                 
+                 frame('http://g.alicdn.com/de/prismplayer-flash/1.2.16/PrismPlayer.swf?vurl=rtmp://218.94.137.117/iptv/fhzw');
+            };
+
 m();
 </script>
 <!--
@@ -49,12 +56,16 @@ http://nlds228.cdnak.dal.neulion.com/nlds/kylin/pxasia/as/live/pxasia_4_ipad.m3u
 http://116.199.5.51:8114/index.m3u8?Fsv_chan_hls_se_idx=190&FvSeid=1&Fsv_ctype=LIVES&Fsv_otype=1&Provider_id=&Pcontent_id=.m3u8
 5宜春移动
 http://117.169.120.217:8080/live/fhchinese/1.m3u8
+http://117.169.120.217:8080/live/fhchinese/.m3u8
 
-http://183.207.249.15/PLTV/3/224/3221226975/index.m3u8
+
 7普通线 p/m
 http://ydn12.b-cdn.net/fhzw.m3u8
 
 http://223.82.250.72/live/fhchinese/1.m3u8
+http://223.110.245.139/PLTV/3/224/3221226922/index.m3u8
+
+
 
 -->
 

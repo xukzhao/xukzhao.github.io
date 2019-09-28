@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>muic</title>
+<link href="./favicon.ico" rel="shortcut icon" />
+<meta name="keywords" content="muic,音乐">
+<meta name="description" content="随机音乐">
+ </head>   
+  <body background="body.png"> 
+ <audio  controls="controls" autoplay="autoplay" src="https://api.tv920.com/music.php" onended="this.load();"></audio>
+  <script>
+    $('body').click(function(){
+		$('audio').get(0).play();
+    });
+  </script>
+  </body>
+</html>
+
+  
+
+
+
+

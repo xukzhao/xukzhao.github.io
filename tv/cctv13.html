@@ -5,16 +5,23 @@
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /> 
 <title>CCTV新闻</title>
 <link rel="stylesheet" href="tv.css" />
-</head>
+<style type="text/css">
+@media screen and (max-width:786px) {
+.tit-name ul {padding-left:0px;}
+}
 
+</style>
+</head>
 <body>
 
 <div class="tit-name">
 <span>CCTV新闻</span>
 <ul>
+<li><a href="javascript:void(0);" onClick="frame('http://player.haoqu.net/cctv888.html?id=cctv13')">回放</a></li>
 <li><a href="javascript:void(0);" onClick="uu('http://223.110.245.170/ott.js.chinamobile.com/PLTV/3/224/3221225560/index.m3u8')">线路三</a></li>
 <li><a href="javascript:void(0);" onClick="uu('http://218.84.130.80:8080/live/myStream.m3u8')">线路二</a></li>
 <li><a href="javascript:void(0);" onClick="uu('http://125.210.152.18:9090/live/CCTV13.m3u8')">线路一</a></li>
+
 <li><a href="javascript:void(0);" onClick="uu('http://cctvcnch5c.v.wscdns.com/live/cctv13_2/index.m3u8')">默认</a></li>
 </ul>
 </div>
