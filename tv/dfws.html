@@ -5,56 +5,41 @@
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>东方卫视</title>
+<link rel="stylesheet" href="tv.css" />
 <style type="text/css">
-body,html{padding: 0;margin: 0;width:100%;height:100%;background-color:#000; color:#999;}
-#a1,#loading,#error{padding: 0;margin: 0;width:100%;height:100%;background-color:#000; color:#999;}
-#db{background-color:#000;}
-#db span{vertical-align:middle; display:none;
+@media screen and (max-width:786px) {
+.tit-name ul {padding-left:0px;}
+.m3{display:none;}
 }
 
-@media screen and (min-device-width:360px) and (max-device-width:480px) {
-.tit-name{background-color:#000;text-align:center;}
-#db span{color:#655555;display:inline;}
-video#ck-video{height:200px}
-}
 </style>
-
-
 </head>
-<body style="overflow-y:hidden;">
-<div id="db">
+<body>
+
 <div class="tit-name">
 <span>东方卫视</span>
+<ul>
+<li class="m3"><a href="javascript:void(0);" onClick="frame('http://player.cntv.cn/standard/live_HLSDRM20180625.swf?v=180.171.5.8.9.6.3.9&ChannelID=dongfang&videoTVChannel=dongfang&P2PChannelID=pd://cctv_p2p_hddongfang')">回放</a></li>
+<li id="m2"><a href="javascript:void(0);" onClick="frame('http://g.alicdn.com/de/prismplayer-flash/1.2.16/PrismPlayer.swf?vurl=rtmp://218.94.137.117/iptv/dftv&s=0&e=2&p=1&h=4&ct=2')">线路三</a></li>
+<li><a href="javascript:void(0);" onClick="uu('http://117.169.120.217:8080/live/hddongfangstv/1.m3u8')">线路二</a></li>
+<li><a href="javascript:void(0);" onClick="uu('http://219.153.252.50/PLTV/88888888/224/3221225548/chunklist.m3u8')">线路一</a></li>
+
+<li><a href="javascript:void(0);" onClick="uu('http://hw-stream.kksmg.com/live/dtvf76c11e8.m3u8')">默认</a></li>
+</ul>
 </div>
-</div>
-<div id="a1" style="text-align:center;">
-<!--官方高清http://hls.cdn.liangtv.cn/live/0c4ef3a44b934cacb8b47121dfada66c/d7e04258157b480dae53883cc6f8123b-1.m3u8  http://live1.plus.hebtv.com/dfws/sd/live.m3u8 -->
-    <script type="text/javascript" src="http://www.tvniu.com/ckplayer/ckplayer.js" charset="utf-8"></script>
-    <script type="text/javascript">
-        window.onload = showPlayer('http://cctvtxyh5c.liveplay.myqcloud.com/wstv/dongfang_2/index.m3u8', 'a1');
-        function showPlayer(src, id) {
-            //player
-            var flashvars = {
-                f: 'http://www.tvniu.com/ckplayer/m3u8.swf',
-                a: src,
-                c: 0,
-                s: 4,
-       p: 1,
-       lv: 1,//注意，如果是直播，需设置lv:1
-       my_pic: "loading.jpg"
-            };
-            var params = { bgcolor: '#FFF', allowFullScreen: true, allowScriptAccess: 'always', wmode: 'transparent' };
-            var video = [src];
-            var h = '100%';
-            if (window.screen.width < 660) {
-                h = '100%';
-                
-            }
-            CKobject.embed('http://www.tvniu.com/ckplayer/ckplayer.swf', id, 'ck-video', '100%', h, false, flashvars, video, params);
-            console.log(h);
-        }
-    </script>
-	</div>
+
+<div id="myElement"></div>
+<script type="text/javascript" src="http://www.tvniu.com/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript" src="tv.js" charset="utf-8"></script>
+<script type="text/javascript">
+uu('http://hw-stream.kksmg.com/live/dtvf76c11e8.m3u8');
+m();
+</script>
    
 </body>
 </html>
+<!--
+http://hw-stream.kksmg.com/live/dtvf76c11e8.m3u8
+
+
+-->

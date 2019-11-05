@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /> 
+<title>CCTV5体育</title>
+<link rel="stylesheet" href="tv.css" />
+embed{margin:0px;}
+</head>
+<body>
+<script language="javascript"> 
+ var xmlhttp;
+ if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest()
+    } else {
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP")
+    }
+    xmlhttp.onreadystatechange = function() {
+        if(xmlhttp.readyState==4 && xmlhttp.status==200){
+		   	 var reg=/"url":"(.*?)"/;
+             results = reg.exec(xmlhttp.responseText);
+	         var url=results[1].replace("http://h5live.gslb.cmvideo.cn","http://mgzb.live.miguvideo.com:8088");
+                 u = encodeURIComponent(url);
+				document.writeln("<embed height=\'100%\' width=\'100%\' name=\'gPlayer\' src=\'http://g.alicdn.com/de/prismplayer-flash/1.2.16/PrismPlayer.swf?vurl="+u+"&autoPlay=true\' type=\'application/x-shockwave-flash\' allowfullscreen=\'true\'></embed>");
+    }
+ }
+var url = 'http://h5.miguvideo.com/playurl/v1/play/playurlh5?contId=641886657&clientId=migu';
+xmlhttp.open("get", url, true);
+xmlhttp.send();
+</script>
+
+</body>
+</html>

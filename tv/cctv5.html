@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /> 
+<title>CCTV5体育</title>
+<link rel="stylesheet" href="tv.css" />
+<style type="text/css">
+.m4{display:none;}
+@media screen and (max-width:786px) {
+.tit-name span , .m3{display:none;}
+.tit-name ul {padding-left:0px;}
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="tit-name">
+<span>CCTV5</span>
+<ul>
+<li class="m3"><a href="javascript:void(0);" onClick="frame('http://player.cntv.cn/standard/live_HLSDRM20180618.swf?v=180.171.5.8.9.6.3.9?tai=cctv5&ChannelID=cctv5&videoTVChannel=cctv5&P2PChannelID=pd://cctv_p2p_hdcctv5&VideoName=cctv5&channelID=cctv5&BannerWidth=600&BannerInterval=20&playBackType=common&ruleVisible=true&languageXml=&configURL=http://player.cntv.cn/flashplayer/config/WebHDSPlayerConfig.xml&referrer=&fingerprint=Fingerprint&wmode=opaque&quality=high')">线路六</a></li>
+<li class="m3"><a href="javascript:void(0);" onClick="frame('http://g.alicdn.com/de/prismplayer-flash/1.2.16/PrismPlayer.swf?vurl=rtmp://ivi.bupt.edu.cn:1935/livetv/cctv5')">线路五</a></li>
+<li class="m3"><a href="javascript:void(0);" onClick="frame('cctv5b.html')">线路四</a></li>
+<li><a href="javascript:void(0);" onClick="uu('http://223.110.245.165/ott.js.chinamobile.com/PLTV/3/224/3221226362/index.m3u8')">线路三</a></li>
+
+<li><a href="javascript:void(0);" onClick="uu('http://sdlqx.chinashadt.com:2036/live/CCTV5.stream/playlist.m3u8')">线路二</a></li>
+<li><a href="javascript:void(0);" onClick="uu('http://live.gansuyunshi.com:9090/live/CCTV5_800.m3u8')">线路一</a></li>
+<li id="m2"><a href="javascript:void(0);" onClick="frame('http://player.haoqu.net/cctv888.html?id=cctv5')">默认</a></li>
+<li id="m1"><a href="javascript:void(0);" onClick="frame('http://125.210.152.10:8060/live/CCTV5HD_H265.m3u8')">默认</a></li>
+</ul>
+</div>
+
+<div id="myElement"></div>
+<script type="text/javascript" src="http://www.tvniu.com/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript" src="tv.js" charset="utf-8"></script>
+<script type="text/javascript">
+var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+            if(isiPad){
+                  uu('http://125.210.152.10:8060/live/CCTV5HD_H265.m3u8');
+            }else{
+                 
+                 frame('http://player.haoqu.net/cctv888.html?id=cctv5');
+            };
+
+m();
+</script>
+<!--
+
+-->
+
+</body>
+</html>
