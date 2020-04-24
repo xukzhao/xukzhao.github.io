@@ -1,28 +1,29 @@
 
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-<title>LIVE</title>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>凤凰资讯</title>
 <style type="text/css"> 
 <!--
 html,body,form{width:100%;height:100%;margin:0;padding:0;overflow:hidden;}*{margin:0;padding:0;}
-#dplayer {height:100%; width:100%;}
+#a1 {height:100%; width:100%;}
 -->
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css" type="text/css">
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
 </head>
 <body>
-<div class="dplayer dplayer-no-danmaku dplayer-live dplayer-playing dplayer-hide-controller" id="dplayer">
-<script>
-var vid='http://ydn11.b-cdn.net/fhzx.m3u8';
-var isWap = navigator.userAgent.match(/iPad|iPhone|iPod|Android/i) != null;
-if(isWap){
-document.getElementById('dplayer').innerHTML='<video src="'+vid+'" controls="controls" preload="preload" width="100%" height="100%" autoplay="autoplay"></video>';
-}else{
-var dp = new DPlayer({element: document.getElementById('dplayer'),live: true,autoplay: true,loop: false,screenshot: false,video:{name: 'play',type: 'hls',url: ''+vid+'',}
-});
-}
+<div id="a1"></div>
+<script type="text/javascript" src="http://jx.178du.com/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+    
+    var flashvars={
+        f:'http://24tl.qingk.cn/live/fhzx889.flv',
+        c:0,
+        t:3,
+		p:1
+    };
+    var video=['http://24tl.qingk.cn/live/fhzx889.flv'];
+    CKobject.embed('http://jx.178du.com/ckplayer/ckplayer.swf','a1','ckplayer_a1','100%','100%',false,flashvars,video);
 </script>
-</body></html>
+</body>
+</html>

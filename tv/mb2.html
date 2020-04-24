@@ -16,13 +16,13 @@ a{color:#000}
 <body style="overflow-y:hidden;">
 <div id="a1" style="text-align:center;">
 
-    <script type="text/javascript" src="http://www.tvniu.com/ckplayer/ckplayer.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://jx.178du.com/ckplayer/ckplayer.js" charset="utf-8"></script>
     <script type="text/javascript">
-        window.onload = showPlayer('http://stream.mastvnet.com/MSTV/SD/live.m3u8', 'a1');
+        window.onload = showPlayer('http://192.200.120.82:8080/ZZ_zhongtiannews/ZZ_zhongtiannews.m3u8', 'a1');
         function showPlayer(src, id) {
             //player
             var flashvars = {
-                f: 'http://www.tvniu.com/ckplayer/m3u8.swf',
+                f: 'http://jx.178du.com/ckplayer/m3u8.swf',
                 a: src,
                 c: 0,
                 s: 4,
@@ -37,7 +37,7 @@ a{color:#000}
                 h = '100%';
                 
             }
-            CKobject.embed('http://www.tvniu.com/ckplayer/ckplayer.swf', id, 'ck-video', '100%', h, false, flashvars, video, params);
+            CKobject.embed('http://jx.178du.com/ckplayer/ckplayer.swf', id, 'ck-video', '100%', h, false, flashvars, video, params);
             console.log(h);
         }
     </script>

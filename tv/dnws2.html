@@ -30,13 +30,13 @@ video#ck-video{height:200px}
 </div>
 <div id="a1" style="text-align:center;">
 <!--官方高清http://hls.cdn.liangtv.cn/live/0c4ef3a44b934cacb8b47121dfada66c/d7e04258157b480dae53883cc6f8123b-1.m3u8 -->
-    <script type="text/javascript" src="http://www.tvniu.com/ckplayer/ckplayer.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://jx.178du.com/ckplayer/ckplayer.js" charset="utf-8"></script>
     <script type="text/javascript">
         window.onload = showPlayer('http://cctvtxyh5c.liveplay.myqcloud.com/wstv/dongnan_2/index.m3u8', 'a1');
         function showPlayer(src, id) {
             //player
             var flashvars = {
-                f: 'http://www.tvniu.com/ckplayer/m3u8.swf',
+                f: 'http://jx.178du.com/ckplayer/m3u8.swf',
                 a: src,
                 c: 0,
                 s: 4,
@@ -51,7 +51,7 @@ video#ck-video{height:200px}
                 h = '100%';
                 
             }
-            CKobject.embed('http://www.tvniu.com/ckplayer/ckplayer.swf', id, 'ck-video', '100%', h, false, flashvars, video, params);
+            CKobject.embed('http://jx.178du.com/ckplayer/ckplayer.swf', id, 'ck-video', '100%', h, false, flashvars, video, params);
             console.log(h);
         }
     </script>

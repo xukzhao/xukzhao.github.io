@@ -6,7 +6,7 @@ if (isMobile) {
 	document.getElementById('myElement').innerHTML = '<' + 'video autoplay="autoplay" src="' + u + '" controls="controls" width="100%" height="100%" preload="auto"' + '></' + 'video>'
 } else {
     var flashvars = {
-	f: 'http://www.tvniu.com/ckplayer/m3u8.swf',
+	f: 'https://jx.178du.com/ckplayer/m3u8.swf',
 	a: encodeURIComponent(u),
 	lv: 1,
 	c: 0,
@@ -21,7 +21,7 @@ if (isMobile) {
 		allowScriptAccess: 'always',
 		wmode: 'transparent'
 	};
-	CKobject.embedSWF('http://www.tvniu.com/ckplayer/ckplayer.swf', 'myElement', 'ckplayer_a1', '100%', '100%', flashvars, params)
+	CKobject.embedSWF('https://jx.178du.com/ckplayer/ckplayer.swf', 'myElement', 'ckplayer_a1', '100%', '100%', flashvars, params)
 }} 
 
 function frame(url){if(url){document.getElementById('myElement').innerHTML='<iframe border="0" marginWidth="0" frameSpacing="0" marginHeight="0" src="'+url+'" frameBorder="0" noResize width="100%" height="100%" vspace="0" scrolling="no"></iframe>';}}
