@@ -22,19 +22,26 @@
 
 
 
-<li id="m2"><a href="javascript:void(0);" onClick="frame('http://g.alicdn.com/de/prismplayer-flash/1.2.16/PrismPlayer.swf?vurl=rtmp://ivi.bupt.edu.cn:1935/livetv/fhzw')">线路一</a></li>
-<li><a href="javascript:void(0);" onClick="uu('http://117.169.120.170:8080/live/fhchinese/.m3u8')">默认</a></li>
+<li id="m4"><a href="javascript:void(0);" onClick="flash('rtmp://58.200.131.2:1935/livetv/fhzw')">线路二</a></li>
+<li><a href="javascript:void(0);" onClick="hls('http://iptv.pdsu.edu.cn/hls/fhzw.m3u8')">线路一</a></li>
+<li id="m2"><a href="javascript:void(0);" onClick="flash('rtmp://ivi.bupt.edu.cn:1935/livetv/fhzw')">默认</a></li>
 
 
 </ul>
 </div>
 
 <div id="myElement"></div>
-<script type="text/javascript" src="http://jx.178du.com/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript" src="ckplayer/ckplayer.js"></script>
 <script type="text/javascript" src="tv.js" charset="utf-8"></script>
 <script type="text/javascript">
-
-                  uu('http://117.169.120.170:8080/live/fhchinese/.m3u8');
+var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+            if(isiPad){
+              flash('http://125.210.152.18:9090/live/FHZW_1200.m3u8')  ;
+            }else{
+                  flash('rtmp://ivi.bupt.edu.cn:1935/livetv/fhzw');
+                  
+            }
+                 
           
 
            
@@ -65,15 +72,38 @@ http://ydn12.b-cdn.net/fhzw.m3u8
 http://223.82.250.72/live/fhchinese/1.m3u8
 http://223.110.245.139/PLTV/3/224/3221226922/index.m3u8
 
-http://223.82.250.72/ysten-bussiness/live/fhchinese/1.m3u8
+
              http://221.179.217.70/PLTV/88888888/224/3221225942/1.m3u8
 凤凰中文高清,http://111.13.111.242/otttv.bj.chinamobile.com/PLTV/88888888/224/3221225942/1.m3u8 
 凤凰中文高清,http://111.13.111.242/otttv.bj.chinamobile.com/PLTV/88888888/224/3221225948/1.m3u8 
 凤凰中文高清,http://111.13.111.242/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226143/1.m3u8 
 凤凰中文高清,http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221226922/index.m3u8
-http://liveali.ifeng.com/live/FHZW.m3u8
-http://24tl.qingk.cn/live/fhws988.flv
 
+
+#EXTINF:-1 ,Unknown_2
+http://iptv.pdsu.edu.cn/hls/fhzw.m3u8
+#EXTINF:-1 ,Unknown_3
+http://125.210.152.18:9090/live/FHZW_1200.m3u8
+#EXTINF:-1 ,Unknown_8
+http://117.169.120.160:8080/live/fhchinese/1.m3u8
+#EXTINF:-1 ,Unknown_9
+http://117.169.120.170:8080/live/fhchinese/.m3u8
+#EXTINF:-1 ,Unknown_10
+http://117.169.120.138:8080/live/fhchinese/.m3u8
+#EXTINF:-1 ,Unknown_12
+http://223.82.250.72/live/fhchinese/1.m3u8
+#EXTINF:-1 ,Unknown_13
+http://223.110.245.139/PLTV/3/224/3221226922/index.m3u8
+#EXTINF:-1 ,Unknown_14
+http://221.179.217.70/PLTV/88888888/224/3221225942/1.m3u8
+#EXTINF:-1 ,Unknown_15
+http://111.13.111.242/otttv.bj.chinamobile.com/PLTV/88888888/224/3221225942/1.m3u8
+#EXTINF:-1 ,Unknown_16
+http://111.13.111.242/otttv.bj.chinamobile.com/PLTV/88888888/224/3221225948/1.m3u8
+#EXTINF:-1 ,Unknown_17
+http://111.13.111.242/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226143/1.m3u8
+#EXTINF:-1 ,Unknown_18
+http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221226922/index.m3u8
 
 
 -->

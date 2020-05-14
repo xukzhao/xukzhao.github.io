@@ -13,25 +13,18 @@
 <span>TVBj2</span>
 <ul>
 
-<li id="m1"><a href="javascript:void(0);" onClick="uu('http://bo.tstfyy.com/AppName/StreamName.m3u8')">线路二</a></li>
-<li id="m2">
-<a href="javascript:void(0);" onClick="frame('http://g.alicdn.com/de/prismplayer-flash/1.2.16/PrismPlayer.swf?vurl=rtmp://bo.tstfyy.com/AppName/StreamName&amp;t=flv')">线路二</a></li>
-<li><a href="javascript:void(0);" onClick="uu('http://222.186.61.82/atv/01kjzcom__redirect__1392.m3u8')">线路一</a></li>
-<li><a href="javascript:void(0);" onClick="frame('http://47.240.60.73/zszb.php?id=12')">默认</a></li>
+
 </ul>
 </div>
 
 <div id="myElement"></div>
-<script type="text/javascript" src="http://jx.178du.com/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
 <script type="text/javascript" src="tv.js" charset="utf-8"></script>
 <script type="text/javascript">
- var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
-            if(isiPad){
-                 uu('http://49.233.148.32/dl/lttv/bstv.php?id=tvbj2');
-            }else{
+
                  
-                 uu('http://pull.scphsd.com/live/7f4646afc32511ae043526245ff2d28e/playlist.m3u8');
-            }
+                 hls('http://pull.scphsd.com/live/7f4646afc32511ae043526245ff2d28e/playlist.m3u8');
+           
 
 
 m();

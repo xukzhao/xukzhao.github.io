@@ -1,40 +1,24 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>东南卫视</title>
-<script type="text/javascript">
-if(/AppleWebKit.*Mobile/i.test(navigator.userAgent)||(/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="dnws_m.html";}else if(/iPad/i.test(navigator.userAgent)){window.location.href="dnws_m.html";}}catch(e){}}}
-</script>
-<style type="text/css">
-body,html{padding: 0;margin: 0;width:100%;height:100%;background-color:#000; color:#999;}
-#a1,#loading,#error{padding: 0;margin: 0;width:100%;height:100%;background-color:#000; color:#999;}
-#db{background-color:#000;}
-#db span{ height:50px;line-height:50px;}
-.tit-name{height:50px;background-color:red;text-align:center;display:none;}
-
-
-@media screen and (min-device-width:360px) and (max-device-width:480px) {
-.tit-name{background-color:#000;text-align:center;}
-#db span{color:#655555;display:inline;}
-video#ck-video{height:200px}
-}
-
+<style type="text/css"> 
+<!--
+html,body,form{width:100%;height:100%;margin:0;padding:0;overflow:hidden;}*{margin:0;padding:0;}
+#a1 {height:100%; width:100%;}
+-->
 </style>
-
-<script type="text/javascript" src="http://jx.178du.com/ckplayer/ckplayer.js" charset="utf-8"></script>
 </head>
-<body style="overflow-y:hidden;">
-<div id="db">
-<div class="tit-name">
-<span>东南卫视</span>
-</div>
-</div>
-
-<iframe id="jlrc_url" name="leshi123" allowtransparency="true" border="0" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" src="http://67.230.188.214/play.html?id=5&u=83&t=hoge" width="100%" height="100%" rel="nofollow"></iframe>
-
-
-   
+<body>
+<div id="myElement"></div>
+<script type="text/javascript" src="ckplayer/ckplayer.js"></script>
+<script type="text/javascript" src="tv.js" charset="utf-8"></script>
+<script type="text/javascript">
+               
+              hls('http://liveplay-kk.rtxapp.com/live/program/live/dnwshd/2300000/mnf.m3u8');
+                 
+</script>
 </body>
 </html>
+

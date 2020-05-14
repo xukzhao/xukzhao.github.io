@@ -1,28 +1,29 @@
-
- function uu(u){   
-var	isMobile = /android|phone|mobi|ipad|ipod|blackberry|symbian|midp|ios/i.test(navigator.userAgent.toLowerCase());
-	z = 0;
-if (isMobile) {
-	document.getElementById('myElement').innerHTML = '<' + 'video autoplay="autoplay" src="' + u + '" controls="controls" width="100%" height="100%" preload="auto"' + '></' + 'video>'
-} else {
-    var flashvars = {
-	f: 'https://jx.178du.com/ckplayer/m3u8.swf',
-	a: encodeURIComponent(u),
-	lv: 1,
-	c: 0,
-	s: 4,
-	v:100,
-	wh:'16:9',
-	p: 1
-};
-	var params = {
-		bgcolor: '#FFF',
-		allowFullScreen: true,
-		allowScriptAccess: 'always',
-		wmode: 'transparent'
+function flash(url){  
+ var videoObject = {
+		container: '#myElement',//“#”代表容器的ID，“.”或“”代表容器的class
+		variable: 'player',//该属性必需设置，值等于下面的new chplayer()的对象
+		autoplay:true,//自动播放
+		live:true,//直播视频形式
+		video:url,//视频地址
 	};
-	CKobject.embedSWF('https://jx.178du.com/ckplayer/ckplayer.swf', 'myElement', 'ckplayer_a1', '100%', '100%', flashvars, params)
-}} 
+	var player=new ckplayer(videoObject);
+}
+
+
+function hls(url){
+	var videoObject = {
+		container: '#myElement',//“#”代表容器的ID，“.”或“”代表容器的class
+		variable: 'player',//该属性必需设置，值等于下面的new chplayer()的对象
+		autoplay:true,
+		html5m3u8:true,
+		video:url//视频地址
+	};
+	var player=new ckplayer(videoObject);
+	
+}
+
+
+
 
 function frame(url){if(url){document.getElementById('myElement').innerHTML='<iframe border="0" marginWidth="0" frameSpacing="0" marginHeight="0" src="'+url+'" frameBorder="0" noResize width="100%" height="100%" vspace="0" scrolling="no"></iframe>';}}
 
