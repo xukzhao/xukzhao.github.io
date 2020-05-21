@@ -18,7 +18,14 @@
 <script type="text/javascript" src="http://sinacloud.net/xukzhao/ckplayer.js" charset="utf-8"></script>
 <script type="text/javascript" src="tv.js" charset="utf-8"></script>
 <script type="text/javascript">
-hls('http://nclive.grtn.cn/ggpd/sd/live.m3u8?_upt=df5322ae1589382216')
+var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+            if(isiPad){
+              hls('http://www.dszbdq.cn/play/gd.php?id=31')  ;
+            }else{
+                  flash('http://116.199.5.52:8114/00000000/hls/index.m3u8?Fsv_chan_hls_se_idx=85&amp;FvSeid=1&amp;Fsv_ctype=LIVES&amp;Fsv_otype=1&amp;Provider_id=&amp;Pcontent_id=.m3u8');
+                  
+            }
+
 </script>
 
 

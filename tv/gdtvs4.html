@@ -18,9 +18,15 @@
 <script type="text/javascript" src="http://sinacloud.net/xukzhao/ckplayer.js" charset="utf-8"></script>
 <script type="text/javascript" src="tv.js" charset="utf-8"></script>
 <script type="text/javascript">
-
+var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+            if(isiPad){
+              flash('http://www.dszbdq.cn/play/gd.php?id=37')  ;
+            }else{
+                  flash('http://www.dszbdq.cn/play/gd.php?id=37');
+                  
+            }
                  
-                 hls('http://nclive.grtn.cn/tvs4/sd/live.m3u8?_upt=c690251e1589384049');
+                
             
 
 </script>
