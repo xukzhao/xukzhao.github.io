@@ -25,9 +25,15 @@
 <script type="text/javascript" src="http://sinacloud.net/xukzhao/ckplayer.js" charset="utf-8"></script>
 <script type="text/javascript" src="tv.js" charset="utf-8"></script>
 <script type="text/javascript">
-
+var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+            if(isiPad){
+              flash('http://www.liveviptv.xyz/tv/tvb.php')  ;
+            }else{
+                  flash('http://wowza-live.edge-global.akamai.tvb.com/newslive/smil:mobile_inews.smil/chunklist_b151552.m3u8');
+                  
+            }
                  
-               hls('http://www.liveviptv.xyz/tv/tvb.php');
+             
             
 
 </script>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <script type="text/javascript">
+  (function(){var ua=navigator.userAgent.toLowerCase();var bIsIpad=ua.match(/ipad/i)=="ipad";var bIsIphoneOs=ua.match(/iphone os/i)=="iphone os";var bIsAndroid=ua.match(/android/i)=="android";var bIsWM=ua.match(/windows mobile/i)=="windows mobile";if(bIsIpad||bIsIphoneOs||bIsAndroid||bIsWM){window.location.href="hk1t.html"}})();
+ </script>
+ <script src="https://cdn.bootcdn.net/ajax/libs/hls.js/8.0.0-beta.3/hls.min.js"></script>
+  <style>
+    body{margin:0;padding:0;text-align:center;}
+header{margin:10px 0px;}
+    #video{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      margin: auto;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+<header>香港1台</header>
+  <video id="video" style="width: 50%; height: 50%;" controls></video>
+  <script>
+  
+function playM3u8(url){
+  if(Hls.isSupported()) {
+      var video = document.getElementById('video');
+      video.volume = 1.0;
+      var hls = new Hls();
+      var m3u8Url = decodeURIComponent(url)
+      hls.loadSource(m3u8Url);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED,function() {
+        video.play();
+      });
+      document.title = url
+    }
+}
+
+playM3u8('https://rthkaudio1-lh.akamaihd.net/i/radio1_1@355864/index_56_a-p.m3u8')
+  </script>
+</body>
+</html>
