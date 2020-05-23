@@ -29,7 +29,7 @@ body{background-image:url('../image/body.png')}
          #liebiao {width:98%;}		 
 	 }
 	@media screen  and (max-width:768px) {
-      #liebiao{width:100%;margin-top:55px;}
+      #liebiao{width:100%;margin-top:55px;background-image:none;}
       #liebiao2{margin:10px 0px;border-radius:0px;-moz-box-shadow:2px 0px 5px #333333; -webkit-box-shadow:2px 0px 5px #333333; box-shadow:2px 0px 5px #333333;}
       #liebiao2 ul li{width:33.3%;margin:0px;}
       #liebiao2 ul li a{font-size:100%;color:#000;background-color:none; }
