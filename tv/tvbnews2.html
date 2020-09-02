@@ -21,8 +21,12 @@
 <body>
   <video id="video" style="width: 100%; height: 100%;" controls></video>
   <script>
-  
-function playM3u8(url){
+ var isMobile = /android|phone|mobi|ipad|ipod|blackberry|symbian|midp|ios/i.test(navigator.userAgent.toLowerCase());
+if (isMobile) {
+document.getElementById('video').innerHTML='<iframe border="0" marginWidth="0" frameSpacing="0" marginHeight="0" src="http://www.xukzhao.ml/tvb.php?id=wxxw" frameBorder="0" noResize width="100%" height="100%" vspace="0" scrolling="no"></iframe>';
+
+else { 
+  function playM3u8(url){
   if(Hls.isSupported()) {
       var video = document.getElementById('video');
       video.volume = 1.0;
@@ -38,6 +42,8 @@ function playM3u8(url){
 }
 
 playM3u8('http://www.xukzhao.ml/tvb.php?id=wxxw')
+}
+}
   </script>
 </body>
 </html>
