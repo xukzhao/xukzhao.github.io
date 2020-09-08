@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /> 
-<title>广州台</title>
-<link rel="stylesheet" href="tv.css" />
+  <script src="https://cdn.bootcdn.net/ajax/libs/hls.js/8.0.0-beta.3/hls.min.js"></script>
+  <style>
+    body{
+      background-color:black;
+    }
+    #video{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      margin: auto;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  </style>
 </head>
-
 <body>
+  <video id="video" style="width: 100%; height: 100%;" controls></video>
+  <script>
+  
+function playM3u8(url){
+  if(Hls.isSupported()) {
+      var video = document.getElementById('video');
+      video.volume = 1.0;
+      var hls = new Hls();
+      var m3u8Url = decodeURIComponent(url)
+      hls.loadSource(m3u8Url);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED,function() {
+        video.play();
+      });
+      document.title = url
+    }
+}
 
-<div class="tit-name">
-<span>广州台</span>
-<ul>
-<li id="m1"><a href="javascript:void(0);" onClick="uu('https://aplay.gztv.com/sec/zhonghe.m3u8')">线路一</a></li>
-
-<li><a href="javascript:void(0);" onClick="frame('https://channel.gztv.com/channelf/viewapi/player/channelVideo?id=5c7f7072e4b01c17db18fbd5')">默认</a></li>
-
-</ul>
-</div>
-
-<div id="myElement"></div>
-<script type="text/javascript" src="http://jx.178du.com/ckplayer/ckplayer.js" charset="utf-8"></script>
-<script type="text/javascript" src="tv.js" charset="utf-8"></script>
-<script type="text/javascript">
-frame('https://channel.gztv.com/channelf/viewapi/player/channelVideo?id=5c7f7072e4b01c17db18fbd5');
-m();
-</script>
-
-
+playM3u8('http://xukzhao.ml/gz.php?id=gzt')
+  </script>
 </body>
 </html>
