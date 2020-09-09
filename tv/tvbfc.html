@@ -12,11 +12,12 @@
 <div class="tit-name">
 <span>TVB翡翠</span>
 <ul>
-<li id="m2"><a href="javascript:void(0);" onClick="flash('rtmp://219.232.160.161/livestream/bycgekwh')">线路二</a></li>
 
 
-<li><a href="javascript:void(0);" onClick="flash('http://116.199.5.52:8114/index.m3u8?Fsv_chan_hls_se_idx=188&FvSeid=1&Fsv_ctype=LIVES&Fsv_otype=1&Provider_id=&Pcontent_id=.m3u8')">线路一</a></li>
-<li><a href="javascript:void(0);" onClick="flash('http://116.199.5.52:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=188&Fsv_rate_id=0&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=&Fsv_CMSID=&Fsv_otype=1')">默认</a></li>
+
+
+
+<li><a href="javascript:void(0);" onClick="flash('http://116.199.5.52:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=188&Fsv_rate_id=0&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=&Fsv_CMSID=&Fsv_otype=1')">线路一</a></li>
 
 </ul>
 </div>
@@ -25,9 +26,14 @@
 <script type="text/javascript" src="http://sinacloud.net/xukzhao/ckplayer.js" charset="utf-8"></script>
 <script type="text/javascript" src="tv.js" charset="utf-8"></script>
 <script type="text/javascript">
-
-                 
-                flash('http://116.199.5.52:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=188&Fsv_rate_id=0&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=&Fsv_CMSID=&Fsv_otype=1');
+var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+            if(isiPad){
+              hls('https://live-wxxcx.mtq.tvmmedia.cn/weixin/live_XGFeiCui.m3u8')  ;
+            }else{
+                  hls('https://live-wxxcx.mtq.tvmmedia.cn/weixin/live_XGFeiCui.m3u8');
+                  
+            }
+                
             
 m();
 </script>
