@@ -27,12 +27,12 @@
 <ul>
 
 
-<li><a href="javascript:void(0);" onClick="hls('http://iptv.pdsu.edu.cn/hls/fhzx.m3u8')">线路五</a></li>
+
 <li><a href="javascript:void(0);" onClick="hls('http://live.centerch.com/fhzx.m3u8')">线路四</a></li>
 <li><a href="javascript:void(0);" onClick="flash('http://117.169.120.160:8080/live/fhzixun/1.m3u8')">线路三</a></li>
 <li ><a href="javascript:void(0);" onClick="flash('http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221226923/index.m3u8')">线路二</a></li>
-
-<li><a href="javascript:void(0);" onClick="flash('http://www.dszbdq.cn/play/ifeng.php?id=fhzxhd')">线路一</a></li>
+<li id="m1"><a href="javascript:void(0);" onClick="hls('http://125.210.152.18:9090/live/FHZX_1200.m3u8')">线路一</a></li>
+<li id="m2"><a href="javascript:void(0);" onClick="flash('rtmp://ivi.bupt.edu.cn/livetv/fhzx')">线路一</a></li>
 
 </ul>
 </div>
@@ -43,9 +43,9 @@
 <script type="text/javascript">
 var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
             if(isiPad){
-              flash('http://125.210.152.18:9090/live/FHZX_1200.m3u8')  ;
+              hls('https://live-wxxcx.mtq.tvmmedia.cn/weixin/live_PhoenixinfoTVHD.m3u8')  ;
             }else{
-                  flash('rtmp://ivi.bupt.edu.cn/livetv/fhzx');
+                  hls('https://live-wxxcx.mtq.tvmmedia.cn/weixin/live_PhoenixinfoTVHD.m3u8');
                   
             }
                  
