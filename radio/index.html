@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="zh">
 <head>
@@ -5,13 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>网络电台</title>
-	<link rel="stylesheet" href="../css/reset.css" />
-	<link rel="stylesheet" href="../css/swiper.min.css" />
-	<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
-	<link rel="stylesheet" href="../css/head.css" />
+	<link rel="stylesheet" href="https://sinacloud.net/xukzhao/css/reset.css" />
+	<link rel="stylesheet" href="https://sinacloud.net/xukzhao/css/swiper.min.css" />
+	<link rel="stylesheet" href="https://sinacloud.net/xukzhao/css/bootstrap.css" />
+	<link rel="stylesheet" href="https://sinacloud.net/xukzhao/css/head.css" />
 	<link rel="stylesheet" href="../css/a1.css" />
-	<style type="text/css">
 	
+	
+		
+		
+	<style type="text/css">
 	iframe{width:100%}
 	
 	@media screen and (min-device-width:360px) and (max-device-width:480px) {
@@ -34,7 +39,7 @@
 						<a href="../">首页</a>
 					</li>
 					<li class="dropdown">
-					<a href="../vip/index.html">VIP视频解析</a>
+					<a href="/vip">VIP视频解析</a>
 							
 						
 					<!--	<a href="javascript:void(0)">
@@ -47,11 +52,12 @@
 						</div>   -->
 					</li>
 					<li class="dropdown">
-						<a href="../tv/index.html">网络电视</a>
+						<a href="../tv/index.html">电视直播</a>
 					</li>
 					<li>
 						<a href="../radio/index.html">网络电台</a>
 					</li>
+					
 					
 				</ul>
 			</div>
@@ -73,10 +79,10 @@
 				<a href="../">首页</a>
 			</li>
 			<li class="dropdown">
-				<a href="../vip">VIP视频解析</a>
+				<a href="/vip">VIP视频解析</a>
 			</li>
 			<li class="dropdown">
-				<a href="../tv">网络电视</a>
+				<a href="../tv">电视直播</a>
 			</li>
 			<li class="dropdown">
 				<a href="../radio">网络电台</a>
@@ -84,10 +90,10 @@
 			
 		</ul>
 	</div>
-
-	<div id="liebiao">
+    
+		<div id="liebiao">
 	     <div id="liebiao2">
-				<iframe  src="cnzgzs.html" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="true" allowtransparency="true"name="abc"></iframe>
+				<iframe  src="cnhqzx.html" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="true" name="abc" ></iframe>
 				
 				<ul>
 				<li><a href="music.html" target="abc">随机音乐</a> </li>
@@ -97,7 +103,9 @@
 				<li><a href="cnyyzs.html" target="abc">CNR音乐之声</a> </li>
 				<li><a href="cnxgzs.html" target="abc">香港之声</a> </li>
 				<li><a href="hk.html" target="abc">香港1台</a> </li>
+				<li><a href="fg.html" target="abc">rfi</a> </li>
 				
+				<li><a href="voapc.html" target="abc">voa</a> </li>
 				
 				<li><a href="qcyyt.html" target="abc">清晨音乐台</a> </li>
 				
@@ -131,15 +139,17 @@
 				</ul>
 				<div style="clear:both"></div>
 		</div>		
-	</div>
+	</div>	
+	
 			
 
 			
-	
+
 		<footer>	
-        <p>Copyright © 2019 xukzhao@foxmail.com</p>
-		</footer>
-			
+        <p>Copyright © 2019 xukzhao.ga</p>
+		</footer>	
+		
+		
 
 			
 
@@ -147,21 +157,18 @@
 		
 	
 	
-	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-	<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/bootstrap.js"></script>
 	<script src="../js/swiper.min.js"></script>
-	<script>
 	
-	function m(){
- var	isMobile = /android|phone|mobi|ipad|ipod|blackberry|symbian|midp|ios/i.test(navigator.userAgent.toLowerCase());	
-var m1 = document.getElementById("m1");
-var m2 = document.getElementById("m2");
-if (isMobile){
-	m2.style.display="none";
-}else {
-m1.style.display="none";
-}}
-m();	
+	
+	<script>
+    
+/* 	var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+            if(isiPad){
+			document.getElementById("u2").selected=true;
+			}  */
+
 	
 		$(function(){
 			//超过一定高度导航添加类名
