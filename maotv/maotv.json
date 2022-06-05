@@ -194,7 +194,7 @@
 {
 "name": "redirect",
 "urls": [
-"proxy://do=live&type=txt&ext=aHR0cHM6Ly9rZHMyLmNvZGluZy5uZXQvcC9rL2Qvay9naXQvcmF3L21hc3Rlci9tYW9saXZlLnR4dA=="
+"proxy://do=live&type=txt&ext=aHR0cHM6Ly94dWt6aGFvLnRrL21hb3R2L21hb2xpdmUudHh0"
 ]
 }
 ]
@@ -330,7 +330,7 @@
 "wasu",
 "bilibili"
 ],
-"spider": "https://jar1234.coding.net/p/m/d/m/git/raw/master/custom_spider_0330.jar;md5;01a4ac9109a0602124cee4feddc1971e",
+"spider": "https://xukzhao.tk/maotv/custom_spider.jar;md5;e43a84197bf0dcac50990fbc7f2ca470",
 "ijk": [
 {
 "group": "软解码",
