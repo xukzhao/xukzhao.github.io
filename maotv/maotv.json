@@ -17,7 +17,7 @@
 "searchable": 1,
 "quickSearch": 1,
 "filterable": 1,
-"ext": "https://kds2.coding.net/p/k/d/k/git/raw/master/xpath/zxzj.json"
+"ext": "https://xukzhao.tk/maotv/zxzj.json"
 },
 {
 "key": "csp_xpath_lezhutv",
@@ -27,7 +27,7 @@
 "searchable": 1,
 "quickSearch": 1,
 "filterable": 0,
-"ext": "https://kds2.coding.net/p/k/d/k/git/raw/master/xpath/lezhutv.json"
+"ext": "https://xukzhao.tk/maotv/lezhutv.json"
 },
 {
 "key": "csp_xpath_lib",
@@ -37,7 +37,7 @@
 "searchable": 1,
 "quickSearch": 1,
 "filterable": 1,
-"ext": "https://kds2.coding.net/p/k/d/k/git/raw/master/xpath/lib.json"
+"ext": "https://xukzhao.tk/maotv/lib.json"
 },
 {
 "key": "csp_xpath_ddg",
@@ -47,7 +47,7 @@
 "searchable": 1,
 "quickSearch": 1,
 "filterable": 1,
-"ext": "https://kds2.coding.net/p/k/d/k/git/raw/master/xpath/dadagui.json"
+"ext": "https://xukzhao.tk/maotv/dadagui.json"
 },
 {
 "key": "csp_xpath_jbb",
@@ -57,7 +57,7 @@
 "searchable": 1,
 "quickSearch": 1,
 "filterable": 1,
-"ext": "https://kds2.coding.net/p/k/d/k/git/raw/master/xpath/jubaibai.json"
+"ext": "https://xukzhao.tk/maotv/jubaibai.json"
 },
 {
 "key": "csp_appysv2_迪迪",
@@ -77,7 +77,7 @@
 "searchable": 1,
 "quickSearch": 1,
 "filterable": 0,
-"ext": "https://kds2.coding.net/p/k/d/k/git/raw/master/xpath/94sm.json"
+"ext": "https://xukzhao.tk/maotv/94sm.json"
 },
 {
 "key": "csp_xpath_age",
@@ -87,7 +87,7 @@
 "searchable": 1,
 "quickSearch": 1,
 "filterable": 0,
-"ext": "https://kds2.coding.net/p/k/d/k/git/raw/master/xpath/agefans.json"
+"ext": "https://xukzhao.tk/maotv/agefans.json"
 },
 {
 "key": "csp_xpath_jpyszl",
@@ -97,7 +97,7 @@
 "searchable": 1,
 "quickSearch": 1,
 "filterable": 0,
-"ext": "https://kds2.coding.net/p/k/d/k/git/raw/master/xpath/jpys.json"
+"ext": "https://xukzhao.tk/maotv/jpys.json"
 },
 {
 "key": "csp_appysv2_天空V2",
@@ -127,7 +127,7 @@
 "searchable": 1,
 "quickSearch": 1,
 "filterable": 0,
-"ext": "https://kds2.coding.net/p/k/d/k/git/raw/master/xpath/tvci.json"
+"ext": "https://xukzhao.tk/maotv/tvci.json"
 },
 {
 "key": "csp_xpath_duboku",
@@ -137,7 +137,7 @@
 "searchable": 1,
 "quickSearch": 1,
 "filterable": 0,
-"ext": "https://kds2.coding.net/p/k/d/k/git/raw/master/xpath/Duboku.json"
+"ext": "https://xukzhao.tk/maotv/Duboku.json"
 },
 {
 "key": "csp_xpath_dm84",
@@ -147,7 +147,7 @@
 "searchable": 1,
 "quickSearch": 1,
 "filterable": 0,
-"ext": "https://kds2.coding.net/p/k/d/k/git/raw/master/xpath/dm84.json"
+"ext": "https://xukzhao.tk/maotv/dm84.json"
 },
 {
 "key": "csp_Auete",
@@ -184,7 +184,7 @@
 "searchable": 1,
 "quickSearch": 1,
 "filterable": 0,
-"ext": "https://kds2.coding.net/p/k/d/k/git/raw/master/xpath/pianba.json"
+"ext": "https://xukzhao.tk/maotv/pianba.json"
 }
 ],
 "lives": [
