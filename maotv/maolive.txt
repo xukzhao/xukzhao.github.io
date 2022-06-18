@@ -4,11 +4,11 @@
 凤凰资讯,https://playtv-live.ifeng.com/live/06OLEEWQKN4_tv2.m3u8#https://xu0775.ml/tv/fh.php?id=1
 凤凰香港,https://xu0775.ml/tv/fh.php?id=3
 翡翠台,http://iptv12k.com:35461/live/test167/12345/1021.m3u8
-广州台,http://xukzhao.ml/tv/gz.php?id=gzt
-广州影视,https://xukzhao.ml/tv/gz.php?id=gzys
-广州新闻,https://xukzhao.ml/tv/gz.php?id=gzxw
-广州法治,https://xukzhao.ml/tv/gz.php?id=gzfz
-广州都市,https://xukzhao.ml/tv/gz.php?id=gzds
+广州台,http://xukzhao.ga/tv/gz.php?id=gzt
+广州影视,https://xukzhao.ga/tv/gz.php?id=gzys
+广州新闻,https://xukzhao.ga/tv/gz.php?id=gzxw
+广州法治,https://xukzhao.ga/tv/gz.php?id=gzfz
+广州都市,https://xukzhao.ga/tv/gz.php?id=gzds
 央视,#genre#
 中央1台,http://39.135.138.60:18890/PLTV/88888910/224/3221225618/index.m3u8#http://39.135.138.59:18890/TVOD/88888910/224/3221225630/index.m3u8?$移动高清720P#http://111.20.106.13:6610/yinhe/2/ch00000090990000001068/index.m3u8?virtualDomain=yinhe.live_hls.zte.com$移动超清1080P#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-1/1.m3u8?$移动超清1080P#http://39.135.138.58:18890/PLTV/88888888/224/3221225642/index.m3u8?$移动超清1080P#http://iptv.tvfix.org/hls/cctv1hd.m3u8?$全网超清1080P#http://117.148.179.155:80/PLTV/88888888/224/3221231468/1.m3u8?$咪咕移动1080P
 中央2台,http://117.148.179.156/PLTV/88888888/224/3221232362/index.m3u8#http://111.20.106.13:6610/yinhe/2/ch00000090990000001293/index.m3u8?virtualDomain=yinhe.live_hls.zte.com$移动超清1080P#http://iptv.tvfix.org/hls/cctv2hd.m3u8?$全网超清1080P#http://111.20.41.249:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226195/1.m3u8?$移动超清1080P#http://39.135.212.1:6610/yst.live.scmobile.com/otvzte.scmcc.com.cn:8080/ysten-business/live/cctv-2/1.m3u8?$移动超清1080P#http://117.148.179.147:80/PLTV/88888888/224/3221231678/1.m3u8?$咪咕移动1080P#http://39.135.138.58:18890/PLTV/88888888/224/3221225643/index.m3u8?$移动蓝光1080P
