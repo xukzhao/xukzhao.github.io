@@ -1,0 +1,215 @@
+#甬哥Github项目  ：github.com/yonggekkk
+#甬哥Blogger博客 ：ygkkk.blogspot.com
+#甬哥YouTube频道 ：www.youtube.com/@ygkkk
+#====clash-meta精简配置文件模版（V23.8.31）=====
+#====参考自clash-meta官方文档：wiki.metacubex.one=====
+
+#（一区）=============================（clash配置）
+#dns可自行修改
+port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+dns:
+  enable: true
+  listen: :53
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver: 
+    - 223.5.5.5
+    - 8.8.8.8
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - https://1.0.0.1/dns-query
+    - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+
+
+
+#（二区）==============================（代理协议）
+#当前12个协议节点配置模版，按需求修改，如某协议节点不用，则无需删除，确保三区代理分流中没有该name节点名称即可
+proxies:
+
+
+#==============================（vless-ws-tls节点）
+- name: cf_美国                           #可自定义名称
+  type: vless
+  server: ip.sb                          #解析的域名或者优选域名IP
+  port: 443                                      #自定义的端口
+  uuid: 9428663c-16d4-494f-8a7f-1a872861a408       #自定义的uuid
+  udp: true
+  tls: true
+  network: ws
+  servername: usa.xukzhao.eu.org                     #sni域名，与下面的host一致
+  ws-opts:
+    path: "/?ed=2048"                              #" "内自定义的path路径
+    headers:
+      Host: usa.xukzhao.eu.org                       #host域名，与上面的servername一致
+
+#==============================（vless-ws-tls节点）
+- name: cf_台湾                          #可自定义名称
+  type: vless
+  server: 125.227.91.176                          #解析的域名或者优选域名IP
+  port: 443                                      #自定义的端口
+  uuid: 9428663c-16d4-494f-8a7f-1a872861a408       #自定义的uuid
+  udp: true
+  tls: true
+  network: ws
+  servername: tw.xukzhao.eu.org                    #sni域名，与下面的host一致
+  ws-opts:
+    path: "/?ed=2048"                              #" "内自定义的path路径
+    headers:
+      Host: tw.xukzhao.eu.org                       #host域名，与上面的servername一致
+
+#==============================（vless-ws-tls节点）
+- name: cf_香港                         #可自定义名称
+  type: vless
+  server: 103.160.204.113                          #解析的域名或者优选域名IP
+  port: 443                                      #自定义的端口
+  uuid: 9428663c-16d4-494f-8a7f-1a872861a408       #自定义的uuid
+  udp: true
+  tls: true
+  network: ws
+  servername: 0717.xukzhao.eu.org                    #sni域名，与下面的host一致
+  ws-opts:
+    path: "/?ed=2048"                              #" "内自定义的path路径
+    headers:
+      Host: 0717.xukzhao.eu.org                       #host域名，与上面的servername一致
+
+#==============================（vless-ws-tls节点）
+- name: cf_日本                         #可自定义名称
+  type: vless
+  server: 146.56.149.205                        #解析的域名或者优选域名IP
+  port: 443                                      #自定义的端口
+  uuid: 9428663c-16d4-494f-8a7f-1a872861a408       #自定义的uuid
+  udp: true
+  tls: true
+  network: ws
+  servername: jp.xukzhao.eu.org                    #sni域名，与下面的host一致
+  ws-opts:
+    path: "/?ed=2048"                              #" "内自定义的path路径
+    headers:
+      Host: jp.xukzhao.eu.org                      #host域名，与上面的servername一致
+
+#==============================（vless-ws-tls节点）
+- name: cf通用                         #可自定义名称
+  type: vless
+  server: cdn-b100.xn--b6gac.eu.org                         #解析的域名或者优选域名IP
+  port: 443                                      #自定义的端口
+  uuid: 9428663c-16d4-494f-8a7f-1a872861a408       #自定义的uuid
+  udp: true
+  tls: true
+  network: ws
+  servername: tongyong.xukzhao.eu.org                    #sni域名，与下面的host一致
+  ws-opts:
+    path: "/?ed=2048"                              #" "内自定义的path路径
+    headers:
+      Host: tongyong.xukzhao.eu.org                      #host域名，与上面的servername一致
+
+
+
+
+
+
+#==============================（vless-ws节点）
+- name: 2bcb_vless                               #可自定义名称
+  type: vless
+  server: ip.sb                          #解析的域名或者优选域名IP
+  port: 2052                                       #自定义的端口
+  uuid: 7fd51419-a3d4-4c9c-f325-02b6c19b0d49      #自定义的uuid
+  udp: true
+  tls: false
+  network: ws
+  servername: vless.xukzhao.gq                     #sni域名，与下面的host一致
+  ws-opts:
+    path: "/vless"                              #" "内自定义的path路径
+    headers:
+      Host: vless.xukzhao.gq                       #host域名，与上面的servername一致
+
+
+
+#==============================（vmess-ws节点）
+- name: vmess                              #可自定义名称
+  type: vmess
+  server: icook.tw                        #解析的域名或者优选域名IP
+  port: 8880                                       #自定义的端口
+  uuid: 05ccb3e5-b126-47b1-d1de-a052352d52bd       #自定义的uuid
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: 2bcb.xukzhao.gq                     #sni域名，与下面的host一致
+  ws-opts:
+    path: "/"                              #" "内自定义的path路径
+    headers:
+      Host: 2bcb.xukzhao.gq                       #host域名，与上面的servername一致
+
+
+
+#==============================（warp-wireguard节点）  
+- name: warp-wireguard节点                                   #可自定义名称
+  type: wireguard         
+  server: 162.159.193.10                                     #可自定义优选对端IP，与下面port的端口相对应
+  port: 2408                                                 #可自定义优选对端IP，与上面server的IP相对应
+  ip: 172.16.0.2
+  ipv6: 2606:4700:110:8f9c:a1e:ac38:e72:d11f               #与private-key相对应，如删除本行，表示仅IPV4
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  private-key: aNsR0xxzhCFTN+BKrmwci9qZ7tNkUOFOltfjABJDC2Q=  #获取private-key，私key
+  udp: true
+
+
+
+#（三区）==============================（代理分流）
+#分流组可自行创建添加，proxies参数下的name节点名称，按需求自行增减，确保出现的name节点名称在二区代理协议中可查找
+proxy-groups:
+- name: 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - warp-wireguard节点                                  #自定义添加协议的name字段
+    - 2bcb_vless
+    - cf通用
+
+- name: 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+    - warp-wireguard节点                                  #自定义添加协议的name字段
+    - 2bcb_vless
+    - cf通用
+    
+- name: 🌍选择代理节点
+  type: select
+  proxies:
+    - 负载均衡                                            #自定义添加协议的name字段
+    - 自动选择
+    - DIRECT
+    - warp-wireguard节点                                  #自定义添加协议的name字段
+    - 2bcb_vless
+    - cf通用
+    - cf_日本
+    - cf_美国
+    - cf_台湾
+    - cf_香港
+    
+
+
+
+#（四区）==============================（代理规则）
+#代理规则可自行添加 
+rules:
+  - GEOIP,CN,DIRECT
+  - MATCH,🌍选择代理节点
