@@ -1,0 +1,8 @@
+自建,#genre#
+凤凰卫视中文台,rtmp://ivi.bupt.edu.cn:1935/livetv/fhzw
+
+自建,#genre#
+凤凰卫视资讯台,rtmp://ivi.bupt.edu.cn:1935/livetv/fhzx
+
+自建,#genre#
+星空卫视,rtmp://ivi.bupt.edu.cn:1935/livetv/startv
