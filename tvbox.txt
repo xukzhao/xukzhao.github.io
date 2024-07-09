@@ -1,8 +1,8 @@
 {
 "urls": [
 {
-"url": "http://www.饭太硬.com/tv",
-"name": "饭太硬"
+"url": "https://mp-064c2f8f-83e1-4bd3-a4a5-103f278b40df.cdn.bspapp.com/cloudstorage/bd112246-eb72-4aeb-8566-c80aafcd42a7.bmp",
+"name": "test"
 },
 {
 "url": "http://www.mpanso.com/小米/DEMO.json",
