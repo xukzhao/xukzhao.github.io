@@ -1,4 +1,4 @@
-{
+[
 馃摗澶棰戦亾,#genre#
 
 
@@ -3631,4 +3631,4 @@ Jason Derulo - Breathing -[102M.mp4-1080P],https://15799848.s21v.faiusr.com/58/A
 鐚尓渚�54,https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/01fa590200a942c182244eb0cbda1a08/1200.m3u8
 鐚尓渚�55,https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/30b5fadd7cf5428c87a3c00bfe766c3c/1200.m3u8
 鐚尓渚�56,https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/d33d57c10acd486a9a38572c82d61b83/1200.m3u8
-}
+]
