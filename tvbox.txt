@@ -1,3 +1,56 @@
-https://xhdwc.tk/0 
-http://rihou.cc:88/荷城茶秀
-http://饭太硬.top/tv
+{
+"urls": [
+{
+"url": "http://www.饭太硬.com/tv",
+"name": "饭太硬"
+},
+{
+"url": "http://www.mpanso.com/小米/DEMO.json",
+"name": "小米"
+},
+{
+"url": "http://肥猫.com",
+"name": "肥猫"
+},
+{
+"url": "http://tvbox.王二小放牛娃.xyz",
+"name": "王二小"
+},
+{
+"url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
+"name": "香雅情"
+},
+{
+"url": "https://ghproxy.net/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json",
+"name": "南风"
+},
+{
+"url": "https://100km.top/0",
+"name": "骚零"
+},
+{
+"url": "http://ok321.top/ok",
+"name": "OK"
+},
+{
+"url": "http://bp.tvbox.cam",
+"name": "白嫖"
+},
+{
+"url": "http://ttkx.live:55/天天开心",
+"name": "天天开心"
+},
+{
+"url": "https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer",
+"name": "少儿频道"
+},
+{
+"url": "http://z.qiqiv.cn/123/258.txt",
+"name": "🌟资源全部免费"
+},
+{
+"url": "http://z.qiqiv.cn/123/369.txt",
+"name": "🌟请勿内置售卖"
+}
+]
+}
