@@ -1,10 +1,12 @@
 🌏港澳台,#genre#
 凤凰中文,http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pcc72.m3u8
+凤凰中文,https://stream1.freetv.fun/a7d73b5ffe9e9d33a8b774a4df3d623b2ba01a36f6ef70f20d1f3f9b27836330.m3u8
 凤凰中文,http://www.cdtriot.cn:9999/udp/239.93.0.162:2192
 凤凰中文,http://112.19.171.156:9999/udp/239.93.0.162:2192
 凤凰中文,http://146.56.153.245:20121/bysid/258
 凤凰中文,http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226320/index.m3u8
 凤凰资讯,http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.m3u8
+凤凰资讯,https://stream1.freetv.fun/320c213f4bb29b607f6c659b2a94918fc7f922c996ede3738fdff2ab9bd90217.m3u8
 凤凰资讯,http://www.cdtriot.cn:9999/udp/239.93.0.118:2191
 凤凰资讯,http://ax.micaesoft.com/YMitv/YMITV_CN_ifengNEW.m3u8?
 凤凰资讯,http://103.95.24.37:880/fhzx.m3u8
@@ -20,10 +22,11 @@
 香港凤凰,http://113.64.145.55:8081/hls/38/index.m3u8
 香港凤凰,http://123.202.245.120:8008/bysid/85
 翡翠台,http://php.jdshipin.com:8880/smt.php?id=jade_twn
-
+明珠台,https://stream1.freetv.fun/ming-zhu-1.m3u8
 
 无线新闻,http://live.cooltv.top/tv/tvb.php?id=2&hq
 无线新闻,http://live.cooltv.top/tv/tvb.php?id=0&hq
+无线新闻,https://stream1.freetv.fun/tvbwu-xian-xin-wen-2.m3u8
 无线星河,http://v2h.jdshipin.com/xinghe/xinghe.stream/chunklist.m3u8
 无线娱乐,http://v2h.jdshipin.com/enew/enew.stream/chunklist.m3u8
 无线娱乐,https://epg.pw/stream/57737ed82a70288e90bca3ef3b9e7ed3e8b896445947908bd76d4ed3c4ba6c43.m3u8
@@ -86,6 +89,7 @@ CCTV-14少儿,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV14HD/1.m3u8?gMac=unknown&livod
 南宁公共频道,http://hls.nntv.cn/nnlive/GGPD_24.m3u8
 
 广东,#genre#
+
 广州电视台综合频道,https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=e8a54fced9025a5af7cec5c05d5dc530&txTime=19072465600
 广州电视台影视频道,https://tencentplay.gztv.com/live/yingshi.m3u8?txSecret=da4e7946ce44b3e1150e257961439a77&txTime=19071ed9221
 广州电视台新闻频道,https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=dd1b312cc1b5cbe9fad85bf5ddce4b10&txTime=190723b940c
