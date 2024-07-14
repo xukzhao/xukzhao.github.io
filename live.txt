@@ -23,7 +23,7 @@
 香港凤凰,http://123.202.245.120:8008/bysid/85
 翡翠台,http://php.jdshipin.com:8880/smt.php?id=jade_twn
 明珠台,https://stream1.freetv.fun/ming-zhu-1.m3u8
-
+J2,https://stream1.freetv.fun/1936e0180ebd92426c3868ef2bdd66c8217fbe9b33c7061122dc46c27ae56c78.m3u8
 无线新闻,http://live.cooltv.top/tv/tvb.php?id=2&hq
 无线新闻,http://live.cooltv.top/tv/tvb.php?id=0&hq
 无线新闻,https://stream1.freetv.fun/tvbwu-xian-xin-wen-2.m3u8
