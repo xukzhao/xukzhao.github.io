@@ -69,18 +69,22 @@ CCTV-1综合,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV1HD/1.m3u8?gMac=unknown&livodTo
 CCTV-2财经,http://liveop.cctv.cn/hls/CCTV28bee868714f04ea2af79947bb9b46fc3H/playlist.m3u8
 CCTV-2财经,http://58.215.231.60/live2.rxip.sc96655.com/live/CCTV-2H265_4000.m3u8
 CCTV-3综艺,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV3_HD/1.m3u8?gMac=unknown&livodToken=9e52a12168a904a9c696c23ecc5523003d2533989900ef8dcec24e97d13eac44_1720704795_604800&fromCDN=ws
+CCTV-3综艺,http://58.215.231.58/live2.rxip.sc96655.com/live/CCTV-3H265_4000.m3u8
 CCTV-4国际,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV4HD/1.m3u8?gMac=unknown&livodToken=3a869400565affa690b2d61e3acf1e81c47a582a60b8fba808abf013c5357784_1720704885_604800&fromCDN=ws
+CCTV-5体育,http://58.215.231.60/live2.rxip.sc96655.com/live/CCTV-5H265_4000.m3u8
 CCTV-5体育,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV5_HD/1.m3u8?gMac=unknown&livodToken=d364b3b544489123a6671ca86ca1dad05dfb375d25bb38c81134ef0130bbfc09_1720704976_604800&fromCDN=ws
 CCTV-6电影,http://mobilelive-ds.ysp.cctv.cn/ysp/2013693901.m3u8
+CCTV-7,http://58.215.231.60/live2.rxip.sc96655.com/live/CCTV-7H265_4000.m3u8
 CCTV-8电视,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV8_HD/1.m3u8?gMac=unknown&livodToken=6ce025da454fc761e4c6ffbefbf6ed755dd74bca5d6f5779816b25233f8dd847_1720705101_604800&fromCDN=ws
 CCTV-9纪录,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV9HD/1.m3u8?gMac=unknown&livodToken=899feeae912c9026eb16b8a8bcedfe3027c6a8416d14aa96897d0b14185e65fb_1720705164_604800&fromCDN=ws
 CCTV-10科教,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV10HD/1.m3u8?gMac=unknown&livodToken=f8e91b3a7119609d0e179a4503791527c456b8a2f2ba3bd160970babe054b8cb_1720705251_604800&fromCDN=ws
 CCTV-11戏曲,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV11HD/1.m3u8?gMac=unknown&livodToken=ed47433980eecca32ac33b11c484b321b21ed567efb27d92a04502981647c3dd_1720705337_604800&fromCDN=ws
 CCTV-12社会与法治,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV12HD/1.m3u8?gMac=unknown&livodToken=0cb5eaafa39c1f342908e0e12045fb825af6d9056373c4f41aed1662e6bf5364_1720705386_604800&fromCDN=ws
 CCTV-13新闻,https://event.pull.hebtv.com/jishi/cp4.m3u8
+CCTV-13新闻,http://58.215.231.58/live2.rxip.sc96655.com/live/CCTV-xw_4000.m3u8
 CCTV-13新闻,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV13HD/1.m3u8?gMac=unknown&livodToken=7c77c3220b39939906f8f68f3fcfab226900075ba1ac6d5bb6382143703b0704_1720705502_604800&fromCDN=ws
 CCTV-14少儿,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV14HD/1.m3u8?gMac=unknown&livodToken=0f5baef8976031af24d0da4f7f1fd68483d31b63fa1db1301f607303e651b3dd_1720705567_604800&fromCDN=ws
-
+CCTV-17农业,http://58.215.231.60/live2.rxip.sc96655.com/live/CCTV-17_4000.m3u8
 
 广西,#genre#
 广西国际频道,https://mobilelive.gxtv.cn/live/nn_live1009/playlist.m3u8
