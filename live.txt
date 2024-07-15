@@ -67,6 +67,7 @@ J2,https://stream1.freetv.fun/1936e0180ebd92426c3868ef2bdd66c8217fbe9b33c7061122
 CCTV-1综合,https://event.pull.hebtv.com/jishi/cp3.m3u8
 CCTV-1综合,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV1HD/1.m3u8?gMac=unknown&livodToken=8dc2978325b9171c2fc7ce17749d6b343142cf25e17ca49bdf3fd25b205ea956_1720704606_604800&fromCDN=ws
 CCTV-2财经,http://liveop.cctv.cn/hls/CCTV28bee868714f04ea2af79947bb9b46fc3H/playlist.m3u8
+CCTV-2财经,http://58.215.231.60/live2.rxip.sc96655.com/live/CCTV-2H265_4000.m3u8
 CCTV-3综艺,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV3_HD/1.m3u8?gMac=unknown&livodToken=9e52a12168a904a9c696c23ecc5523003d2533989900ef8dcec24e97d13eac44_1720704795_604800&fromCDN=ws
 CCTV-4国际,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV4HD/1.m3u8?gMac=unknown&livodToken=3a869400565affa690b2d61e3acf1e81c47a582a60b8fba808abf013c5357784_1720704885_604800&fromCDN=ws
 CCTV-5体育,http://jxcbn.ws-cdn.gitv.tv/hls/CCTV5_HD/1.m3u8?gMac=unknown&livodToken=d364b3b544489123a6671ca86ca1dad05dfb375d25bb38c81134ef0130bbfc09_1720704976_604800&fromCDN=ws
