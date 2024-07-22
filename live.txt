@@ -28,7 +28,7 @@
 明珠台,http://cdn12.jdshipin.com/smt3.2.php?id=pearl_twn
 明珠台,https://stream1.freetv.fun/ming-zhu-1.m3u8
 J2,http://cdn12.jdshipin.com/smt3.2.php?id=j2_twn
-无线新闻,https://ali.hlspull.yximgs.com/live/cf30b9a1942ebcf6692d9012fa82d844.flv
+
 无线新闻,https://player2.ggiptv.com/vplay.php?token=9rlgpG%2BZZgJkFjiBh6TtzLEr&tid=wintv123&id=16&p=1
 无线新闻,https://player2.ggiptv.com/vplay.php?token=9rlgpG%2BZZgJkFjiBh6TtzLEr&tid=wintv123&id=16&p=2
 无线新闻,http://live.cooltv.top/tv/tvb.php?id=2&hq
