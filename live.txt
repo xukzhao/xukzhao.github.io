@@ -112,6 +112,7 @@ CETV3,http://hwylivehd.centv.cn/cetv3/bjdm.m3u8
 CETV4空中课堂,http://hwylivehd.centv.cn/cetv4/zjpd.m3u8
 其它,#genre#
 中国天气,http://hls.weathertv.cn/tslslive/qCFIfHB/hls/live_sd.m3u8
+test,http://47.94.111.99/api/live/v1/sources?Pid=local-ws_szdsj
 
 
 
