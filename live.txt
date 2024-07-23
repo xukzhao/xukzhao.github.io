@@ -28,7 +28,7 @@
 明珠台,http://cdn12.jdshipin.com/smt3.2.php?id=pearl_twn
 明珠台,https://stream1.freetv.fun/ming-zhu-1.m3u8
 J2,http://cdn12.jdshipin.com/smt3.2.php?id=j2_twn
-
+无线新闻,http://60.208.140.180:5544/tvb%E6%96%B0%E9%97%BB/%E9%A6%99%E8%95%89%E5%93%A5%E4%B8%93%E7%94%A8-%E6%98%93%E7%99%BCTV.live.flv
 无线新闻,https://stream1.freetv.fun/tvbwu-xian-xin-wen-2.m3u8
 无线新闻,http://live.cooltv.top/tv/tvb.php?id=2&hq
 无线新闻,http://live.cooltv.top/tv/tvb.php?id=0&hq
