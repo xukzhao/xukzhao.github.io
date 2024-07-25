@@ -1,0 +1,53 @@
+<script src="http://libs.baidu.com/jquery-1.8.3.min.js"></script>
+<link href="https://img2-cloud.itouchtv.cn/sitecdn/cdn-lib/videojs/video-js.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://img.gdtv.cn/sitecdn/platforms/gdtv/css/client_0af3552b.css">
+<script src="https://img2-cloud.itouchtv.cn/sitecdn/cdn-lib/videojs/video.min.js"></script>
+<script src="https://img2-cloud.itouchtv.cn/sitecdn/cdn-lib/videojs/videojs-contrib-hls.js"></script>
+
+<video id="video" class="video-js vjs-big-play-centered" poster="" style="width:100%;height:100%"  controls autoplay></video>
+<script>
+var vid = location.href.split('html?id=')[1];
+var n = [];
+var m = [];
+    n['gdws'] = 1182;//广东卫视
+    n['gdzj'] = 1183;//广东珠江
+    n['dwqws'] = 1197;//大湾区卫视
+    n['gdms'] = 1185;//广东民生
+    n['gdxw'] = 1186;//广东新闻
+    n['gdjjkj'] = 1196;//广东经济科教
+    n['gdty'] = 1184;//广东体育
+    n['gdse'] = 1200;//广东少儿
+    n['gdys'] = 1199;//广东影视
+    n['jjkt'] = 1187;//嘉佳卡通
+    n['gdgj'] = 1191;//广东国际
+    n['nfgw'] = 2393;//南方购物
+    n['gdyd'] = 2463;//广东移动
+    n['gdzy'] = 1198;//广东综艺
+
+    m['gdwh'] = 'wenhua_test0203';//GRTN文化频道
+    m['gdsh'] = 'life';//GRTN生活频道
+    m['gdjk'] = 'health';//GRTN健康频道
+    m['gdjlp'] = 'jilupian';//纪录片
+    m['gdlzt'] = "lizhi";//荔枝台
+    m['gdjy'] = "jiaoyu";//教育
+
+if(m[vid]){
+           playurl = 'https://glive.grtn.cn/live/'+m[vid]+'.m3u8';
+           var player = videojs('video');
+           player.src(playurl);
+           player.play();
+           }
+if(n[vid]){
+          $.get('https://php.ilpl.me/gdtv/data.json',
+            function (d){
+              for(i=0;i<200;i++){
+                if(n[vid] == d[i].pkid){
+                  playurl = d[i].url;
+                  var player = videojs('video');
+                  player.src(playurl);
+                  player.play();
+                  }
+              }
+            },'json')
+          }
+</script>
