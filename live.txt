@@ -27,6 +27,9 @@
 
 无线新闻,http://60.208.140.180:5544/tvb%E6%96%B0%E9%97%BB/%E9%A6%99%E8%95%89%E5%93%A5%E4%B8%93%E7%94%A8-%E6%98%93%E7%99%BCTV.live.flv
 无线新闻,https://stream1.freetv.fun/tvbwu-xian-xin-wen-2.m3u8
+无线新闻,http://php.jdshipin.com:8880/smt.php?id=inews_twn
+无线新闻,http://cdn.1678520.xyz/tvbts/tvbts2.1.php?id=null-1
+
 
 无线星河,http://cdn.1689.us.kg/smt1.php?id=Xinhe
 无线星河,http://cdn.1689.us.kg/smt3.2.php?id=Xinhe
@@ -102,7 +105,10 @@ CCTV-17农业,http://125.116.63.105:4022/udp/233.50.200.113:5140
 南宁公共频道,http://hls.nntv.cn/nnlive/GGPD_24.m3u8
 
 广东,#genre#
-
+珠江台,http://59.32.96.111:8888/udp/239.77.0.1:5146
+大湾区卫视,http://118.144.105.55:91/live/NFWS-1500k/live.m3u8
+大湾区卫视,http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000002000011619/1.m3u8
+大湾区卫视,http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010108/1.m3u8
 广州电视台综合频道,https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=e8a54fced9025a5af7cec5c05d5dc530&txTime=19072465600
 广州电视台影视频道,https://tencentplay.gztv.com/live/yingshi.m3u8?txSecret=da4e7946ce44b3e1150e257961439a77&txTime=19071ed9221
 广州电视台新闻频道,https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=dd1b312cc1b5cbe9fad85bf5ddce4b10&txTime=190723b940c
