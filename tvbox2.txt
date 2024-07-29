@@ -2,7 +2,7 @@
 //  当前接口：http://ok321.top/tv
 
 {
-  "spider": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1722132295628/okpng.txt;md5;39dca264667637db48ba47a86a576af7",
+  "spider": "https://cdn.jsdelivr.net/gh/xukzhao/xukzhao.github.io@master/jar/okpng.txt;md5;39dca264667637db48ba47a86a576af7",
   "wallpaper":"https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1720314187703/w1.jpg",
   "logo":"https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1720314090387/ol.txt",
   "sites": [
