@@ -71,10 +71,10 @@ J2,http://cdn.1689.us.kg/smt1.php?id=j2_twn
 亚洲武侠,http://v2h.jdshipin.com/asia_action/asia_action.stream/chunklist.m3u8
 
 央视,#genre#
-CCTV-1综合,http://101.200.122.188/tv/migu.php?id=cctv1
-CCTV-1综合,http://123.145.70.67:55555/udp/225.0.4.74:7980
+CCTV-1综合,http://xyt.186738613.xyz/lngd.php?id=488&Cf.m3u8
+CCTV-1综合,http://119.98.234.46:85/rtp/239.69.1.247:11124
 CCTV-2财经,http://liveop.cctv.cn/hls/CCTV28bee868714f04ea2af79947bb9b46fc3H/playlist.m3u8
-CCTV-2财经,http://101.200.122.188/tv/migu.php?id=cctv2
+
 
 CCTV-3综艺,http://101.200.122.188/tv/migu.php?id=cctv3
 
@@ -87,7 +87,7 @@ CCTV-5体育,http://58.42.184.110:8888/rtp/238.255.2.134:5999
 
 CCTV-6电影,http://mobilelive-ds.ysp.cctv.cn/ysp/2013693901.m3u8
 CCTV-6电影,http://101.200.122.188/tv/migu.php?id=cctv6
-CCTV-7,http://101.200.122.188/tv/migu.php?id=cctv7
+
 CCTV-7,http://123.145.70.67:55555/udp/225.0.4.127:7980
 CCTV-7,http://125.116.63.105:4022/udp/233.50.200.24:5140
 CCTV-8电视剧,http://101.200.122.188/tv/migu.php?id=cctv8
