@@ -80,9 +80,10 @@ CCTV-3综艺,http://101.200.122.188/tv/migu.php?id=cctv3
 
 CCTV-4国际,http://101.200.122.188/tv/migu.php?id=cctv4
 
+CCTV-5体育,http://117.176.241.206:4022/rtp/239.11.0.100:5140
 CCTV-5体育,http://125.116.63.105:4022/udp/233.50.200.108:5140
 CCTV-5体育,http://58.42.184.110:8888/rtp/238.255.2.134:5999
-CCTV-5体育,http://117.176.241.206:4022/rtp/239.11.0.100:5140
+
 
 CCTV-6电影,http://mobilelive-ds.ysp.cctv.cn/ysp/2013693901.m3u8
 CCTV-6电影,http://101.200.122.188/tv/migu.php?id=cctv6
