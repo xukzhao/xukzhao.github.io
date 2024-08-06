@@ -126,7 +126,7 @@ CCTV-17农业,http://125.116.63.105:4022/udp/233.50.200.113:5140
 珠江台,http://218.13.170.98:9901/tsfile/live/1000_1.m3u8
 
 
-大湾区卫视,http://118.144.105.55:91/live/NFWS-1500k/live.m3u8
+广东影视,https://tcdn.itouchtv.cn/live/gdys.m3u8?t_token=8a731971889b294e4ddc6a7c99ebd93c-jROS%2FC1o4CshHipwct8%2Fn8NzXbF%2FwNZiJ6FLOEpmnP%2BtZXM8vQN6qk5Vf7Dqra4%2BdtFH46besMYo8E01vCZB6sYTAzGuBrbSzP26k32WPm96KkHvqSBgwxXTRc0A8JWWg7%2BSDUF%2B%2BfmSR4lQ6hCgPoXpYTwPGLyNkd%2By8jXqpI9poRbxnomO%2FHQNREBpVwgP32ljVHmfn8x8lDck7IZyyEDsTU3CpGjYgmmDVsjhdqI4KZ2RoppyNMORtihCskCC%2FY7Rx0%2FA6W6RDT%2BV7w%2B1jonzAJaF2Bh49j7BmspUvYUWfutnrGxyLVkGcZcYmwZqy6Rd6ppGdLeadQs8RTfWgLhfLypTASRuvD9DA%2FBUhhNpiIqwTtcJuQYREv5CxQWp
 大湾区卫视,http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000002000011619/1.m3u8
 大湾区卫视,http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010108/1.m3u8
 广州电视台综合频道,https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=e8a54fced9025a5af7cec5c05d5dc530&txTime=19072465600
