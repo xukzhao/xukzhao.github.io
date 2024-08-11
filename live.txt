@@ -139,8 +139,8 @@ CCTV-17农业,http://125.116.63.105:4022/udp/233.50.200.113:5140
 佛山综合,http://php.jdshipin.com:8880/fstv.php?id=fszh
 佛山高明,http://php.jdshipin.com:8880/fstv.php?id=fsgm
 佛山南海,http://php.jdshipin.com:8880/fstv.php?id=fsnh
-佛山顺德http://php.jdshipin.com:8880/fstv.php?id=fssd
-佛山三水http://php.jdshipin.com:8880/fstv.php?id=fsss
+佛山顺德,http://php.jdshipin.com:8880/fstv.php?id=fssd
+佛山三水,http://php.jdshipin.com:8880/fstv.php?id=fsss
 
 
 教育,#genre#
