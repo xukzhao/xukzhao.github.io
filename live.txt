@@ -103,7 +103,7 @@ CCTV-11戏曲,http://123.145.70.67:55555/udp/225.0.4.218:7980
 CCTV-12社会与法治,http://101.200.122.188/tv/migu.php?id=cctv12
 CCTV-12社会与法治,http://125.116.63.105:4022/udp/233.50.200.21:5140
 
-CCTV-13新闻,http://101.200.122.188/tv/migu.php?id=cctv13
+CCTV-13新闻,http://110.185.171.226:96/xhplay/iptv4.php?type=4&id=cctv13&key=943581a4c4387592620f11e250302fde
 CCTV-13新闻,http://125.116.63.105:4022/udp/233.50.200.111:5140
 CCTV-13新闻,http://58.215.231.58/live2.rxip.sc96655.com/live/CCTV-xw_4000.m3u8
 CCTV-14少儿,http://101.200.122.188/tv/migu.php?id=cctv14
