@@ -71,47 +71,43 @@ J2,http://php.jdshipin.com:8880/TVOD/iptv.php?id=j2
 亚洲武侠,http://v2h.jdshipin.com/asia_action/asia_action.stream/chunklist.m3u8
 
 央视,#genre#
-CCTV-1综合,http://xyt.186738613.xyz/lngd.php?id=488&Cf.m3u8
-CCTV-1综合,http://119.98.234.46:85/rtp/239.69.1.247:11124
+CCTV-1综合,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv1&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+
 CCTV-2财经,http://liveop.cctv.cn/hls/CCTV28bee868714f04ea2af79947bb9b46fc3H/playlist.m3u8
 
 
-CCTV-3综艺,http://101.200.122.188/tv/migu.php?id=cctv3
+CCTV-3综艺,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv3&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
 
-CCTV-4国际,http://101.200.122.188/tv/migu.php?id=cctv4
+CCTV-4国际,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv4&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
 
 CCTV-5体育,http://117.176.241.206:4022/rtp/239.11.0.100:5140
-CCTV-5体育,http://125.116.63.105:4022/udp/233.50.200.108:5140
-CCTV-5体育,http://58.42.184.110:8888/rtp/238.255.2.134:5999
+CCTV-5体育,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv5&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+
 
 
 CCTV-6电影,http://mobilelive-ds.ysp.cctv.cn/ysp/2013693901.m3u8
-CCTV-6电影,http://101.200.122.188/tv/migu.php?id=cctv6
+CCTV-6电影,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv6&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
 
-CCTV-7,http://123.145.70.67:55555/udp/225.0.4.127:7980
+CCTV-7,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv7&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
 CCTV-7,http://125.116.63.105:4022/udp/233.50.200.24:5140
 CCTV-8电视剧,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv8&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
-CCTV-8电视剧,http://123.145.70.67:55555/udp/225.0.4.137:7980
-CCTV-8电视剧,http://125.116.63.105:4022/udp/233.50.200.110:5140
-CCTV-9纪录,http://101.200.122.188/tv/migu.php?id=cctv9
-CCTV-9纪录,http://123.145.70.67:55555/udp/225.0.4.131:7980
-CCTV-9纪录,http://125.116.63.105:4022/udp/233.50.200.23:5140
-CCTV-10科教,http://101.200.122.188/tv/migu.php?id=cctv10
-CCTV-10科教,http://125.116.63.105:4022/udp/233.50.200.22:5140
-CCTV-11戏曲,http://101.200.122.188/tv/migu.php?id=cctv11
-CCTV-11戏曲,http://123.145.70.67:55555/udp/225.0.4.218:7980
-CCTV-12社会与法治,http://101.200.122.188/tv/migu.php?id=cctv12
-CCTV-12社会与法治,http://125.116.63.105:4022/udp/233.50.200.21:5140
 
-CCTV-13新闻,http://110.185.171.226:96/xhplay/iptv4.php?type=4&id=cctv13&key=943581a4c4387592620f11e250302fde
-CCTV-13新闻,http://125.116.63.105:4022/udp/233.50.200.111:5140
-CCTV-13新闻,http://58.215.231.58/live2.rxip.sc96655.com/live/CCTV-xw_4000.m3u8
-CCTV-14少儿,http://101.200.122.188/tv/migu.php?id=cctv14
-CCTV-14少儿,http://125.116.63.105:4022/udp/233.50.200.103:5140
-CCTV-15音乐,http://101.200.122.188/tv/migu.php?id=cctv15
-CCTV-17农业,http://101.200.122.188/tv/migu.php?id=cctv17
-CCTV-17农业,http://123.145.70.67:55555/udp/225.0.4.179:7980
-CCTV-17农业,http://125.116.63.105:4022/udp/233.50.200.113:5140
+CCTV-9纪录,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv9&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+
+CCTV-10科教,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv10&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+
+CCTV-11戏曲,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv11&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+
+CCTV-12社会与法治,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv12&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+
+
+CCTV-13新闻,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv13&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+
+CCTV-14少儿,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv14&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+
+CCTV-15音乐,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv15&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+CCTV-17农业,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv17&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+
 
 广西,#genre#
 广西卫视,http://xyt.186738613.xyz/lngd.php?id=116&Cf.m3u8
