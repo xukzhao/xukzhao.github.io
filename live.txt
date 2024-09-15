@@ -1,6 +1,6 @@
 🌏港澳台,#genre#
 
-凤凰中文,http://146.56.153.245:20121/bysid/258
+凤凰中文,http://58.144.154.93/qctv.fengshows.cn/live/0701pcc72.m3u8
 凤凰中文,http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226320/index.m3u8
 凤凰资讯,https://test.zapi.us.kg/?id=phtv-info
 凤凰资讯,http://110.185.171.226:96/xhgat/fhzb.php?type=2&id=fhzx&key=7b76de0705aa43a3346cb3ed64a1a752
