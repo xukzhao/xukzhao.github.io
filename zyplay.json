@@ -372,8 +372,8 @@
 "tbl_iptv": [
 {
 "id": "6",
-"name": "agit:66666",
-"url": "https://agit.ai/66666/mao/raw/branch/master/live20220813.txt",
+"name": "自用",
+"url": "https://gh.con.sh/https://raw.githubusercontent.com/xukzhao/xukzhao.github.io/master/live.txt",
 "isActive": true,
 "type": "remote",
 "epg": ""
