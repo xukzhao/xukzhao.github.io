@@ -118,7 +118,7 @@ CCTV-17农业,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv17&key=e9
 
 广东,#genre#
 
-珠江台,http://61.146.224.42:8088/hls/2/index.m3u8
+
 珠江台,http://php.jdshipin.com:8880/itv6.php?cid=ystenlive&id=1000000004000011655
 
 大湾区卫视,http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000002000011619/1.m3u8
