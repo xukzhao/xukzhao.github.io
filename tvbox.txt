@@ -1,5 +1,5 @@
 {
-"spider":"https://gh.con.sh/https://raw.githubusercontent.com/xukzhao/xukzhao.github.io/master/jar/fan.txt;md5;2d88ca12b97435501ba22ca12ce03d92",
+"spider":"https://gh.con.sh/https://raw.githubusercontent.com/xukzhao/xukzhao.github.io/master/jar/fan2.txt;md5;5640a8ad5bd5face5679bd8d6d73d44a",
 "wallpaper":"https://深色壁纸.xxooo.cf/",
 
 "sites":[
