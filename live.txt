@@ -1,10 +1,10 @@
 🌏港澳台,#genre#
 
 凤凰中文,http://aktv.top/AKTV/live/aktv/null-3/AKTV.m3u8
-凤凰中文,http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226320/index.m3u8
+凤凰中文,http://ali.hlspull.yximgs.com/live/4bcac4f40aa72a695a6b028afa221223.flv
 
 凤凰资讯,http://aktv.top/AKTV/live/aktv/null-4/AKTV.m3u8
-凤凰资讯,https://test.zapi.us.kg/?id=phtv-info
+凤凰资讯,http://ali.hlspull.yximgs.com/live/9dad8fe4bcf91e03b8a7b6920d35042e.flv
 凤凰资讯,http://110.185.171.226:96/xhgat/fhzb.php?type=2&id=fhzx&key=7b76de0705aa43a3346cb3ed64a1a752
 凤凰资讯,http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.m3u8
 凤凰资讯,http://php.jdshipin.com:8880/TVOD/iptv.php?id=fhzx
@@ -72,46 +72,41 @@ J2,http://php.jdshipin.com:8880/TVOD/iptv.php?id=j2
 央视,#genre#
 CCTV-1综合,http://183.255.10.188:6610/200000001898/460000089800010011/1.m3u8?IASHttpSessionId=OTT
 
-CCTV-2财经,http://liveop.cctv.cn/hls/CCTV28bee868714f04ea2af79947bb9b46fc3H/playlist.m3u8
+CCTV-2财经,http://183.255.10.72:6610/200000001898/460000089800010211/1.m3u8?IASHttpSessionId=OTT
 
 
-CCTV-3综艺,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv3&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+CCTV-3综艺,http://183.255.10.76:6610/200000001898/460000089800010212/1.m3u8?IASHttpSessionId=OTT
 
-CCTV-4国际,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv4&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
-
-CCTV-5体育,http://117.176.241.206:4022/rtp/239.11.0.100:5140
+CCTV-4国际,http://183.255.10.121:6610/200000001898/460000089800010017/1.m3u8?IASHttpSessionId=OTT
+CCTV-5体育,http://183.255.10.125:6610/200000001898/460000089800010145/1.m3u8?IASHttpSessionId=OTT
 CCTV-5体育,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv5&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
 
-
-
-CCTV-6电影,http://mobilelive-ds.ysp.cctv.cn/ysp/2013693901.m3u8
+CCTV-6电影,http://183.255.10.84:6610/200000001898/460000089800010214/1.m3u8?IASHttpSessionId=OTT
 CCTV-6电影,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv6&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
 
-CCTV-7,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv7&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+CCTV-7,http://183.255.10.121:6610/200000001898/460000089800010215/1.m3u8?IASHttpSessionId=OTT
 CCTV-7,http://125.116.63.105:4022/udp/233.50.200.24:5140
-CCTV-8电视剧,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv8&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+CCTV-8电视剧,http://183.255.10.123:6610/200000001898/460000089800010216/1.m3u8?IASHttpSessionId=OTT
 
-CCTV-9纪录,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv9&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+CCTV-9纪录,http://183.255.10.123:6610/200000001898/460000089800010217/1.m3u8?IASHttpSessionId=OTT
 
-CCTV-10科教,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv10&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+CCTV-10科教,http://183.255.10.125:6610/200000001898/460000089800010203/1.m3u8?IASHttpSessionId=OTT
 
-CCTV-11戏曲,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv11&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+CCTV-11戏曲,http://183.255.10.68:6610/200000001898/460000089800010092/1.m3u8?IASHttpSessionId=OTT
+CCTV-12社会与法治,http://183.255.10.188:6610/200000001898/460000089800010205/1.m3u8?IASHttpSessionId=OTT
 
-CCTV-12社会与法治,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv12&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+CCTV-13新闻,http://183.255.10.121:6610/200000001898/460000089800010093/1.m3u8?IASHttpSessionId=OTT
 
+CCTV-14少儿,http://183.255.10.190:6610/200000001898/460000089800010207/1.m3u8?IASHttpSessionId=OTT
 
-CCTV-13新闻,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv13&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
-
-CCTV-14少儿,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv14&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
-
-CCTV-15音乐,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv15&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
-CCTV-17农业,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv17&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
+CCTV-15音乐,http://183.255.10.190:6610/200000001898/460000089800010094/1.m3u8?IASHttpSessionId=OTT
+CCTV-17农业,http://183.255.10.80:6610/200000001898/460000089800010210/1.m3u8?IASHttpSessionId=OTT
 
 
 广西,#genre#
-广西卫视,http://xyt.186738613.xyz/lngd.php?id=116&Cf.m3u8
+广西卫视,http://183.255.10.74:6610/200000001898/460000089800010099/1.m3u8?IASHttpSessionId=OTT
 
-广西国际频道,https://mobilelive.gxtv.cn/live/nn_live1009/playlist.m3u8
+
 南宁新闻综合频道,https://hls.nntv.cn/nnlive/XWZH_24.m3u8
 南宁都市生活频道,http://hls.nntv.cn/nnlive/WLSH_24.m3u8
 南宁影视娱乐频道,http://hls.nntv.cn/nnlive/YSYL_244.m3u8
