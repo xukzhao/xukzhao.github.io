@@ -1,9 +1,6 @@
 {
 "urls": [
-{
-"url": "https://xukzhao.eu.org/tvbox.txt",
-"name": "🦅🦅自用接口🦅🦅"
-},
+
 {
 "url": "http://fty.xxooo.cf/tv",
 "name": "🌟饭太硬"
