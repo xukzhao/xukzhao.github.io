@@ -1,7 +1,8 @@
 🌏港澳台,#genre#
 
 凤凰中文,http://aktv.top/AKTV/live/aktv/null-3/AKTV.m3u8
-
+凤凰中文,http://php.jdshipin.com/TVOD/iptv.php?id=fhzw
+凤凰中文,http://61.163.58.154:1321/ms/IPTV.php?id=123
 
 凤凰资讯,http://php.jdshipin.com:8880/TVOD/iptv.php?id=fhzx
 凤凰资讯,http://aktv.top/AKTV/live/aktv/null-4/AKTV.m3u8
@@ -17,6 +18,8 @@
 
 无线星河,http://php.jdshipin.com:8880/PLTV/iptv.php?id=xinghe
 无线星河,http://php.jdshipin.com:8880/smt.php?id=Xinhe
+无线星河,http://ali.hlspull.yximgs.com/live/hp2keozt_akllkuyterwgebfns.flv
+无线星河,http://ali.hlspull.yximgs.com/live/hp2keozt_wertyyuhjgfdscxvc.flv
 
 明珠台,http://1b6467f415.iok.la:9931/tsfile/live/1009_1.m3u8
 J2,http://php.jdshipin.com:8880/PLTV/iptv.php?id=j2
