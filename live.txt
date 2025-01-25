@@ -1,6 +1,6 @@
 🌏港澳台,#genre#
 
-凤凰中文,http://aktv.top/AKTV/live/aktv/null-3/AKTV.m3u8
+凤凰中文,http://ali.hlspull.yximgs.com/live/hp2keozt_hdskwiksjhdksw.flv
 凤凰中文,http://php.jdshipin.com/TVOD/iptv.php?id=fhzw
 凤凰中文,http://61.163.58.154:1321/ms/IPTV.php?id=123
 
