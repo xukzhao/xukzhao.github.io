@@ -5,24 +5,24 @@
 "name": "🦅🦅自用接口🦅🦅"
 },
 {
-"url": "http://www.饭太硬.com/tv",
+"url": "http://fty.xxooo.cf/tv",
 "name": "🌟饭太硬"
 },
 {
-"url": "https://gh.llkk.cc/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json",
-"name": "❤️潇洒哥弹幕线路"
+"url": "http://肥猫.com",
+"name": "❤️肥猫接口"
 },
 {
-"url": "http://www.mpanso.com/小米/DEMO.json",
-"name": "❤️小米线路"
+"url": "https://3450.kstore.space/DEMO.json",
+"name": "❤️小米DEMO"
 },
 {
-"url": "http://我不是.摸鱼儿.top",
-"name": "🌵摸鱼线路"
+"url": "http://xhztv.top/4k.json",
+"name": "🌵小盒子4K"
 },
 {
-"url": "http://itvbox.cc/云星日记",
-"name": "🌵云星日记线路"
+"url": "http://xhztv.top/xhz",
+"name": "🌵小盒子单仓"
 },
 {
 "url": "https://weixine.net/ysc.json",
@@ -33,38 +33,96 @@
 "name": "🌵肥猫线路"
 },
 {
-"url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/guot55/YGBH/main/vip2.json",
-"name": "🌵宝盒线路"
+"url": "http://我不是.摸鱼儿.com",
+"name": "🌵摸鱼接口"
 },
 {
-"url": "https://gh.xxooo.cf/https://raw.githubusercontent.com//yydfys/yydf/main/XYQTVBox/xyq.json",
-"name": "🌵香雅情线路"
+"url": "http://ok321.top/tv",
+"name": "🌵OK线路"
 },
 {
-"url": "https://gitdl.cn/raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json",
-"name": "🌵FongMI线路"
+"url": "https://100km.top/0",
+"name": "🌵騷零接口"
 },
 {
-"url": "http://pandown.pro/tvbox/tvbox.json",
-"name": "🌵巧计线路"
+"url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/demo.json",
+"name": "🌵蜂蜜接口"
 },
 {
-"url": "https://gitdl.cn/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
-"name": "🌵高天流云js"
+"url": "http://ok321.top/ok",
+"name": "🌵OK佬"
 },
 {
-"url": "https://gitdl.cn/raw.githubusercontent.com/gaotianliuyun/gao/master/XYQ.json",
-"name": "🌵高天流云 XYQ"
+"url": "http://tvbox.王二小放牛娃.top",
+"name": "🌵王二小放牛娃"
 },
 {
-"url": "http://www.lyyytv.cn/yt/yt.json",
-"name": "🌱影探线路"
+"url": "https://tv.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=tv",
+"name": "🌱欧歌免费"
 },
 {
-"url": "http://dxawi.github.io/0/0.json",
-"name": "🌱dxawi线路"
+"url": "https://git.acwing.com/xcz/xcz/-/raw/master/xcz.json",
+"name": "🌱小橙子"
 },
-
-
+{
+"url": "https://git.acwing.com/999/tvbox/-/raw/main/%E9%AD%94%E7%9B%92.json",
+"name": "魔盒接口"
+},
+{
+"url": "http://fmys.top/fmys.json",
+"name": "驸马影视"
+},
+{
+"url": "https://git.acwing.com/ocean2025/ocean/-/raw/main/api.json",
+"name": "ocean2025"
+},
+{
+"url": "https://ztha.top/TVBox/thdjk.json",
+"name": "挺好分享"
+},
+{
+"url": "http://tv.nxog.top/m",
+"name": "🌱欧歌4K"
+},
+{
+"url": "http://cdn.qiaoji8.com/tvbox.json",
+"name": "巧记Box"
+},
+{
+"url": "https://chuanshuo.77blog.cn/tv.json",
+"name": "传说blog"
+},
+{
+"url": "https://ghp.ci/raw.githubusercontent.com/guot55/YGBH/main/vip2.json",
+"name": "宝盒VIP"
+},
+{
+"url": "https://gitee.com/lukei7/lib/raw/Luck/%E8%87%AA%E5%BB%BA.json",
+"name": "蓝天Luck"
+},
+{
+"url": "http://74.120.175.78/JK/XYQTVBox/dj.json",
+"name": "香雅情短剧"
+},
+{
+"url": "http://124.71.189.194/a.json",
+"name": "小白龙"
+},
+{
+"url": "https://git.acwing.com/shhentu/lzxw/-/raw/main/Monster.json",
+"name": "林中的小屋"
+},
+{
+"url": "http://yuhuahx.com/%E8%82%B2%E5%8D%8E%E5%AD%A6%E5%A0%82/%E6%96%A7%E5%A4%B4%E5%B8%AE.php",
+"name": "恒星育华"
+},
+{
+"url": "https://ghp.ci/https://raw.githubusercontent.com/vbskycn/tvbox/a244f6f5c08565a9a0e319d6a3cc2e919d05d893/MY%E6%8E%A2%E6%8E%A2.txt",
+"name": "影探"
+},
+{
+"url": "https://gitee.com/yiwu369/6758/raw/master/%E9%9D%92%E9%BE%99/1.json",
+"name": "不是青龙"
+},
 ]
 }
