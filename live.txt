@@ -1,4 +1,4 @@
-🌏港澳台,#genre#
+🌏香港,#genre#
 
 凤凰中文,http://ali.hlspull.yximgs.com/live/hp2keozt_hdskwiksjhdksw.flv
 凤凰中文,http://php.jdshipin.com/TVOD/iptv.php?id=fhzw
@@ -47,6 +47,7 @@ CCTV-3综艺,http://183.255.10.76:6610/200000001898/460000089800010212/1.m3u8?IA
 
 CCTV-4国际,http://183.255.10.121:6610/200000001898/460000089800010017/1.m3u8?IASHttpSessionId=OTT
 CCTV-5体育,http://183.255.10.125:6610/200000001898/460000089800010145/1.m3u8?IASHttpSessionId=OTT
+CCTV-5体育,https://tvpull.careryun.com/tv/cctv5.m3u8
 CCTV-5体育,http://110.185.171.226:96/xhplay/iptv4.php?type=3&id=cctv5&key=e9e6a03c7a5f417b5d1c3ca5b8cd9df8
 
 CCTV-6电影,http://183.255.10.84:6610/200000001898/460000089800010214/1.m3u8?IASHttpSessionId=OTT
