@@ -11,7 +11,7 @@
 凤凰资讯,http://146.56.153.245:20121/bysid/257
 凤凰资讯,https://dl.zhoujie218.top/new/fhx.php?id=fhzx
 凤凰资讯,http://livetv.skycf.eu.org/live.m3u8?c=2
-凤凰资讯,http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.flv
+凤凰资讯,http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
 
 香港凤凰,http://58.144.154.93/qctv.fengshows.cn/live/0701phk72.m3u8
 香港凤凰,https://epg.pw/stream/b3ab43b2415df405226d5b25f38e51432ca7d32b5a240e0aa1f3e201d181442f.m3u8
