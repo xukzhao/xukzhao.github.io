@@ -1,20 +1,88 @@
-{"urls":[
-{"name":"🚀小盒子","url":"http://xhztv.top/xhz"},
-{"name":"🐔肥猫","url":"http://我不是.肥猫.live/接口禁止贩卖"},
-{"name":"🐟 摸 鱼","url":"http://我不是.摸鱼儿.top"},
-{"name":"🍯毒盒","url":"https://毒盒.com/tv"},
-{"name":"🍯PG线路","url":"https://git.acwing.com/iduoduo/orange/-/raw/main/jsm.json"},
-{"name":"🍯影视仓","url":"https://download.kstore.space/download/2883/nzk/nzk0722.json"},
-{"name":"🦆神仙线路","url":"http://dp.sxtv.top:88/img"},
-{"name":"🦆俊于","url":"http://home.jundie.top:81/top98.json"},
-{"name":"😹影视资源","url":"http://bp.tvbox.cam"},
-{"name":"😹玄珠","url":"https://jihulab.com/xuanzhuapp/xzys/-/raw/main/xzvip.json"},
-{"name":"😹吾爱","url":"http://52pan.top:81/api/v3/file/get/174964/%E5%90%BE%E7%88%B1%E8%AF%84%E6%B5%8B.m3u?sign=rPssLoffquDXszCARt6UNF8MobSa1FA27XomzOluJBY%3D%3A0"},
-{"name":"😹动漫城","url":"https://www.yingm.cc/dm/dm.json"},
-{"name":"🚀喵影视","url":"http://meowtv.cn/tv"},
-{"name":"🚀摸鱼","url":"http://我不是.摸鱼儿.top"},
-{"name":"🚀小马","url":"https://szyyds.cn/tv/x.json"},
-{"name":"🦉飘零","url":"https://100km.top/0"},
-{"name":"🐹dxawi","url":"https://dxawi.github.io/0/0.json"},
-{"name":"🍯HG","url":"https://api.hgyx.vip/hgyx.json"}
-]}
+{
+"urls": [
+{
+"url": "https://play.iptv365.org/饭太硬/api.json",
+"name": "饭太硬"
+},
+{
+"url": "https://play.iptv365.org/小米/api.json",
+"name": "小米"
+},
+{
+"url": "https://play.iptv365.org/肥猫/api.json",
+"name": "肥猫"
+},
+{
+"url": "https://play.iptv365.org/菜妮丝/api.json",
+"name": "菜妮丝"
+},
+{
+"url": "https://play.iptv365.org/王二小/api.json",
+"name": "王二小"
+},
+{
+"url": "https://play.iptv365.org/摸鱼儿/api.json",
+"name": "摸鱼儿"
+},
+{
+"url": "https://play.iptv365.org/PG/api.json",
+"name": "PG"
+},
+{
+"url": "https://play.iptv365.org/欧歌/api.json",
+"name": "欧歌"
+},
+{
+"url": "https://play.iptv365.org/潇洒/api.json",
+"name": "潇洒"
+},
+{
+"url": "https://play.iptv365.org/天微/api.json",
+"name": "天微"
+},
+{
+"url": "https://play.iptv365.org/天天开心/api.json",
+"name": "天天开心"
+},
+{
+"url": "https://play.iptv365.org/香雅情/api.json",
+"name": "香雅情"
+},
+{
+"url": "https://play.iptv365.org/南风/api.json",
+"name": "南风"
+},
+{
+"url": "https://play.iptv365.org/骚零/api.json",
+"name": "骚零"
+},
+{
+"url": "https://play.iptv365.org/白嫖/api.json",
+"name": "白嫖"
+},
+{
+"url": "https://play.iptv365.org/OK/api.json",
+"name": "OK"
+},
+{
+"url": "https://play.iptv365.org/戏曲音乐/api.json",
+"name": "戏曲音乐"
+},
+{
+"url": "https://play.iptv365.org/短剧频道/api.json",
+"name": "短剧频道"
+},
+{
+"url": "https://play.iptv365.org/少儿频道/api.json",
+"name": "少儿频道"
+},
+{
+"url": "https://play.iptv365.org/动漫频道/api.json",
+"name": "动漫频道"
+},
+{
+"url": "https://play.iptv365.org/iptv365/api.json",
+"name": "iptv365直播"
+}
+]
+}
