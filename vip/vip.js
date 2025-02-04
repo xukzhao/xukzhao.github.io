@@ -1,6 +1,6 @@
 
 // ==UserScript==
-// @name           VIP会员
+// @name           自用VIP会员
 // @namespace      https://xukzhao.eu.org
 // @version        1.0
 // @description    破解[优酷|腾讯|乐视|爱奇艺]等会员视频
@@ -49,7 +49,7 @@
   window.q = function(cssSelector) {return document.querySelector(cssSelector);};
   window.qa = function(cssSelector) {return document.querySelectorAll(cssSelector);};
   window.makeEl = function(tag){return document.createElement(tag);};
-  
+
   /* 兼容 Tampermonkey | Violentmonkey | Greasymonkey 4.0+ */
   function GMaddStyle(cssText){
     let a = document.createElement('style');
@@ -57,7 +57,7 @@
     let doc = document.head || document.documentElement;
     doc.appendChild(a);
   }
-  
+
   GMaddStyle(`
     /*TMHY:TamperMonkeyHuanYan*/
     #TMHYvideoContainer{z-index:999998;background:rgba(0,0,0,.7);position:fixed;top:7em;left:5em;height:65%;width:65%;resize:both;overflow:auto;box-shadow:2px 2px 5px 5px rgba(255,255,0,.8);}
@@ -70,22 +70,22 @@
     #TMHYul{position:fixed;top:5em;left:0;padding:0;z-index:999999;}
     #TMHYul li{list-style:none;}
     #TMHYul svg{float:right;}
-    .TM1{opacity:0.8;position:relative;width:1.9em;cursor:pointer;}
+    .TM1{opacity:0.8;position:relative;width:1em;cursor:pointer;}
     .TM1:hover{opacity:1;}
-    .TM1 span{display:block;border-radius:0 .3em .3em 0;background-color:#ffff00;border:0;font:bold 1em "微软雅黑"!important;color:#ff0000;margin:0;padding:1em .3em;}
-    .TM3{position:absolute;top:0;left:1.8em;display:none;border-radius:.3em;margin:0;padding:0;}
+    .TM1 span{display:block;border-radius:0 .3em .3em 0;background-color:#ffff00;border:0;font:bold 1em "微软雅黑"!important;color:#ff0000;margin:0;padding:1em .1em;}
+    .TM3{position:absolute;top:0;left:1em;display:none;border-radius:.3em;margin:0;padding:0;}
     .TM3 li{float:none;margin:0;font-size:1.25em;padding:.25em 1em;cursor:pointer;color:#3a3a3a!important;background:rgba(255,255,0,0.8);}
     .TM3 li:hover{color:white!important;background:rgba(0,0,0,.8);}
     .TM3 li:last-child{border-radius:0 0 .35em .35em;}
     .TM3 li:first-child{border-radius:.35em .35em 0 0;}
     .TM1:hover .TM3{display:block;}
   `);
-  
+
   var defaultapi = {
     title: "虾米",
     url: "https://jx.xmflv.com/?url="
   };
-  
+
   var apis =[
     {title:"ik9",url:"https://yparse.ik9.cc/index.php?url="},
     {title:"Player-JY",url:"https://jx.playerjy.com/?url="},
@@ -95,7 +95,7 @@
     {title:"playm3u8.cn",url:"https://www.playm3u8.cn/jiexi.php?url="},
     {title:"ckplayer",url:"https://www.ckplayer.vip/jiexi/?url="},
     {title:"bljiex",url:"https://vip.bljiex.com/?v="},
-  
+
   ];
 
   /*  执行  */
