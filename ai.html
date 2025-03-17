@@ -11,6 +11,16 @@ body{background-image:url('../image/body.png')}
 	</style>	
 </head>
 <body>
+	<div>
+		curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyB-vtDigd7JcYcwaxBAanh0BeQ3cGHMlcU" \
+-H 'Content-Type: application/json' \
+-X POST \
+-d '{
+  "contents": [{
+    "parts":[{"text": "Explain how AI works"}]
+    }]
+   }'
+	</div>
 <h3>AI</h3>
 <p><a href="https://chat.deepseek.com/" target="_blank">deepseek</a></p>
 <p><a href="https://chatglm.cn/" target="_blank">智谱清言</a></p>	 
