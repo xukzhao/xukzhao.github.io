@@ -11,16 +11,7 @@ body{background-image:url('../image/body.png')}
 	</style>	
 </head>
 <body>
-	<div>
-		curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyB-vtDigd7JcYcwaxBAanh0BeQ3cGHMlcU" \
--H 'Content-Type: application/json' \
--X POST \
--d '{
-  "contents": [{
-    "parts":[{"text": "Explain how AI works"}]
-    }]
-   }'
-	</div>
+
 <h3>AI</h3>
 <p><a href="https://chat.deepseek.com/" target="_blank">deepseek</a></p>
 <p><a href="https://chatglm.cn/" target="_blank">智谱清言</a></p>	 
@@ -37,6 +28,7 @@ body{background-image:url('../image/body.png')}
 <p><a href="https://xiaohuanxiong.com/code/playground" target="_blank">代码小浣熊</a></p>	
 <p><a href="https://lingma.aliyun.com/download" target="_blank">通义灵码</a></p>
 <p><a href="https://www.gaoding.com/ai" target="_blank">稿定AI</a></p>
+<p><a href="https://felo.ai/" target="_blank">felo</a></p>	
 <p><a href="https://chatgpt.com/" target="_blank">chatGTP</a></p>	
 <p><a href="https://gemini.google.com/" target="_blank">gemini</a></p>	
 <p><a href="https://copilot.microsoft.com/" target="_blank">copilot</a></p>	
@@ -44,7 +36,16 @@ body{background-image:url('../image/body.png')}
 
   
 </div>
-	
+	<div>
+		curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyB-vtDigd7JcYcwaxBAanh0BeQ3cGHMlcU" \
+-H 'Content-Type: application/json' \
+-X POST \
+-d '{
+  "contents": [{
+    "parts":[{"text": "Explain how AI works"}]
+    }]
+   }'
+	</div>	
 	
 </body>
 </html>
