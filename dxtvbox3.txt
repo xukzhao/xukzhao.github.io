@@ -1,76 +1,33 @@
-{
+ {
 "urls": [
+
 {
-"url": "https://肥猫.com",
-"name": "🚀1-肥猫"
+"url": "http://www.mpanso.com/%E5%B0%8F%E7%B1%B3/DEMO.json",
+"name": "小米"
 },
 {
-"url": "https://www.饭太硬.com/tv",
-"name": "🚀2-饭太硬推荐"
+"url": "https://fmbox.cc",
+"name": "星辰"
 },
 {
-"url": "https://gitlab.com/noimank/tvbox/-/raw/main/tvbox1.json",
-"name": "🚀3-健康家用"
+"url": "http://meowtv.cn/tv",
+"name": "喵影视"
 },
 {
-"url": "https://ghp.ci/raw.githubusercontent.com/guot55/YGBH/main/vip2.json",
-"name": "🚀4-宝盒线路"
+"url": "http://ok321.top/ok",
+"name": "OK"
 },
 {
-"url": "http://tvbox.xn--4kq62z5rby2qupq9ub.top/",
-"name": "🚀5-王二小"
+"url": "http://cdn.qiaoji8.com/tvbox.json",
+"name": "巧技"
 },
 {
-"url": "https://ghp.ci/raw.githubusercontent.com//gaotianliuyun/gao/master/0827.json",
-"name": "🚀6-FongMI线路"
+"url": "http://szyyds.cn/tv/x.json",
+"name": "小马"
 },
 {
-"url": "http://pandown.pro/tvbox/tvbox.json",
-"name": "🚀7-巧计线路"
-},
-{
-"url": "http://www.mpanso.com/小米/DEMO.json",
-"name": "🚀8-小米"
-},
-{
-"url": "https://weixine.net/ysc.json",
-"name": "🚀9-运输车路"
-},
-{
-"url": "https://100km.top/0",
-"name": "🚀10-骚 0线路"
-},
-{
-"url": "https://ghp.ci/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
-"name": "🚀11-高天流云js"
-},
-{
-"url": "https://ghp.ci/raw.githubusercontent.com/gaotianliuyun/gao/master/XYQ.json",
-"name": "🚀12-高天流云 XYQ"
-},
-{
-"url": "http://www.lyyytv.cn/yt/yt.json",
-"name": "🚀13-影探线路"
-},
-{
-"url": "http://dxawi.github.io/0/0.json",
-"name": "🚀14-dxawi线路"
-},
-{
-"url": "https://ghp.ci/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json",
-"name": "🚀15-南风"
-},
-{
-"url": "https://szyyds.cn/tv/x.json",
-"name": "🚀16-小马线路"
-},
-{
-"url": "https://www.wya6.cn/tv/yc.json",
-"name": "🚀17-无意线路"
-},
-{
-"url": "https://ghp.ci/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json",
-"name": "🚀18-潇洒哥线路"
+"url": "http://www.uuneed.cn/yydsys/duoapi/raw/master/jsm.json",
+"name": "网盘"
 }
 ]
 }
