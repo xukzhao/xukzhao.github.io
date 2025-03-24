@@ -24,10 +24,6 @@
 {
 "url": "http://szyyds.cn/tv/x.json",
 "name": "小马"
-},
-{
-"url": "http://www.uuneed.cn/yydsys/duoapi/raw/master/jsm.json",
-"name": "网盘"
 }
 ]
 }
