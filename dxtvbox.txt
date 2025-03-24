@@ -83,6 +83,14 @@
 {
 "url": "https://play.iptv365.org/iptv365/api.json",
 "name": "iptv365直播"
+},
+{
+"url": "http://64.112.42.49:6688/https://raw.githubusercontent.com/guot55/yg/refs/heads/main/pg/jsm2.json",
+"name": "公众号【宝盒视界】"
+},
+{
+"url": "https://3043.kstore.space/bhvip/bh/box.json",
+"name": "公众号【宝盒汇】备用"
 }
 ]
 }
