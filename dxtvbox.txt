@@ -1,12 +1,16 @@
 {
 "urls": [
 {
-"url": "https://play.iptv365.org/饭太硬/api.json",
-"name": "饭太硬"
+"url": "https://mp-064c2f8f-83e1-4bd3-a4a5-103f278b40df.cdn.bspapp.com/cloudstorage/bd112246-eb72-4aeb-8566-c80aafcd42a7.bmp",
+"name": "bmp"
 },
 {
 "url": "http://ok321.top/ok",
 "name": "OK"
+},
+{
+"url": "https://play.iptv365.org/饭太硬/api.json",
+"name": "饭太硬"
 },
 {
 "url": "https://play.iptv365.org/小米/api.json",
