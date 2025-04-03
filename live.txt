@@ -77,7 +77,7 @@ CCTV-12社会与法治,http://107.174.52.32/itv.php?id=CCTV112
 
 CCTV-13新闻,http://107.174.52.32/itv.php?id=CCTV13
 CCTV-13新闻,http://39.164.180.36:19901/tsfile/live/0013_1.m3u8?key=txiptv&playlive=0&authid=0
-
+CCTV-13新闻,http://123.54.220.38:9901/tsfile/live/1056_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-14少儿,http://107.174.52.32/itv.php?id=CCTV14
 
 CCTV-15音乐,http://107.174.52.32/itv.php?id=CCTV15
