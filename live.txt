@@ -155,14 +155,3 @@ CCTV-17农业,http://107.174.52.32/itv.php?id=CCTV17
 佛山三水,http://tp88.cn/IPTV/guangdong/fstv.php?id=fsss
 佛山三水,http://php.jdshipin.com:8880/fstv.php?id=fsss
 
-
-其它,#genre#
-周星驰,http://182.40.120.171/test-txdwk.flv.huya.com/src/1394575534-1394575534-5989656310331736064-2789274524-10057-A-0-1.m3u8
-林正英,http://182.40.120.171/test-txdwk.flv.huya.com/src/1394575543-1394575543-5989656348986441728-2789274542-10057-A-0-1.m3u8
-周润发,http://182.40.120.171/test-txdwk.flv.huya.com/src/1394565192-1394565192-5989611891779960832-2789253840-10057-A-0-1.m3u8
-刘德华,http://182.40.120.195/test-txdwk.flv.huya.com/src/1394575547-1394575547-5989656366166310912-2789274550-10057-A-0-1.m3u8
-孙红雷,http://182.40.120.229/test-txdwk.flv.huya.com/src/43460312-43460312-186660618713956352-2847687638-10057-A-0-1.m3u8 frdgdfwt 
-
-
-
-
