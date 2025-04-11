@@ -73,7 +73,7 @@ CCTV-3综艺,http://107.174.52.32/itv.php?id=CCTV3
 
 CCTV-4国际,http://107.174.52.32/itv.php?id=CCTV4
 
-CCTV-5体育,http://107.174.52.32/itv.php?id=CCTV5
+
 CCTV-5体育,https://tvpull.careryun.com/tv/cctv5.m3u8
 
 
@@ -89,10 +89,10 @@ CCTV-9纪录,http://107.174.52.32/itv.php?id=CCTV9
 
 CCTV-10科教,http://107.174.52.32/itv.php?id=CCTV10
 
-CCTV-11戏曲,http://107.174.52.32/itv.php?id=CCTV11
+
 CCTV-12社会与法治,http://107.174.52.32/itv.php?id=CCTV112
 
-CCTV-13新闻,http://107.174.52.32/itv.php?id=CCTV13
+
 CCTV-13新闻,http://39.164.180.36:19901/tsfile/live/0013_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV-13新闻,http://123.54.220.38:9901/tsfile/live/1056_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-14少儿,http://107.174.52.32/itv.php?id=CCTV14
