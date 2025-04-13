@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>直播源播放器</title>
+  <style>
+    body { margin: 0; padding: 0; font-family: Arial, sans-serif; background: #f9f9f9; }
+    #controls { padding: 10px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    label { margin-right: 5px; }
+    select { margin-right: 15px; padding: 5px; }
+    #video { width: 100%; height: auto; background: #000; display: block; }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <label for="channel">频道：</label>
+    <select id="channel"></select>
+    <label for="source">线路：</label>
+    <select id="source"></select>
+  </div>
+  <video id="video" controls playsinline></video>
+
+  <!-- HLS.js for .m3u8 streams -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <!-- flv.js for .flv streams -->
+  <script src="https://cdn.jsdelivr.net/npm/flv.js@latest"></script>
+  <script>
+    // 频道与直播源数据
+    const channels = {
+      '凤凰资讯': [
+        'https://2552.xukzhao.eu.org/tv/php/hk.php?id=zx',
+        'http://php.jdshipin.com:8880/TVOD/iptv.php?id=fhzx',
+        'http://php.jdshipin.com/TVOD/iptv.php?id=fhzx',
+        'https://2552.xukzhao.eu.org/tv/php/fh.php?id=1',
+        'http://162.62.120.19/qctv.fengshows.cn/live/0701pin72.flv',
+        'https://cdn3.163189.xyz/live/fhzx/stream.m3u8'
+      ],
+      '翡翠台': [
+        'https://live.cdn.com.mp/live/fct/stream.m3u8',
+        'http://cdn9.163189.xyz/smt1.1.php?id=jade_twn',
+        'https://cdn3.163189.xyz/live/fct/stream.m3u8',
+        'http://php.jdshipin.com/smt.php?id=jade_twn',
+        'https://smt.cdn6.rr.nu/smt3.2.1.php?id=jade_twn',
+        'http://php.jdshipin.com/TVOD/iptv.php?id=fct2',
+        'http://php.jdshipin.com/TVOD/iptv.php?id=fct3',
+        'http://php.jdshipin.com/TVOD/iptv.php?id=fct4'
+      ]
+    };
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const channelSelect = document.getElementById('channel');
+      const sourceSelect = document.getElementById('source');
+
+      // 填充频道列表
+      Object.keys(channels).forEach(name => {
+        const opt = document.createElement('option');
+        opt.value = name; opt.text = name;
+        channelSelect.appendChild(opt);
+      });
+
+      channelSelect.addEventListener('change', updateSources);
+      sourceSelect.addEventListener('change', loadStream);
+
+      // 初始化默认
+      channelSelect.selectedIndex = 0;
+      updateSources();
+    });
+
+    function updateSources() {
+      const channel = document.getElementById('channel').value;
+      const list = channels[channel] || [];
+      const sourceSelect = document.getElementById('source');
+      sourceSelect.innerHTML = '';
+      list.forEach((url, idx) => {
+        const opt = document.createElement('option');
+        opt.value = url;
+        opt.text = `线路 ${idx + 1}`;
+        sourceSelect.appendChild(opt);
+      });
+      sourceSelect.selectedIndex = 0;
+      loadStream();
+    }
+
+    function loadStream() {
+      const video = document.getElementById('video');
+      const url = document.getElementById('source').value;
+
+      // 先销毁已有播放器实例
+      if (window.hls) { window.hls.destroy(); window.hls = null; }
+      if (window.flvPlayer) { window.flvPlayer.destroy(); window.flvPlayer = null; }
+
+      // HLS (.m3u8)
+      if (url.endsWith('.m3u8') && Hls.isSupported()) {
+        const hls = new Hls();
+        window.hls = hls;
+        hls.loadSource(url);
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+      }
+      // FLV (.flv)
+      else if (url.endsWith('.flv') && flvjs.isSupported()) {
+        const flvPlayer = flvjs.createPlayer({ type: 'flv', url: url });
+        window.flvPlayer = flvPlayer;
+        flvPlayer.attachMediaElement(video);
+        flvPlayer.load();
+        flvPlayer.play();
+      }
+      // 其他可直接播放格式
+      else {
+        video.src = url;
+        video.play();
+      }
+    }
+  </script>
+</body>
+</html>
