@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直播频道</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background: #f0f2f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .channel-group {
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .channel-header {
+            padding: 12px 20px;
+            background: #1677ff;
+            color: white;
+            cursor: pointer;
+        }
+
+        .source-list {
+            display: none;
+            padding: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .source-btn {
+            padding: 8px 12px;
+            background: #f5f5f5;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: left;
+        }
+
+        .source-btn:hover {
+            background: #e6f4ff;
+            transform: translateY(-2px);
+        }
+
+        #playerContainer {
+            position: sticky;
+            top: 10px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        #videoPlayer {
+            width: 100%;
+            height: 360px;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            #videoPlayer {
+                height: 240px;
+            }
+            
+            .source-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="playerContainer">
+            <video id="videoPlayer" controls playsinline></video>
+        </div>
+
+        <div id="channelList"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flv.js/1.6.2/flv.min.js"></script>
+    <script>
+        const channels = [
+            {
+                name: "凤凰资讯",
+                sources: [
+                    "https://2552.xukzhao.eu.org/tv/php/hk.php?id=zx",
+                    "http://php.jdshipin.com:8880/TVOD/iptv.php?id=fhzx",
+                    "http://php.jdshipin.com/TVOD/iptv.php?id=fhzx",
+                    "https://2552.xukzhao.eu.org/tv/php/fh.php?id=1",
+                    "http://162.62.120.19/qctv.fengshows.cn/live/0701pin72.flv",
+                    "https://cdn3.163189.xyz/live/fhzx/stream.m3u8"
+                ]
+            },
+            {
+                name: "翡翠台",
+                sources: [
+                    "https://live.cdn.com.mp/live/fct/stream.m3u8",
+                    "http://cdn9.163189.xyz/smt1.1.php?id=jade_twn",
+                    "https://cdn3.163189.xyz/live/fct/stream.m3u8",
+                    "http://php.jdshipin.com/smt.php?id=jade_twn",
+                    "https://smt.cdn6.rr.nu/smt3.2.1.php?id=jade_twn",
+                    "http://php.jdshipin.com/TVOD/iptv.php?id=fct2",
+                    "http://php.jdshipin.com/TVOD/iptv.php?id=fct3",
+                    "http://php.jdshipin.com/TVOD/iptv.php?id=fct4"
+                ]
+            }
+        ];
+
+        let currentHls = null;
+        let currentFlv = null;
+
+        function initPlayer(url) {
+            const video = document.getElementById('videoPlayer');
+            
+            // 清除之前的实例
+            if(currentHls) {
+                currentHls.destroy();
+            }
+            if(currentFlv) {
+                currentFlv.destroy();
+            }
+
+            if(url.includes('.m3u8')) {
+                if(Hls.isSupported()) {
+                    currentHls = new Hls();
+                    currentHls.loadSource(url);
+                    currentHls.attachMedia(video);
+                    video.play();
+                }
+            } else if(url.includes('.flv')) {
+                if(flvjs.isSupported()) {
+                    currentFlv = flvjs.createPlayer({
+                        type: 'flv',
+                        url: url
+                    });
+                    currentFlv.attachMediaElement(video);
+                    currentFlv.load();
+                    video.play();
+                }
+            } else {
+                video.src = url;
+                video.play();
+            }
+        }
+
+        function createChannelElements() {
+            const container = document.getElementById('channelList');
+            
+            channels.forEach(channel => {
+                const group = document.createElement('div');
+                group.className = 'channel-group';
+                
+                const header = document.createElement('div');
+                header.className = 'channel-header';
+                header.textContent = channel.name;
+                
+                const sourceList = document.createElement('div');
+                sourceList.className = 'source-list';
+                
+                channel.sources.forEach((source, index) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'source-btn';
+                    btn.textContent = `线路 ${index + 1}`;
+                    btn.onclick = () => initPlayer(source);
+                    sourceList.appendChild(btn);
+                });
+
+                header.onclick = () => {
+                    sourceList.style.display = sourceList.style.display === 'grid' ? 'none' : 'grid';
+                };
+
+                group.appendChild(header);
+                group.appendChild(sourceList);
+                container.appendChild(group);
+            });
+        }
+
+        // 初始化
+        createChannelElements();
+        
+        // 自动播放第一个源
+        if(channels.length > 0 && channels[0].sources.length > 0) {
+            initPlayer(channels[0].sources[0]);
+        }
+    </script>
+</body>
+</html>
