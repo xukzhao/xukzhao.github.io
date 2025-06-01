@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线电台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(to right, #ff8a00, #e52e71);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
+        
+        .radio-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .radio-list {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            padding: 25px;
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        .player-container {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            padding: 25px;
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #ff8a00;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section-title i {
+            font-size: 1.5rem;
+        }
+        
+        .station-group {
+            margin-bottom: 25px;
+        }
+        
+        .group-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #6dd5ed;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .stations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .station-btn {
+            background: linear-gradient(to right, #2193b0, #6dd5ed);
+            border: none;
+            border-radius: 50px;
+            padding: 12px 15px;
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        
+        .station-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .station-btn:active {
+            transform: translateY(1px);
+        }
+        
+        .station-btn.phoenix {
+            background: linear-gradient(to right, #c31432, #240b36);
+        }
+        
+        .station-btn.hk {
+            background: linear-gradient(to right, #00467f, #a5cc82);
+        }
+        
+        .station-btn.intl {
+            background: linear-gradient(to right, #2193b0, #6dd5ed);
+        }
+        
+        .station-btn.guangdong {
+            background: linear-gradient(to right, #FF416C, #FF4B2B);
+        }
+        
+        .station-btn.music {
+            background: linear-gradient(to right, #8E2DE2, #4A00E0);
+        }
+        
+        .station-btn.finance {
+            background: linear-gradient(to right, #11998E, #38EF7D);
+        }
+        
+        .station-btn.local {
+            background: linear-gradient(to right, #F37335, #FDC830);
+        }
+        
+        .now-playing {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 15px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .station-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff8a00, #e52e71);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+        }
+        
+        .station-info {
+            flex: 1;
+        }
+        
+        .station-name {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #ff8a00;
+        }
+        
+        .station-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #6dd5ed;
+        }
+        
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            background: #4caf50;
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        audio {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 50px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        audio::-webkit-media-controls-panel {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+        }
+        
+        .device-info {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #a5cc82;
+        }
+        
+        .instructions {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .instructions h3 {
+            color: #ff8a00;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .instructions ul {
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+        
+        .instructions li {
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .radio-container {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .station-btn {
+                padding: 10px 12px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-radio"></i> 在线电台</h1>
+           <!-- <p class="subtitle">智能适配手机和桌面设备，提供最佳播放体验。在手机上自动使用原生播放模式解决凤凰台播放问题。</p>
+           -->
+        </header>
+        
+        <div class="radio-container">
+            <div class="radio-list">
+                <h2 class="section-title"><i class="fas fa-broadcast-tower"></i> 电台列表</h2>
+                
+                <!-- 凤凰/国际电台 -->
+                <div class="station-group">
+                    <h3 class="group-title"><i class="fas fa-globe-asia"></i> 凤凰/国际电台</h3>
+                    <div class="stations">
+                        <button class="station-btn phoenix" onclick="playRadio('凤凰中文音频', 'http://playtv-live.ifeng.com/live/06OLEGEGM4G_audio.m3u8')">
+                            <i class="fas fa-dove"></i> 凤凰中文音频
+                        </button>
+                        <button class="station-btn phoenix" onclick="playRadio('凤凰资讯音频', 'http://playtv-live.ifeng.com/live/06OLEEWQKN4_audio.m3u8')">
+                            <i class="fas fa-newspaper"></i> 凤凰资讯音频
+                        </button>
+                        <button class="station-btn hk" onclick="playRadio('香港电台', 'https://rthkradio1-live.akamaized.net/hls/live/2035313/radio1/index_64_a.m3u8')">
+                            <i class="fas fa-city"></i> 香港电台
+                        </button>
+                        <button class="station-btn intl" onclick="playRadio('RFI 中文', 'https://rfienchinois64k.ice.infomaniak.ch/rfienchinois-64.mp3')">
+                            <i class="fas fa-globe-asia"></i> RFI 中文
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 广东地区电台 -->
+                <div class="station-group">
+                    <h3 class="group-title"><i class="fas fa-umbrella-beach"></i> 广东地区电台</h3>
+                    <div class="stations">
+                        <button class="station-btn guangdong" onclick="playRadio('珠江经济', 'http://lhttp.qingting.fm/live/1259/64k.mp3')">
+                            <i class="fas fa-yen-sign"></i> 珠江经济
+                        </button>
+                        <button class="station-btn guangdong" onclick="playRadio('羊城交通台', 'http://lhttp.qingting.fm/live/1262/64k.mp3')">
+                            <i class="fas fa-car"></i> 羊城交通台
+                        </button>
+                        <button class="station-btn guangdong" onclick="playRadio('深圳先锋898', 'http://lhttp.qingting.fm/live/1270/64k.mp3')">
+                            <i class="fas fa-tower-broadcast"></i> 深圳先锋898
+                        </button>
+                        <button class="station-btn guangdong" onclick="playRadio('中山快乐888', 'http://lhttp.qingting.fm/live/1278/64k.mp3')">
+                            <i class="fas fa-smile"></i> 中山快乐888
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 音乐电台 -->
+                <div class="station-group">
+                    <h3 class="group-title"><i class="fas fa-music"></i> 音乐电台</h3>
+                    <div class="stations">
+                        <button class="station-btn music" onclick="playRadio('清晨音乐台', 'http://lhttp.qingting.fm/live/4915/64k.mp3')">
+                            <i class="fas fa-sun"></i> 清晨音乐台
+                        </button>
+                        <button class="station-btn music" onclick="playRadio('动听音乐', 'http://lhttp.qingting.fm/live/5022107/64k.mp3')">
+                            <i class="fas fa-headphones"></i> 动听音乐
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 财经电台 -->
+                <div class="station-group">
+                    <h3 class="group-title"><i class="fas fa-chart-line"></i> 财经电台</h3>
+                    <div class="stations">
+                        <button class="station-btn finance" onclick="playRadio('第一财经', 'http://lhttp.qingting.fm/live/276/64k.mp3')">
+                            <i class="fas fa-money-bill-wave"></i> 第一财经
+                        </button>
+                        <button class="station-btn finance" onclick="playRadio('广东股市', 'http://lhttp.qingting.fm/live/4847/64k.mp3')">
+                            <i class="fas fa-chart-pie"></i> 广东股市
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 其他地区电台 -->
+                <div class="station-group">
+                    <h3 class="group-title"><i class="fas fa-map-marker-alt"></i> 其他地区</h3>
+                    <div class="stations">
+                        <button class="station-btn local" onclick="playRadio('广西新闻台', 'http://lhttp.qingting.fm/live/1753/64k.mp3')">
+                            <i class="fas fa-newspaper"></i> 广西新闻台
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="player-container">
+                <h2 class="section-title"><i class="fas fa-play-circle"></i> 正在播放</h2>
+                <div class="now-playing">
+                    <div class="station-icon">
+                        <i class="fas fa-radio"></i>
+                    </div>
+                    <div class="station-info">
+                        <div class="station-name">请选择电台</div>
+                        <div class="station-status">
+                            <div class="status-indicator"></div>
+                            <span>等待播放</span>
+                        </div>
+                    </div>
+                </div>
+                <audio id="audioPlayer" controls></audio>
+                
+                <div class="device-info">
+                    <i class="fas fa-info-circle"></i> 当前播放模式: <span id="playbackMode">尚未选择</span>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="instructions">
+            <h3><i class="fas fa-lightbulb"></i> 使用说明</h3>
+            <ul>
+                <li>在<strong>手机设备</strong>上播放凤凰台时，使用原生播放模式解决兼容性问题</li>
+                <li>在<strong>桌面设备</strong>上播放时，使用HLS.js技术实现最佳播放效果</li>
+                <li>点击电台按钮开始播放，当前播放信息会显示在右侧面板</li>
+                <li>播放器完全响应式设计，适配手机、平板和桌面设备</li>
+                <li>遇到播放问题时，请尝试刷新页面或切换网络环境</li>
+            </ul>
+        </div>
+        -->
+        <footer>
+            <p>© 2025 在线电台 | xukzhao</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script>
+        // 检测是否移动设备
+        function isMobileDevice() {
+            return /Mobi|Android/i.test(navigator.userAgent);
+        }
+        
+        // 更新播放模式显示
+        function updatePlaybackModeDisplay(mode) {
+            document.getElementById('playbackMode').textContent = mode;
+        }
+        
+        // 播放电台函数
+        function playRadio(name, url) {
+            const audioPlayer = document.getElementById('audioPlayer');
+            const stationName = document.querySelector('.station-name');
+            const stationStatus = document.querySelector('.station-status span');
+            
+            // 更新播放信息
+            stationName.textContent = name;
+            stationStatus.textContent = '连接中...';
+            
+            // 清除之前的音源
+            if (audioPlayer.hls) {
+                audioPlayer.hls.destroy();
+                audioPlayer.hls = null;
+            }
+            
+            // 停止当前播放
+            audioPlayer.pause();
+            audioPlayer.src = '';
+            
+            // 设置播放模式
+            if (isMobileDevice() && url.includes('ifeng.com')) {
+                // 移动设备播放凤凰台使用原生模式
+                audioPlayer.src = url;
+                updatePlaybackModeDisplay('手机原生播放模式');
+            } else if (url.endsWith('.m3u8')) {
+                // 桌面设备使用HLS.js
+                if (Hls.isSupported()) {
+                    const hls = new Hls();
+                    hls.loadSource(url);
+                    hls.attachMedia(audioPlayer);
+                    audioPlayer.hls = hls;
+                    updatePlaybackModeDisplay('HLS.js 流媒体播放');
+                } else if (audioPlayer.canPlayType('application/vnd.apple.mpegurl')) {
+                    // Safari 原生支持HLS
+                    audioPlayer.src = url;
+                    updatePlaybackModeDisplay('Safari 原生HLS播放');
+                } else {
+                    alert('您的浏览器不支持播放此音频流');
+                    stationStatus.textContent = '播放失败';
+                    return;
+                }
+            } else {
+                // 直接播放MP3等其他格式
+                audioPlayer.src = url;
+                updatePlaybackModeDisplay('直接播放模式');
+            }
+            
+            // 播放音频
+            audioPlayer.play().then(() => {
+                stationStatus.textContent = '正在播放';
+            }).catch(e => {
+                stationStatus.textContent = '播放失败: ' + e.message;
+                console.error('播放错误:', e);
+            });
+        }
+        
+        // 初始化页面时检测设备类型
+        document.addEventListener('DOMContentLoaded', function() {
+            const deviceType = isMobileDevice() ? '移动设备' : '桌面设备';
+            const playbackMode = document.getElementById('playbackMode');
+            playbackMode.textContent = `已检测到${deviceType}`;
+            
+            if (!isMobileDevice()) {
+        const phoenixButtons = document.querySelectorAll('.station-btn.phoenix');
+        phoenixButtons.forEach(btn => btn.style.display = 'none');
+    }
+        });
+    </script>
+</body>
+</html>
