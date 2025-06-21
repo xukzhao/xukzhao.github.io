@@ -120,10 +120,6 @@ CCTV13,http://39.164.180.36:19901/tsfile/live/0013_1.m3u8?key=txiptv&playlive=0&
 广东珠江,http://cdn2.163189.xyz/live/gdzj/stream.m3u8
 
 
-
-
-
-
 广州综合,https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=e8a54fced9025a5af7cec5c05d5dc530&txTime=19072465600
 广州综合,https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=f0147ae6453a80f5989f382368b72aad&txTime=18d00acf487
 广州综合,http://php.jdshipin.com:8880/gztv.php?id=zhonghe
@@ -148,26 +144,4 @@ CCTV13,http://39.164.180.36:19901/tsfile/live/0013_1.m3u8?key=txiptv&playlive=0&
 东莞新闻综合,https://xukzhao.dpdns.org/tv/php/dg.php
 东莞新闻综合,http://php.jdshipin.com:8880/0769.php?id=xwzh
 
-
-佛山公共,http://tp88.cn/IPTV/guangdong/fstv.php?id=fsgg
-佛山公共,http://php.jdshipin.com:8880/fstv.php?id=fsgg
-
-佛山影视,http://tp88.cn/IPTV/guangdong/fstv.php?id=fsys
-佛山影视,http://php.jdshipin.com:8880/fstv.php?id=fsys
-佛山影视,http://8.137.59.151:3000/guangdong/foshan.php?id=fsys
-
-佛山综合,http://tp88.cn/IPTV/guangdong/fstv.php?id=fszh
-佛山综合,http://php.jdshipin.com:8880/fstv.php?id=fszh
-
-佛山高明,http://tp88.cn/IPTV/guangdong/fstv.php?id=fsgm
-佛山高明,http://php.jdshipin.com:8880/fstv.php?id=fsgm
-
-佛山南海,http://tp88.cn/IPTV/guangdong/fstv.php?id=fsnh
-佛山南海,http://php.jdshipin.com:8880/fstv.php?id=fsnh
-
-佛山顺德,http://tp88.cn/IPTV/guangdong/fstv.php?id=fssd
-佛山顺德,http://php.jdshipin.com:8880/fstv.php?id=fssd
-
-佛山三水,http://tp88.cn/IPTV/guangdong/fstv.php?id=fsss
-佛山三水,http://php.jdshipin.com:8880/fstv.php?id=fsss
 
