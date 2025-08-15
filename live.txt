@@ -8,8 +8,7 @@
 凤凰中文,http://php.jdshipin.com/TVOD/iptv.php?id=fhzw
 凤凰中文,http://php.jdshipin.com/TVOD/iptv.php?id=fhzw2
 凤凰中文,http://162.62.120.19/qctv.fengshows.cn/live/0701pcc72.flv
-test,http://119.53.58.104:5003/cctv6.m3u8?token=7375646f810bc373ab6d86b402eda4b9e86d8240&z=1f4e
-test2,http://119.53.58.104:5003/hunanws.m3u8?token=7375646f810bc373ab6d86b402eda4b9e86d8240&z=1f4e
+
 
 凤凰资讯,https://xukzhao.dpdns.org/tv/php/hk.php?id=zx
 凤凰资讯,https://zmeoicom.eu-central-1.clawcloudrun.com/tv/hk.php?id=zx
