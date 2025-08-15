@@ -23,7 +23,7 @@
 凤凰香港,https://zmeoicom.eu-central-1.clawcloudrun.com/tv/fh.php?id=3
 凤凰香港,http://162.62.120.19/qctv.fengshows.cn/live/0701phk72.flv
 
-翡翠台,http://php.jdshipin.com/TVOD/iptv.php?id=huali2
+翡翠台,https://live.tvfix.org/live/jade/index.m3u8
 翡翠台,http://api.mytv666.top/api/hk.php?id=6133373062306330636436323766386638333930633734343164306361626637267469643d74762669643d3234
 翡翠台,https://smt.520761.xyz/Smart.php?id=jade_twn
 翡翠台,https://live.cdn.com.mp/live/fct/stream.m3u8
@@ -35,7 +35,7 @@
 
 无线新闻,http://api.mytv666.top/api/hk.php?id=3437643561316430306564303532666566613235653961373961303464386662267469643d74762669643d3235
 无线新闻,http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_wxxw.flv
-无线新闻,https://smt.520761.xyz/Smart.php?id=inews_twn
+无线新闻,https://live.tvfix.org/live/inews/index.m3u8
 无线新闻,http://php.jdshipin.com:8880/smt.php?id=inews_twn
 无线新闻,http://php.jdshipin.com/TVOD/iptv.php?id=tvbxw
 无线新闻,http://php.jdshipin.com/TVOD/iptv.php?id=wxxwt
