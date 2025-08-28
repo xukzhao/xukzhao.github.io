@@ -1,0 +1,49 @@
+{
+  "sites": [
+    {
+      "key": "suoniapi",
+      "name": "索尼资源(代理,GitHub)",
+      "type": 1,
+      "api": "https://tvbox.xukzhao.dpdns.org/api/suoni?key=Zhao_2025@TV!",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "lziapi",
+      "name": "量子资源(代理,GitHub)",
+      "type": 1,
+      "api": "https://tvbox.xukzhao.dpdns.org/api/lzi?key=Zhao_2025@TV!",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "wwzy",
+      "name": "五五资源(代理,GitHub)",
+      "type": 1,
+      "api": "https://tvbox.xukzhao.dpdns.org/api/wwzy?key=Zhao_2025@TV!",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "wujinapi",
+      "name": "无尽资源(代理,GitHub)",
+      "type": 1,
+      "api": "https://tvbox.xukzhao.dpdns.org/api/wujin?key=Zhao_2025@TV!",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "apiyhzy",
+      "name": "影汇资源(代理,GitHub)",
+      "type": 1,
+      "api": "https://tvbox.xukzhao.dpdns.org/api/apiyhzy?key=Zhao_2025@TV!",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }
+  ]
+}
