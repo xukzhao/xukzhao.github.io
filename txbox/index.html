@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>TVBox 智能线路选择</title>
+<script>
+async function test(url, timeout = 1500) {
+  return new Promise(resolve => {
+    const img = new Image();
+    const timer = setTimeout(() => resolve({ url, ok: false, time: timeout }), timeout);
+    const start = performance.now();
+    img.onload = () => { clearTimeout(timer); resolve({ url, ok: true, time: performance.now() - start }); };
+    img.onerror = () => { clearTimeout(timer); resolve({ url, ok: false, time: timeout }); };
+    img.src = url + '?_=' + Date.now();
+  });
+}
+
+(async () => {
+  const configs = [
+    { name: "GitHub", url: "https://xukzhao.eu.org/tvbox/config.json", testUrl: "https://xukhao.eu.org/favicon.ico" },
+    { name: "firebase", url: "https://xukzhao168.web.app/tvbox/config.json", testUrl: "https://xukzhao168.web.app/favicon.ico" },
+    { name: "2552", url: "https://2552.xukzhao.eu.org/config.json", testUrl: "https://https://2552.xukzhao.eu.org/favicon.ico" }
+  ];
+
+  const results = await Promise.all(configs.map(c => test(c.testUrl)));
+  results.sort((a, b) => a.time - b.time);
+
+  const fastest = results.find(r => r.ok);
+  if (fastest) {
+    // 找到匹配的 config.url
+    const targetConfig = configs.find(c => fastest.url.includes(c.testUrl.split('/favicon.ico')[0]));
+    window.location.href = targetConfig.url;
+  } else {
+    document.body.innerHTML = "<h2>所有线路测试失败，请检查网络</h2>";
+  }
+})();
+</script>
+</head>
+<body>
+<h2 style="text-align:center;margin-top:50px;">正在检测最快线路，请稍候…</h2>
+</body>
+</html>
