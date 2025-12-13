@@ -88,13 +88,15 @@
 
   var apis =[
     {title:"ik9",url:"https://yparse.ik9.cc/index.php?url="},
+    {title:"测试",url:"https://aibox.eu.org/?url="},
+    {title:"极速解析",url:"https://jx.2s0.cn/player/?url="},
     {title:"Player-JY",url:"https://jx.playerjy.com/?url="},
     {title:"m1907",url:"https://im1907.top/?jx="},
     {title:"M3U8TV",url:"https://jx.m3u8.tv/jiexi/?url="},
-    {title:"yemu",url:"https://www.yemu.xyz/?url="},
+    {title:"HLS解析",url:"https://jx.hls.one/?url="},
     {title:"playm3u8.cn",url:"https://www.playm3u8.cn/jiexi.php?url="},
     {title:"ckplayer",url:"https://www.ckplayer.vip/jiexi/?url="},
-    {title:"bljiex",url:"https://vip.bljiex.com/?v="},
+    {title:"虾米",url:"https://jx.xmflv.com/?url="},
 
   ];
 
