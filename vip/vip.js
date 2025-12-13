@@ -114,4 +114,61 @@
     </ul>
   `;
   document.body.appendChild(div);
+ // 菜单可通过黄色按钮 ▶ 上下拖动，带边界限制、视觉提示，并记住位置
+(function() {
+  const menu = document.getElementById("TMHYul");
+  const handle = document.getElementById("TMList"); // 黄色按钮 ▶
+  let isDragging = false;
+  let startY, startTop;
+
+  // 页面加载时恢复上次位置
+  const savedTop = localStorage.getItem("TMHYul_top");
+  if (savedTop !== null) {
+    menu.style.top = savedTop + "px";
+  }
+
+  handle.addEventListener("mousedown", function(e) {
+    isDragging = true;
+    startY = e.clientY;
+    startTop = parseInt(window.getComputedStyle(menu).top, 10);
+    // 鼠标样式提示
+    document.body.style.cursor = "move";
+    // 按钮视觉提示（变色）
+    handle.style.backgroundColor = "#ffa500";
+    // 菜单半透明
+    menu.style.opacity = "0.7";
+    e.preventDefault();
+  });
+
+  document.addEventListener("mousemove", function(e) {
+    if (!isDragging) return;
+    const deltaY = e.clientY - startY;
+    let newTop = startTop + deltaY;
+
+    // 边界限制：不能拖到屏幕外
+    const menuHeight = menu.offsetHeight;
+    const maxTop = window.innerHeight - menuHeight;
+    if (newTop < 0) newTop = 0;
+    if (newTop > maxTop) newTop = maxTop;
+
+    menu.style.top = newTop + "px";
+  });
+
+  document.addEventListener("mouseup", function() {
+    if (isDragging) {
+      // 保存当前位置
+      const currentTop = parseInt(window.getComputedStyle(menu).top, 10);
+      localStorage.setItem("TMHYul_top", currentTop);
+    }
+    isDragging = false;
+    // 恢复鼠标样式
+    document.body.style.cursor = "default";
+    // 恢复按钮颜色
+    handle.style.backgroundColor = "";
+    // 恢复菜单透明度
+    menu.style.opacity = "1";
+  });
+})();
+
+
 })();
