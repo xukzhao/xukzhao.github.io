@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         VIP解析 · 精简无广告版
 // @namespace    https://xukzhao.eu.org
-// @version      2.0.0
+// @version      2.0.1
 // @description  仅提供视频解析跳转，不注入广告、不劫持页面、不内嵌播放器
 // @author       xu
-// @match        *://v.qq.com/*
-// @match        *://*.iqiyi.com/*
+// @match        *://v.qq.com/x/*
+// @match        *://*.iqiyi.com/v_*
 // @match        *://*.iq.com/*
-// @match        *://*.youku.com/*
-// @match        *://*.mgtv.com/*
+// @match        *://*.youku.com/v_*
+// @match        *://*.mgtv.com/b/*
 // @match        *://*.bilibili.com/*
 // @grant        GM_addStyle
 // ==/UserScript==
@@ -61,7 +61,7 @@
       display: block;
     }
     #vipjx-menu li {
-      background: rgba(0,0,0,.75);
+      background: rgba(0,0,0,.55);
       color: #fff;
       padding: 6px 12px;
       cursor: pointer;
@@ -101,11 +101,8 @@
 
   function openApi(apiUrl) {
     const currentUrl = location.href;
-    window.open(
-      apiUrl + encodeURIComponent(currentUrl),
-      '_blank',
-      'noopener,noreferrer'
-    );
+    // 修改这里：将 window.open 改为直接修改 location.href
+    location.href = apiUrl + encodeURIComponent(currentUrl);
   }
 
 })();
