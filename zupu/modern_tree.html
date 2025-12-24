@@ -1206,7 +1206,7 @@
     const svg = d3.select("#tree-container").append("svg")
         .attr("width", width)
         .attr("height", height)
-        .attr("viewBox", [-width / 2, -height / 2, width, height])
+        .attr("viewBox", [0, -height / 2, width, height])
         .style("font", "18px Microsoft YaHei")
         .style("user-select", "none");
 
@@ -1219,8 +1219,8 @@
         });
 
     svg.call(zoom)
-       // 【居中逻辑】：translate(-150, 0) 让根节点处于屏幕视觉中心位置
-       .call(zoom.transform, d3.zoomIdentity.translate(-150, 0).scale(0.8));
+       // 初始视角调整：靠左显示
+       .call(zoom.transform, d3.zoomIdentity.translate(200, 0).scale(0.8));
 
     const linkGroup = g.append("g").attr("fill", "none").attr("stroke", "#999").attr("stroke-opacity", 0.4).attr("stroke-width", 1.5);
     const nodeGroup = g.append("g").attr("cursor", "pointer").attr("pointer-events", "all");
@@ -1346,7 +1346,7 @@
         // 【归位逻辑】
         svg.transition()
            .duration(750)
-           .call(zoom.transform, d3.zoomIdentity.translate(-150, 0).scale(0.8));
+           .call(zoom.transform, d3.zoomIdentity.translate(200, 0).scale(0.8));
     }
 </script>
 
