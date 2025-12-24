@@ -1220,7 +1220,7 @@
 
     svg.call(zoom)
        // 初始视角调整：靠左显示
-       .call(zoom.transform, d3.zoomIdentity.translate(200, 0).scale(0.8));
+       .call(zoom.transform, d3.zoomIdentity.translate(150, 0).scale(0.8));
 
     const linkGroup = g.append("g").attr("fill", "none").attr("stroke", "#999").attr("stroke-opacity", 0.4).attr("stroke-width", 1.5);
     const nodeGroup = g.append("g").attr("cursor", "pointer").attr("pointer-events", "all");
@@ -1346,7 +1346,7 @@
         // 【归位逻辑】
         svg.transition()
            .duration(750)
-           .call(zoom.transform, d3.zoomIdentity.translate(200, 0).scale(0.8));
+           .call(zoom.transform, d3.zoomIdentity.translate(150, 0).scale(0.8));
     }
 </script>
 
