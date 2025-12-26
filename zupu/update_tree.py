@@ -58,7 +58,7 @@ def parse_text_to_json(file_path):
     return root_nodes
 
 def update_html(json_data):
-    html_path = 'modern_tree.html'
+    html_path = 'd3.html'
     try:
         with open(html_path, 'r', encoding='utf-8') as f:
             content = f.read()
